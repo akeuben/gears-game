@@ -1,0 +1,54 @@
+[
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "Do you know who diagnosed you with ADHD? Usually it is a physician, like a family doctor or pediatrician, or a psychologist.",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "I saw a family doctor who diagnosed me.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1d-7"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A pediatrician diagnosed me.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1d-7"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A psychologist diagnosed me.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1d-8"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I don’t remember.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1d-6"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

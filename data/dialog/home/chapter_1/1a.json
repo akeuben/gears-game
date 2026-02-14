@@ -1,0 +1,39 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Now that I finished the reflection, I should report back to Ms. White."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Dear Ms. White,<br><br>I have completed the activity.  Please see attached.<br><br>Sincerely, <br><br>%player%",
+        "strategy": "chapter_1:staying_focussed_while_studying"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "...And sent."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I should take Ms. White’s advice and talk to Dr. Kevin."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Dear Dr. Kevin,<br><br>My guidance counsellor, Ms. White, suggested I talk to you.  I’m planning to go to postsecondary after I graduate, and I have a disability. Ms. White thinks I should know more about how it affects my learning.  Do you have time to meet with me?<br><br>Sincerely,<br><br>%player%",
+        "actions": [
+            {
+                "type": "send_email",
+                "email": ["psychologist/email_1"]
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Reply to Psychologist Email",
+                "list": "story"
+            }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey %player%, have you seen the new science lab equipment?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "No, I haven't. What's new?"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "They got these amazing new microscopes. The detail you can see is incredible."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I heard they also got some new chemistry sets. The science department is really stepping up their game."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's awesome! I can't wait to try them out."
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "What's your favorite part of science class?",
+        "options": [
+            {
+                "text": "Doing experiments.",
+                "actions": [{}]
+            },
+            {
+                "text": "Learning about new theories.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

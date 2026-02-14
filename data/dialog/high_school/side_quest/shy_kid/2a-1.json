@@ -1,0 +1,19 @@
+[
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "I brought my sketchbook in case you wanted to see it."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Of course! I’d love to check it out.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/side_quest/shy_kid/2b"]
+            }
+        ],
+        "setCharacter": "Jayden"
+    }
+]

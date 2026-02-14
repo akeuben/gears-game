@@ -1,0 +1,23 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "I got accepted! Hooray! I should text Dominic about this!",
+        "actions": [
+            {
+                "type": "send_text",
+                "text": "dominic/text_thread_3"
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Respond to Dominic",
+                "list": "story"
+            },
+            {
+                "type": "complete_todo_item",
+                "item": "Check your email for admission status",
+                "list": "story"
+            }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+{
+    "from": "Dominic",
+    "avatar": "test.png",
+    "messages": [
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Hey %player%, sorry for the last minute notice, but if you're free today I could meet you at the cafeteria to hangout for a bit. "
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "Hey Dominic! No problem, that actually would work great!"
+        },
+        {
+            "type": "action",
+            "source": "other",
+            "message": "Perfect! See you soon.",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "coping_transition",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Respond to Dominic",
+                    "list": "story"
+                },
+                {
+                    "type": "add_todo_item",
+                    "item": "Meet up with Dominic",
+                    "list": "story"
+                }
+            ]
+        }
+    ]
+}

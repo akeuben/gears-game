@@ -1,0 +1,94 @@
+{
+    "name": "transition",
+    "backgrounds": [{ "image": "black_screen.jpg" }],
+    "elements": [],
+    "action": {
+        "type": "waterfall",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["transition:submit_application"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "transition:submit_application",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "mail:application_email",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["transitions/chapter_4/transition_1"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["transition:chapter_4:1"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "transition:chapter_4:1",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["transitions/chapter_4/transition_2"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["transition:chapter_4:2"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "transition:chapter_4:2",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["transitions/chapter_4/transition_3"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter_5_transition"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter_5_transition",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["transitions/chapter_5/transition_1"]
+                    }
+                ]
+            }
+        ]
+    }
+}

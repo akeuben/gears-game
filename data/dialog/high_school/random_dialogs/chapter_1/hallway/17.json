@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, what's your favorite subject in school?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! I really enjoy biology. Learning about how living things work is fascinating."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's cool! Do you have a favorite topic within biology?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I love genetics. It's amazing to see how traits are passed down through generations."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds interesting. Thanks for sharing!"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "No problem!"
+    }
+]

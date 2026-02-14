@@ -1,0 +1,70 @@
+[
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "Hey Sam, how are you?"
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Hey Rahat. It's great to see you again.  How has your semester been going?"
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "It has had its up and downs.  I was too optimistic and thought that I wouldn’t need extra supports in my first year.  I thought that I had been doing well enough in high school that postsecondary would be the same.  That turned out not to be true."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "What happened?"
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "The assignments were a much different from high school.  There was a lot more writing than I was used to – essays and stuff. Instructors don’t give you a lot of help.  They mark a lot harder and they don’t allow rewrites."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Unfortunately, instructors don’t have the time to let everyone re-do their assignments if they don’t get a good grade the first time."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "They don't?"
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Oh, I’m sorry, Rahat, this is %player%. I’m doing a mentoring session like you and I did last year."
+    },
+    {
+        "type": "option",
+        "source": "Rahat",
+        "message": "Hi %player%. Nice to meet you. Sorry for interrupting.",
+        "options": [
+            {
+                "text": "Not at all.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "university/coffee_shop/side_quest/accommodations/1b"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "-cut conversation short-",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/coffee_shop/chapter_5/1e"]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

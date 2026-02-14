@@ -1,0 +1,27 @@
+[
+    {
+        "type": "action",
+        "source": "Dominic",
+        "message": "Hi, I’m Dominic and this is my friend, %player%.",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "open_house:third_booth_done",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "open_house:third_booth_not_done",
+                        "flag_action": "revoke"
+                    }
+                ]
+            },
+            {
+                "type": "open_dialog",
+                "dialog": ["university/open_house/chapter_3/4b"]
+            }
+        ],
+        "setCharacter": "Dominic"
+    }
+]

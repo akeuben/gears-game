@@ -1,0 +1,23 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Hm. This is interesting...",
+        "actions": [
+            {
+                "type": "send_text",
+                "text": "sam/text_thread_1"
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Respond to Sam",
+                "list": "story"
+            },
+            {
+                "type": "complete_todo_item",
+                "item": "Check your email for SAS email",
+                "list": "story"
+            }
+        ]
+    }
+]

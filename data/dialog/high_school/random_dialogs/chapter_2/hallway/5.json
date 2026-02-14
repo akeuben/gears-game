@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%, did you see the art display in the main hallway?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "No, I haven't had a chance yet. What's it about?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "It's a collection of student artwork from the past semester. There are some really impressive pieces."
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "I loved the painting of the sunset. It was so vibrant and full of life."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I should definitely check it out. Sounds amazing."
+    },
+    {
+        "type": "option",
+        "source": "Marcus",
+        "message": "Do you enjoy looking at art?",
+        "options": [
+            {
+                "text": "Yes, I find it really inspiring.",
+                "actions": [{}]
+            },
+            {
+                "text": "Not really, but I appreciate the talent involved.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

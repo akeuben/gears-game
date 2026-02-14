@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, how's your school project going?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! It's going well. I'm almost done with the research part."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's great to hear. What's your project about?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "It's about the impact of social media on teenagers. Pretty interesting stuff."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds like a fascinating topic. Good luck with the rest of it!"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Thanks! I appreciate it."
+    }
+]

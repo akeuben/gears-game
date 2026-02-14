@@ -1,0 +1,94 @@
+{
+    "type": "cards",
+    "music": "textbook.mp3",
+    "questions": [
+        {
+            "question": "Classes have started, and you need your textbook to finish an assignment that is due next week. You’ll need to go order it from the bookstore.",
+            "explaination": "High importance, high urgency. The deadline for the assignment is soon, and you’ll want to make sure the bookstore has your textbook in stock in case it takes a couple days for it to be ordered in.",
+            "correct": "tl"
+        },
+        {
+            "question": "You’ve just gotten all your class syllabi and need to record important dates, assignment deadlines, and exam times in your calendar.",
+            "explaination": "High importance, high urgency. You’ll want to record those important dates as soon as possible so you can make plans accordingly.",
+            "correct": "tl"
+        },
+        {
+            "question": "Student Accessibility Services is asking registered students to book their test spaces and accommodations two weeks before midterms. The deadline is in two days.",
+            "explaination": "High importance, high urgency. The deadline is very soon, and if you’d like access to accommodations that will help you during your exams, you’ll need to book them soon.",
+            "correct": "tl"
+        },
+        {
+            "question": "Tuition is due one week after classes start, and students incur late fees for everyday that their payment is late. The last day to pay tuition is in three days, but you need to go to the bank to get a cheque first.",
+            "explaination": "High importance, high urgency. To avoid late fees which, start adding up quickly, you’ll need to take one of the three days to go the bank to pick up the cheque and then pay tuition the next day. It’s a tight deadline.",
+            "correct": "tl"
+        },
+        {
+            "question": "A midterm exam is coming up in a month for a class that you’re finding to be a challenge. You need to figure out a study plan.",
+            "explaination": "High importance, medium urgency. Since you’re finding the course to be challenging, making a study plan is your best option to fix that hurdle. The exam is a month away so nailing down your plan soon is ideal, but not the highest urgency.",
+            "correct": "tr"
+        },
+        {
+            "question": "Cramming all your studying in for exams is stressful, and you want to make a study schedule that is more sustainable. ",
+            "explaination": "High importance, low urgency. Since the timeline for exams isn’t specified, the urgency is lower. Making study plans for final exams helps you end the term more peacefully and turn what you’ve learned into long-term memory, which is important as you continue to more difficult content in your program.",
+            "correct": "tr"
+        },
+        {
+            "question": "There is a huge group project due in three weeks, and your group has barely started. You have a paper due around the same deadline, and your work for this group project needs to be reviewed by your team before the work is submitted.",
+            "explaination": "Medium importance, medium urgency. Three weeks can be a decent amount of time to work on two projects along with your courses. However, group work can bring up some unexpected challenges and coordinating with your team’s work styles requires more time than you would expect. Getting your portion of the work done earlier would leave time to correct any challenges that arise.",
+            "correct": "tr"
+        },
+        {
+            "question": "You find that keeping an exercise routine helps you feel more balanced. When the end of the term comes around it becomes more difficult to keep up with the exercise routine because assignments and tests pile up. At the start of the term, you want to create a schedule to help maintain work-life balance so less work piles up at the end of the term.",
+            "explaination": "Medium importance, low urgency. There is no specific deadline for this task, but it does help your overall wellbeing during the term which is important. Planning to make the term go more smoothly for you and help maintain work-life balance is a good idea.",
+            "correct": "tr"
+        },
+        {
+            "question": "There has been a big snowstorm and your grandmother needs you shovel her walk.  The city regulates that sidewalks have to be cleared within 48 hours. She has called you to ask for your help",
+            "explaination": "Low importance, High urgency. This might be an opportunity for your brother/sister to step up and help with this task.",
+            "correct": "bl"
+        },
+        {
+            "question": "You are working on a group project that is due in a few days. You've been assigned a task, but another member of the group has stronger skills in that area. You know the project will work out better if your friend works on it instead.",
+            "explaination": "Low importance, High urgency. Since your friend is better suited for the task, it would be a good idea to swap some responsibilities with them.",
+            "correct": "bl"
+        },
+        {
+            "question": "Your classmates are getting together after class. You had planned to work on a paper that is due in a couple weeks, but could use a break.",
+            "explaination": "Low importance, low urgency. Taking breaks and maintaining a well balanced life is good for your overall health and wellbeing, especially if the paper is not due for a while. However, if you have not scheduled other time to work on the paper, it may be a good idea to do so or to take a raincheck on meeting up with your classmates this time.",
+            "correct": "br"
+        },
+        {
+            "question": "You have a research paper to find articles for and have opened up a new web browser to get to the library’s home page.  However, you see an ad for electric bikes.  You have been thinking about getting one so you click on the ad to learn more about the product.",
+            "explaination": "While the ad are enticing, remember, they’re designed to steal your attention.",
+            "correct": "br"
+        },
+        {
+            "question": "You are part of the student group in your faculty and they have decided to organize a bake sale.  You are in charge of putting ads for the sale on bulletin boards around campus.",
+            "explaination": "Although this is a task you have committed to, it is neither important or urgent. See if you can pull out of these obligations diplomatically.",
+            "correct": "br"
+        }
+    ],
+    "left_labels": ["important", "not important"],
+    "top_labels": ["urgent", "not urgent"],
+    "top_left": {
+        "title": "Do It",
+        "description": "Important tasks that are urgent should be prioritized above other tasks."
+    },
+    "top_right": {
+        "title": "Schedule It",
+        "description": "Important tasks that are not urgent should be sheduled for later completion."
+    },
+    "bottom_left": {
+        "title": "Delegate It",
+        "description": "Urgent tasks that are not important should be delegated to someone else."
+    },
+    "bottom_right": {
+        "title": "Eliminate It",
+        "description": "Tasks that are neither urgent nor important should not be completed by anyone."
+    },
+    "instruction": {
+        "title": "How To Play",
+        "content": "For each card, correctly sort it into one of the categories. You can click and drag the card with the mouse or use %key:urgency_matrix_minigame:next_cell%, %key:urgency_matrix_minigame:previous_cell%, and %key:minigames:select%.<br /><br />Categories:<br /><br /><ul><li><b>Do It:</b> Things with clear deadlines and consequences for not taking immediate action</li><li><b>Schedule It:</b> Activities without a set deadline that being you closer to your goals. Easy to procrastinate on.</li><li><b>Delegate It:</b> Things that need to be done, but don't require your specific skills. Busy work.</li><li><b>Delete It:</b> Distractions that make you feel worse afterward. Can be okay but only in moderation.</li></ul>",
+        "content_no_kb": "For each card, correctly sort it into one of the categories. You can click and drag the card with the mouse.<br /><br />Categories:<br /><br /><ul><li><b>Do It:</b> Things with clear deadlines and consequences for not taking immediate action</li><li><b>Schedule It:</b> Activities without a set deadline that being you closer to your goals. Easy to procrastinate on.</li><li><b>Delegate It:</b> Things that need to be done, but don't require your specific skills. Busy work.</li><li><b>Delete It:</b> Distractions that make you feel worse afterward. Can be okay but only in moderation.</li></ul>"
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "type": "quiz",
+    "avatar": "npc/counseller",
+    "questions": [
+        {
+            "question": "What is the most common learning disibility?",
+            "choices": [
+                {
+                    "text": "ADHD",
+                    "reason": "Correct! ADHD is the most common learning disability.",
+                    "correct": true
+                },
+                {
+                    "text": "Dyslexia",
+                    "reason": "Incorrect. While dyslexia is a learning disability, it is not the most common.",
+                    "correct": false
+                },
+                {
+                    "text": "APD",
+                    "reason": "Incorrect. While APD is a learning disability, it is not the most common.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "What does LD stand for?",
+            "choices": [
+                {
+                    "text": "Learning Disability",
+                    "reason": "Correct! LD stands for Learning Disability",
+                    "correct": true
+                },
+                {
+                    "text": "Learning Deficit",
+                    "reason": "Incorrect. LD does not stand for learning deficit",
+                    "correct": false
+                },
+                {
+                    "text": "Learning Disorder",
+                    "reason": "Incorrect. Learning disorder is not a proper term to use.",
+                    "correct": false
+                },
+                {
+                    "text": "Long Distance",
+                    "reason": "Incorrect. Long distance is not related to the topic of this quiz.",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

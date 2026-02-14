@@ -1,0 +1,165 @@
+[
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Postsecondary institutions are responsible for ensuring that students with disabilities have the support they need for their learning.",
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "That sounds great."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What kind of support?"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "It depends on each student’s learning needs. An advisor can meet with you to review your learning profile and identify the support that works for you."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "I get extra time for tests now. Would I still get that here?"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Probably, but you won’t know for sure until you speak with someone in the office."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "I don’t really use the extra time anyway and that is the only accommodation I get in high school."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Postsecondary education has different demands and skills from high school. You might need different accommodations than what you get now."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I don’t think it is worth the time to get other accommodations."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "It's better to figure that out now rather than later on. Lots of students end up wanting accommodations after they start the first term when they start to struggle academically."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yeah, but I can just make an appointment then."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "You can, but you can be delayed getting an appointment with accessibility services if you wait until school has started, because everyone is busy with other students who also waited. If there is a long wait, you might not have accommodations in place until the next semester."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "That happened to my cousin.  He had to wait 6 weeks for an appointment and he ended up failing one of his courses."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "You don’t want your grades to suffer."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "No, I don’t want that."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "How can I access all this?"
+    },
+    {
+        "type": "option",
+        "source": "School Representative",
+        "message": "Check out this pamphlet, which answers questions about our services. Most offices have an online booking system to make an appointment.",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "I’m going to check this out. Thanks for the information!",
+                "actions": [
+                    {
+                        "type": "change_background",
+                        "index": 0
+                    },
+                    {
+                        "type": "document",
+                        "document": "open_house:accessibility",
+                        "open": true
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["open_house:repeat_take_flyer"],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["university/open_house/chapter_3/6a"]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "open_house:repeat_2b",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "open_house:first_booth_not_done",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Oh no, thank you, I think I'll be alright.",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["open_house:first_booth_not_done"],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["university/open_house/chapter_3/2c"]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["open_house:repeat_2b"],
+                        "actions": [
+                            {
+                                "type": "change_background",
+                                "index": 0
+                            },
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["university/open_house/chapter_3/6a"]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

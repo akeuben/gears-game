@@ -1,0 +1,17 @@
+{
+    "name": "university:lecture_hall",
+    "backgrounds": [{ "image": "university/lecture_hall.png" }],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0.42,
+            "y": 0.83,
+            "x2": 0.56,
+            "y2": 0.999,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "university/map"
+            }
+        }
+    ]
+}

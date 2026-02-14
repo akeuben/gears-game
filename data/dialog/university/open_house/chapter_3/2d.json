@@ -1,0 +1,70 @@
+[
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "That might not be a good idea. My cousin didn’t think he would need accommodations because he did well in high school with little support.  But he didn’t realize how much his instructors helped him in little ways.  Like giving him extensions for assignments.",
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Aren’t instructors here going to be nice?"
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Most of them are, but he said postsecondary is different – it is fast paced and there is more independent learning outside of class time."
+    },
+    {
+        "type": "option",
+        "source": "Dominic",
+        "message": "Instructors don’t have the time to give exceptions to every student so most would not help him out if he didn’t have documentation from the accessibility services office.",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "Hmm. Maybe I should check out that pamphlet.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "open_house:first_booth_not_done",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/2e"]
+                    }
+                ]
+            },
+            {
+                "text": "I’ll take my chances for now.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "open_house:first_booth_not_done",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 0
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6a"]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "That was a productive call!",
+        "actions": [
+            {
+                "type": "complete_todo_item",
+                "item": "Join the Annual Accessibility Info Day Zoom Session Link",
+                "list": "story"
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Go to bed and complete Chapter 5",
+                "list": "story"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "chapter5:complete",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "time:night",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

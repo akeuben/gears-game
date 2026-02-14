@@ -1,0 +1,197 @@
+{
+    "name": "schedule_builder",
+    "stylesheet": "",
+    "activities": [
+        [
+            {
+                "type": "schedule",
+                "classes": [
+                    {
+                        "name": "The Philosophy of Coffee Brewing",
+                        "code": "BEAN-114",
+                        "components": [
+                            {
+                                "type": "lec",
+                                "sections": [
+                                    {
+                                        "startTime": 9.0,
+                                        "endTime": 9.83,
+                                        "days": "TuTh",
+                                        "section": 1
+                                    },
+                                    {
+                                        "startTime": 14.0,
+                                        "endTime": 14.83,
+                                        "days": "TuTh",
+                                        "section": 2
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "lab",
+                                "sections": [
+                                    {
+                                        "startTime": 11.0,
+                                        "endTime": 11.83,
+                                        "days": "MWF",
+                                        "section": 1
+                                    },
+                                    {
+                                        "startTime": 15.0,
+                                        "endTime": 15.83,
+                                        "days": "MWF",
+                                        "section": 2
+                                    },
+                                    {
+                                        "startTime": 17.0,
+                                        "endTime": 18.25,
+                                        "days": "TuTh",
+                                        "section": 3
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Under Water Basket Weaving",
+                        "code": "AQUA-108",
+                        "components": [
+                            {
+                                "type": "lec",
+                                "sections": [
+                                    {
+                                        "startTime": 10.0,
+                                        "endTime": 10.83,
+                                        "days": "MWF",
+                                        "section": 1
+                                    },
+                                    {
+                                        "startTime": 13.0,
+                                        "endTime": 14.25,
+                                        "days": "TuTh",
+                                        "section": 2
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "tut",
+                                "sections": [
+                                    {
+                                        "startTime": 9.0,
+                                        "endTime": 10.25,
+                                        "days": "TuTh",
+                                        "section": 1
+                                    },
+                                    {
+                                        "startTime": 15.0,
+                                        "endTime": 15.83,
+                                        "days": "MWF",
+                                        "section": 2
+                                    },
+                                    {
+                                        "startTime": 17.0,
+                                        "endTime": 18.25,
+                                        "days": "TuTh",
+                                        "section": 3
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Applied Nap Optimization",
+                        "code": "SLEE-142",
+                        "components": [
+                            {
+                                "type": "lec",
+                                "sections": [
+                                    {
+                                        "startTime": 8.0,
+                                        "endTime": 8.83,
+                                        "days": "MWF",
+                                        "section": 1
+                                    },
+                                    {
+                                        "startTime": 11.0,
+                                        "endTime": 12.25,
+                                        "days": "TuTh",
+                                        "section": 2
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "lab",
+                                "sections": [
+                                    {
+                                        "startTime": 10.0,
+                                        "endTime": 10.83,
+                                        "days": "MWF",
+                                        "section": 1
+                                    },
+                                    {
+                                        "startTime": 14.0,
+                                        "endTime": 15.25,
+                                        "days": "TuTh",
+                                        "section": 2
+                                    },
+                                    {
+                                        "startTime": 16.0,
+                                        "endTime": 16.83,
+                                        "days": "MWF",
+                                        "section": 3
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Zombie Apocalypse Resource Management",
+                        "code": "ZOMB-120",
+                        "components": [
+                            {
+                                "type": "lec",
+                                "sections": [
+                                    {
+                                        "startTime": 9.0,
+                                        "endTime": 9.83,
+                                        "days": "MWF",
+                                        "section": 1
+                                    },
+                                    {
+                                        "startTime": 12.0,
+                                        "endTime": 13.25,
+                                        "days": "TuTh",
+                                        "section": 2
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "tut",
+                                "sections": [
+                                    {
+                                        "startTime": 14.0,
+                                        "endTime": 14.83,
+                                        "days": "MWF",
+                                        "section": 1
+                                    },
+                                    {
+                                        "startTime": 16.0,
+                                        "endTime": 18.25,
+                                        "days": "TuTh",
+                                        "section": 2
+                                    },
+                                    {
+                                        "startTime": 18.0,
+                                        "endTime": 18.83,
+                                        "days": "MWF",
+                                        "section": 3
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    ]
+}

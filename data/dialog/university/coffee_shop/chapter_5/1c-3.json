@@ -1,0 +1,64 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Do you find that your instructors and other students are ok with the accommodation students with ADHD or LD have access to?",
+        "setCharacter": "Sam"
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "There has been a shift in attitudes towards students with disabilities and more advocacy work is being done to reduce the stigma surrounding them. More often than not, instructors are aware, and accepting, that some students need supports."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I sometimes feel self-conscious about my disability. Have you encountered any stigma or misconceptions about your disability?"
+    },
+    {
+        "type": "option",
+        "source": "Sam",
+        "message": "Sadly, yes. There are still misconceptions and stereotypes out there, but it's up to us to challenge them and advocate for ourselves. It's essential to educate others about what it means to have a learning disability and how it doesn't define who we are. I recommend Professor Case. I learned some tips about advocacy and talking to professors about your own learning needs. I went and found it useful. Their ad is on this board here.",
+        "options": [
+            {
+                "text": "Yeah, I’ll take a look at the board, thanks.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter_5:poster_hint",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I’ll check it out later.",
+                "actions": [
+                    {
+                        "type": "void"
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Thanks for being so open about your experience with stigma."
+    },
+    {
+        "type": "action",
+        "source": "Sam",
+        "message": "Remember, disabilities are just a part of who we are; they don't diminish our worth or potential. I hope you keep that in mind even when you're facing challenges.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["university/coffee_shop/chapter_5/1b"]
+            }
+        ]
+    }
+]

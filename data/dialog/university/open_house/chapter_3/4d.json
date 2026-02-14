@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Me too.",
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Alright then. If things change, come back and we can talk about it, ok? Enjoy the Open House!"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Thanks. I'll see you around.",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["open_house:first_booth_done"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6a"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["open_house:first_booth_not_done"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6b"]
+                    }
+                ]
+            }
+        ]
+    }
+]

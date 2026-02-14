@@ -1,0 +1,29 @@
+{
+    "from": "Student Accessibility Services",
+    "avatar": "test.jpg",
+    "subject": "SAS Annual Accessibility Info Day Post Session Info",
+    "content": "Thanks to everyone who attended our session about Student Accessibility Services for your interest and your questions.  <br><br>As promised here are the handouts we referenced in the session: <br><br> 1. A suggested timeline for registering with the student accessibility office. Take time to read it and mark important dates in your calendar. <br><br> 2. Information on how to get a reassessment if your current assessment needs to be updated. <br><br>I wish everyone a successful first semester. <br><br>Regards,<br><br>Jennifer Wilks<br>Student Accessibility Services Advisor<br>jwilks@PSU.ca<br>Administration Block 555, Unit 1",
+    "attachments": [
+        {
+            "text": "1. Suggested Timeline",
+            "actions": [
+                {
+                    "type": "document",
+                    "document": "sas:timeline",
+                    "open": true
+                }
+            ]
+        },
+        {
+            "text": "2. How To Get a Reassessment",
+            "actions": [
+                {
+                    "type": "document",
+                    "document": "high_school:reassessment",
+                    "open": true
+                }
+            ]
+        }
+    ],
+    "important": true
+}

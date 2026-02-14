@@ -1,0 +1,78 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, what's with the brochure?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Oh, hey. Just trying to figure out which university to apply to. It's so confusing."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yeah, it can be overwhelming. Have you narrowed it down to any options yet?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Sort of. I'm looking at a couple of schools that have good programs for what I want to study, but I can't decide."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What are you thinking of studying?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I'm interested in environmental science. I want to go somewhere that has a strong program and good research opportunities."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds awesome. Have you looked at the campus life and the support services they offer? That might help you decide."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Not really. I guess I should. I don't just want a good program; I want to feel comfortable there too."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Exactly. And it's worth visiting the campuses if you can. Sometimes you get a gut feeling about a place when you see it in person."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "That's a good idea. Maybe I can plan some visits over the next few weekends."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Definitely. And make sure to talk to some current students if you can. They can give you the inside scoop on what it's really like."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Thanks, that's really helpful. I feel a bit better about this now."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Anytime. We're all in the same boat, trying to figure this stuff out."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "True. Let's just make sure we end up somewhere we love, right?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Absolutely. We've got this."
+    }
+]

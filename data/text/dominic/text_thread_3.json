@@ -1,0 +1,57 @@
+{
+    "from": "Dominic",
+    "avatar": "test.png",
+    "messages": [
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Hey %player%, university acceptance letters came out today did you get yours?"
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "I did! I just got mine and I got accepted!"
+        },
+        {
+            "type": "message",
+            "source": "other",
+            "message": "That's great, congratulations! I also just got the acceptance letter."
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "That's fantastic news, congratulations! We should do something to celebrate."
+        },
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Ya let's meet up at the cafeteria one day soon."
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "Ya that sounds good, tell me what day works best for you, I am pretty free this week."
+        },
+        {
+            "type": "action",
+            "source": "other",
+            "message": "Alright! I will get back to you when I figure out what my week looks like.",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "open_dialog_chapter_4:2a",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Respond to Dominic",
+                    "list": "story"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "useOptions": ["debug"],
+    "options": [
+        {
+            "name": "A",
+            "EnableVoiceLines": false,
+            "EnableKbControls": false,
+            "EnableKbHints": false,
+            "EnableKeyRebinding": false,
+            "EnableDialogHistory": false,
+            "EnableSkipMinigames": false,
+            "EnableFailedTodo": false,
+            "SelectSecretProbability": 0.1,
+
+            "DebugEnabled": false,
+            "AutoDialogueEnabled": false,
+            "ShowBoundingBoxes": false
+        },
+        {
+            "name": "B",
+            "EnableVoiceLines": true,
+            "EnableKbControls": true,
+            "EnableKbHints": true,
+            "EnableKeyRebinding": true,
+            "EnableDialogHistory": true,
+            "EnableSkipMinigames": true,
+            "EnableFailedTodo": true,
+            "SelectSecretProbability": 0.5,
+
+            "DebugEnabled": false,
+            "AutoDialogueEnabled": false,
+            "ShowBoundingBoxes": false
+        },
+        {
+            "name": "debug",
+            "EnableVoiceLines": true,
+            "EnableKbControls": true,
+            "EnableKbHints": true,
+            "EnableKeyRebinding": true,
+            "EnableDialogHistory": true,
+            "EnableSkipMinigames": true,
+            "EnableFailedTodo": true,
+            "SelectSecretProbability": 1.0,
+
+            "DebugEnabled": true,
+            "AutoDialogueEnabled": false,
+            "ShowBoundingBoxes": false
+        },
+        {
+            "name": "all",
+            "EnableVoiceLines": true,
+            "EnableKbControls": true,
+            "EnableKbHints": true,
+            "EnableKeyRebinding": true,
+            "EnableDialogHistory": true,
+            "EnableSkipMinigames": true,
+            "EnableFailedTodo": true,
+            "SelectSecretProbability": 1.0,
+
+            "DebugEnabled": true,
+            "AutoDialogueEnabled": false,
+            "ShowBoundingBoxes": true
+        }
+    ]
+}

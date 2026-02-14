@@ -1,0 +1,71 @@
+{
+    "from": "Sam",
+    "avatar": "test.png",
+    "messages": [
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Hey %player%. I’m Sam, I’m part of your Postsecondary’s Orientation 101 team.  Congratulations on your acceptance to our institution."
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "Thanks. I’m excited."
+        },
+        {
+            "type": "message",
+            "source": "other",
+            "message": "As part of my role with the Orientation team, I am a student mentor and touch base with students about the transition to the first year."
+        },
+        {
+            "type": "message",
+            "source": "other",
+            "message": "I assume you have been thinking about how you are going to navigate postsecondary."
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "Yes, I’ve been talking to some people."
+        },
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Like you, I have a disability. One of the best supports I had in my first year was getting advice from peers who have already been through some postsecondary years."
+        },
+        {
+            "type": "message",
+            "source": "other",
+            "message": "If you’d like, I would be willing to meet with you and share my experience."
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "Thank you, that sounds great!"
+        },
+        {
+            "type": "option",
+            "source": "other",
+            "message": "Are you attending the SAS Info Day? They send out an invitation to all new students with disabilities.",
+            "options": [
+                {
+                    "text": "Yes, next Monday.",
+                    "actions": [
+                        {
+                            "type": "send_text",
+                            "text": "sam/text_thread_2"
+                        }
+                    ]
+                },
+                {
+                    "text": "I don't think so, I might go see them later.",
+                    "actions": [
+                        {
+                            "type": "send_text",
+                            "text": "sam/text_thread_3"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

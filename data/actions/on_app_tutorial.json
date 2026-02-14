@@ -1,0 +1,291 @@
+{
+    "type": "waterfall",
+    "actions": [
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["messages:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "messages:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "messages:tutorial",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Welcome to the Message App!",
+                    "description": "You received a message from your friend Dominic!",
+                    "flag": "phone:closed_app:messages",
+                    "color": "red",
+                    "sound": "hint"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["settings:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "settings:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "settings:tutorial",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Explore Settings App",
+                    "description": "You can change your profile, sound and typography settings.<br>Save and load game progression in the settings app!",
+                    "flag": "phone:closed_app:settings",
+                    "color": "red",
+                    "sound": "hint"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["mail:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "mail:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "mail:tutorial",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "waterfall",
+                    "actions": [
+                        {
+                            "type": "conditional",
+                            "condition": "flag",
+                            "flags": ["participant:enablekbcontrols"],
+                            "actions": [
+                                {
+                                    "type": "hint",
+                                    "title": "Reply to Your First Email",
+                                    "description": "You can reply to the emails by clicking the message to reply with,<br>or using %key:general:up%, %key:general:down%, and %key:general:select% to select it.<br>Additionally, if the email doesn't have a star, then it's optional.",
+                                    "flag": "replied:first_email",
+                                    "color": "red",
+                                    "sound": "hint"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "conditional",
+                            "condition": "true",
+                            "actions": [
+                                {
+                                    "type": "hint",
+                                    "title": "Reply to Your First Email",
+                                    "description": "You can reply to the emails by clicking the message to reply with. Additionally, if the email doesn't have a star, then it's optional.",
+                                    "flag": "replied:first_email",
+                                    "color": "red",
+                                    "sound": "hint"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["achievements:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "achievements:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "achievements:tutorial",
+                            "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "open_dialog:4",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Explore Achievements App",
+                    "description": "You can earn badges for completing minigames, side quests!<br>Bumper stickers are earned at the end of each chapter for story progression.",
+                    "flag": "phone:closed_app:achievements",
+                    "color": "red",
+                    "sound": "hint"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["todo:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "todo:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "todo:tutorial",
+                            "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "open_dialog:5",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Explore To-Do App",
+                    "description": "In the to-do app, you can view the list of both story-related and optional tasks.",
+                    "flag": "phone:closed_app:todo",
+                    "color": "red",
+                    "sound": "hint"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["map:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "map:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "map:tutorial",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Explore Map App",
+                    "description": "Some locations unlock as the story progresses.<br>Visit the high school and find the guidance counselor.",
+                    "flag": "scene:visited:high_school:entrance",
+                    "color": "red",
+                    "sound": "hint"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["journal:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "journal:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "journal:tutorial",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Explore Journal App",
+                    "description": "Store and edit journal activities and view received documents.",
+                    "flag": "phone:closed_app:journal",
+                    "color": "red",
+                    "sound": "hint"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["dictionary:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "dictionary:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "dictionary:tutorial",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Explore Dictionary App",
+                    "description": "All meanings of words discussed in the story in the dictionary app!",
+                    "flag": "phone:closed_app:dictionary",
+                    "color": "red",
+                    "sound": "hint"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["browser:tutorial"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "browser:tutorial:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "browser:tutorial",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Explore Browser App",
+                    "description": "In the Browser app, you can view several videos and click to go to several search pages.",
+                    "flag": "phone:closed_app:browser",
+                    "color": "red",
+                    "sound": "hint"
+                }
+            ]
+        }
+    ]
+}

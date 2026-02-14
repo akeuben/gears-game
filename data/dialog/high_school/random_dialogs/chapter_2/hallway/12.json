@@ -1,0 +1,28 @@
+[
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%, do you know what the lunch special is today?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I think it's spaghetti and meatballs."
+    },
+    {
+        "type": "option",
+        "source": "Marcus",
+        "message": "Nice! I love spaghetti. What about you?",
+        "options": [
+            {
+                "text": "Absolutely, it's delicious!",
+                "actions": [{}]
+            },
+            {
+                "text": "It's okay, but I prefer something else.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

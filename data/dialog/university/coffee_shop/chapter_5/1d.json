@@ -1,0 +1,111 @@
+[
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Well, it was great chatting with you. I have a class in 10 minutes so I have to run."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Thanks again."
+    },
+    {
+        "type": "message",
+        "source": "Sam ",
+        "message": "If you want to chat again in the future, just send me a text.  I’d be happy to meet again."
+    },
+    {
+        "type": "conditional",
+        "source": "%player%",
+        "message": "",
+        "conditions": ["chapter_5_Route:1"],
+        "trueDialog": {
+            "type": "action",
+            "source": "%player%",
+            "message": "Thanks. I’ll let you know.",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "chapter5:complete",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "add_todo_item",
+                    "item": "Go to bed and complete Chapter 5",
+                    "list": "story"
+                },
+                {
+                    "type": "conditional",
+                    "condition": "flag",
+                    "flags": ["chapter_5:poster_hint"],
+                    "actions": [
+                        {
+                            "type": "flag",
+                            "flag": [
+                                {
+                                    "flag_name": "chapter_5:poster_hint",
+                                    "flag_action": "revoke"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "notification",
+                            "title": "Advocacy Presentation",
+                            "description": "Click on the poster to view the presentation on advocacy!",
+                            "color": "red",
+                            "sound": "hint"
+                        }
+                    ]
+                }
+            ]
+        },
+        "falseDialog": {
+            "type": "action",
+            "source": "%player%",
+            "message": "Thanks. I’ll let you know. I'm going to go to the zoom event first.",
+            "actions": [
+                {
+                    "type": "add_todo_item",
+                    "item": "Go back home",
+                    "list": "story"
+                },
+                {
+                    "type": "conditional",
+                    "condition": "flag",
+                    "flags": ["chapter_5:poster_hint"],
+                    "actions": [
+                        {
+                            "type": "flag",
+                            "flag": [
+                                {
+                                    "flag_name": "chapter_5:poster_hint",
+                                    "flag_action": "revoke"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "notification",
+                            "title": "Advocacy Presentation",
+                            "description": "Click on the poster to view the presentation on advocacy!",
+                            "color": "red",
+                            "sound": "hint"
+                        }
+                    ]
+                },
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "chapter5:home",
+                            "flag_action": "give"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

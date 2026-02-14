@@ -1,0 +1,13 @@
+[
+    {
+        "type": "action",
+        "source": "Psychologist",
+        "message": "Hello, %player%, thank you for meeting with me yesterday.",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            }
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "type": "action",
+        "source": "Dominic",
+        "message": "Hello, I'm Dominic.",
+        "setCharacter": "Dominic",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "open_house:finished",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "open_house:first_booth_done",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "open_house:repeat_take_flyer",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "And I'm %player%, nice to meet you."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Hi there, I hope you two are having a good time at the Open House so far! I’m from accessibility services.  Would you like to hear about what we do?"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "It wouldn’t hurt. What is accessibility services?",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["university/open_house/chapter_3/2b"]
+            }
+        ]
+    }
+]

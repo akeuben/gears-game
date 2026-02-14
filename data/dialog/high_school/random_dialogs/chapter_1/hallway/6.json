@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, how's studying going?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Ugh, it's rough. These exams are going to be the death of me."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I feel you. Which subject are you struggling with the most?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Definitely chemistry. I can't seem to remember all these formulas."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Want to study together? Maybe we can help each other out."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "That would be great. Two heads are better than one, right?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Exactly. Let's meet up after school in the library."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Sounds like a plan. Thanks for the help!"
+    }
+]

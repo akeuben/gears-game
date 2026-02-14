@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, have you picked up any new hobbies lately?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yeah, actually. I started learning to play the guitar."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's awesome! How's it going?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "It's tough, but a lot of fun. I can play a few songs now."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'd love to hear you play sometime."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Sure thing! I'll let you know when I'm ready for my first performance."
+    }
+]

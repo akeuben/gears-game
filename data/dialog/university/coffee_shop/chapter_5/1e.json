@@ -1,0 +1,40 @@
+[
+    {
+        "type": "option",
+        "source": "Sam",
+        "message": "Anyways, what did you want to talk about?",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "How are you managing your time?",
+                "flag": "coffee_shop:visited:manage_time",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/coffee_shop/chapter_5/1c-1"]
+                    }
+                ]
+            },
+            {
+                "text": "How have you found postsecondary compared to high school?",
+                "flag": "coffee_shop:visited:compare",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/coffee_shop/chapter_5/1c-2"]
+                    }
+                ]
+            },
+            {
+                "text": "I’m concerned about how instructors will treat me if I have a disability.",
+                "flag": "coffee_shop:visited:instructor",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/coffee_shop/chapter_5/1c-3"]
+                    }
+                ]
+            }
+        ]
+    }
+]

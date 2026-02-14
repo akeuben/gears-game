@@ -1,0 +1,47 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hi, Ms. White.",
+        "setCharacter": "Guidance Counsellor"
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "Hi %player%!"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I’m ready to submit an application to postsecondary. What do I need to do?"
+    },
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "Each postsecondary institution will have its own application process. Let’s review the process so you can fill out your application.",
+        "options": [
+            {
+                "text": "I'm ready to apply!",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "high_school:submit_application",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "transition:submit_application",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "go_to_scene",
+                        "scene": "transition"
+                    }
+                ]
+            }
+        ]
+    }
+]

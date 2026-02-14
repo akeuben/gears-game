@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I don’t think it's fair that I might have to take longer than others just because of my disability."
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "I don’t either, but they told me that most students take longer than 4 years – more like 5 years to complete their degree."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "It sounds like that workshop was useful. Where did you say you went? "
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Student services.  I can email you a document about the resources they offer for students.  They have a lot of different workshops for students on learning skills plus other resources like counselling."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That would be helpful, thanks."
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "I’ll also email you a practice exercise they gave me on organizing a weekly timetable."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I’d like that. Good luck with your semester."
+    },
+    {
+        "type": "action",
+        "source": "Joe",
+        "message": "I’ll see you around.",
+        "actions": [
+            {
+                "type": "send_email",
+                "email": ["side_quest/time_management_email_1"]
+            },
+            {
+                "type": "send_email",
+                "email": ["side_quest/time_management_email_2"]
+            }
+        ]
+    }
+]

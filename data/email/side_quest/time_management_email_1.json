@@ -1,0 +1,19 @@
+{
+    "from": "Joe",
+    "avatar": "test.jpg",
+    "subject": "Resources in Postsecondary",
+    "content": "Hi %player%,<br><br>Here's the list of resources in postsecondary that they offer to students.<br><br>Best, <br><br>Joe",
+    "attachments": [
+        {
+            "text": "Resources List",
+            "actions": [
+                {
+                    "type": "document",
+                    "document": "resources:resources_in_postsecondary",
+                    "open": true
+                }
+            ]
+        }
+    ],
+    "important": true
+}

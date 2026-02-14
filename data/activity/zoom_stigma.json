@@ -1,0 +1,310 @@
+{
+    "name": "zoom_stigma",
+    "stylesheet": "report_reflection",
+    "activities": [
+        [
+            {
+                "type": "image",
+                "imagePath": "assets/images/elements/Logo.png",
+                "height": 132,
+                "width": 132
+            },
+            {
+                "type": "grid",
+                "columnWeights": [1],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "What is Stigma?",
+                            "html": "Stigma is when people have negative beliefs, views or attitudes about individuals that belong to a certain group. Often the result of stigma is discrimination such as excluding people with learning disabilities or mental health issues from experiences and activities that are open to other people. They can also hold erroneous stereotypes or myths."
+                        },
+                        "position": [1, 2],
+                        "size": [1, 2]
+                    }
+                ]
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.3, 0.7],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "image",
+                            "imagePath": "assets/images/elements/stigma-img1.png",
+                            "height": 172,
+                            "width": 172
+                        },
+                        "position": [1, 2],
+                        "size": [1, 2]
+                    },
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "Many people with disabilities get negative messaging.",
+                            "html": "Negative message can start to affect how they feel about themselves.  When they feel like there is something wrong with them, they have more difficulty asking for support and advocating for their needs."
+                        },
+                        "position": [2, 2],
+                        "size": [1, 2]
+                    }
+                ]
+            },
+            {
+                "type": "grid",
+                "columnWeights": [1],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "It is not all gloom and doom.",
+                            "html": "Many people with disabilities use life challenges as an opportunity for personal growth and see adversity as a challenge to overcome."
+                        },
+                        "position": [1, 2],
+                        "size": [1, 2]
+                    }
+                ]
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.7, 0.3],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "quoteblock",
+                            "html": "Invisible disabilities, like LD or ADHD, can be difficult for people to understand. You can’t control how others think, you can only control how you think. Stay positive about yourself."
+                        },
+                        "position": [1, 2],
+                        "size": [1, 2]
+                    },
+                    {
+                        "element": {
+                            "type": "image",
+                            "imagePath": "assets/images/elements/stigma-img2.png",
+                            "height": 172,
+                            "width": 172
+                        },
+                        "position": [2, 2],
+                        "size": [1, 2]
+                    }
+                ]
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.5, 0.5],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "image",
+                            "imagePath": "assets/images/elements/stigma-img3.png",
+                            "height": 272,
+                            "width": 272
+                        },
+                        "position": [1, 2],
+                        "size": [1, 2]
+                    },
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "Everyone has the right to be treated equally.",
+                            "html": "Standing up for your rights can be scary especially when there is an imbalance of power between students and instructors. <br><br>Some instructors will be less understanding than others, but most students report that instructors are understanding of disabilities and are willing to work with students. <br><br>If somebody is treated unfairly because they belong to a particular group (such as those with disabilities) they are being discriminated against. <br><br>The right to a postsecondary education for persons with disabilities is protected through human rights legislation."
+                        },
+                        "position": [2, 2],
+                        "size": [1, 2]
+                    }
+                ]
+            },
+            {
+                "type": "grid",
+                "columnWeights": [1],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "Advocacy can be scary, and it takes practice.",
+                            "html": "Some instructors will be less understanding than others, but most students report that instructors are understanding of disabilities and are willing to work with students. <br><br>Accessibility services won’t be there for all instances when you experience stigma from others. Take time to practice your advocacy skills."
+                        },
+                        "position": [1, 2],
+                        "size": [1, 2]
+                    }
+                ]
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.7, 0.3],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "Strategies & Resources",
+                            "html": "Accessibility services won’t be there for all instances when you experience stigma from others. <br><br>Advocacy can be scary and it takes practice.  You might not be perfect the first time you try it.  THAT’S OK!  The more you do it, the better you will get. <br><br>IDENTIFY STRATEGIES THAT WILL WORK FOR YOU. On the next page, take some time to identify some strategies that may work for you."
+                        },
+                        "position": [1, 2],
+                        "size": [1, 2]
+                    },
+                    {
+                        "element": {
+                            "type": "image",
+                            "imagePath": "assets/images/elements/stigma-img4.png",
+                            "height": 172,
+                            "width": 172
+                        },
+                        "position": [2, 2],
+                        "size": [1, 2]
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Stigma and Advocacy"
+            },
+            {
+                "type": "titledblock",
+                "title": "Coping Strategies",
+                "html": "In the list below check off the strategies that work for you or that you would like to try."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Square breathing: <br><br>Square breathing has four steps just like a square has four sides. You start by breathing in deeply for four seconds, hold your breath for four seconds, breathe out for four seconds, and hold your breath again for four seconds. Repeat that pattern as many times as you’d like."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Pick 10): <br><br>Pick 10 is an exercise where you choose a colour, and then search for ten items that you spot in your surroundings that are that colour. The goal is to make yourself more aware of your surroundings and ground you to them a bit more."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "5 Senses: <br><br>5 Senses is a similar exercise to the Pick 10, but instead you search for items in your surroundings that follow this pattern:<br><br><ul><li>5 things you can see</li><li>4 things you can hear</li><li>3 things you can touch</li><li>2 things you can smell</li><li>1 thing you can taste (or another thing you can smell if there isn’t anything around to taste)</li></ul>"
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Stigma and Advocacy"
+            },
+            {
+                "type": "titledblock",
+                "title": "Education",
+                "html": "In the list below check off the strategies that work for you or that you would like to try."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Educate yourself: <br><br>Understand your disability and how it affects your learning.  This can help you explain your needs and challenges to others."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Know your rights: <br><br>you have a human right to access education. Accommodations and other supports are a right, not an exception."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Educate others: <br><br>Judgement from others often stems from a lack of understanding.  Pass on facts about your disability to others.  Challenge myths they may hold about you.  And talk about the positive things about having your disability."
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Stigma and Advocacy"
+            },
+            {
+                "type": "titledblock",
+                "title": "Advocate",
+                "html": "In the list below check off the strategies that work for you or that you would like to try."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Speak out: <br><br>Join groups that advocate for student rights.  Help spread the work that everyone should be treated with dignity and respect. Remember, postsecondary institutions have a responsibility to foster inclusive learning environments for everyone."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Practice advocacy: <br><br>Advocacy skills don’t develop overnight. Practice by role playing with trusted staff or peers.  Also, check out our strategies in this game for how to talk to instructors."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Problem solve: <br><br>You know yourself the best.  Although others can provide support and advice, you will know what will work for your needs.  Identify strategies you think will work and try them out.  If you need the support of others, explain your needs and why you think the strategy will work."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Collaborate: <br><br>Work with student accessibility services to identify strategies and accommodations that will work for you."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Communication: <br><br>Keep your lines of communication open with instructors.  Don’t wait until it is too late to get clarifications for assignments or ask for support."
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Stigma and Advocacy"
+            },
+            {
+                "type": "titledblock",
+                "title": "Use Available Resources",
+                "html": "In the list below check off the strategies that work for you or that you would like to try."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Have a confidant: <br><br>Have a close peer or friend you can talk to when things get tough.  This is a person who understands your disability and will understand your situation."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Get help: <br><br>Don’t let shame or fear of labels prevent you from seeking help. Seek out resources on campus to learn more about your disability and how you can effectively advocate for your rights."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Focus on the positive: <br><br>Having a disability is only one part of a person and how they live their life. You also have strengths that you can bring to the table."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Kick shame in the butt: <br><br>Don’t let others make you feel that you have a character flaw or are stupid. You are not someone who is weak, but someone who walks in the work in a different way.  Consider seeking counselling, seeking supports, or learning about your disability so you can reframe how you see yourself."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Foster a sense of belonging: <br><br>Get to know trusted peers and instructors.  Reduce feelings of isolation by findings opportunities for social interaction such as extracurricular activities, clubs, support groups, and peer mentorship programs."
+            },
+            {
+                "type": "checkbox",
+                "checkbox": "true",
+                "label": "Remember your strengths and incorporate them into your education strategies. Using the list of strengths you wrote out earlier, determine how you can use them to your advantage."
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Stigma and Advocacy"
+            },
+            {
+                "type": "reflection",
+                "number": "1",
+                "prompt": "Are there other strategies that work for you or that you would like to try? Consider the strengths you identified earlier in the game. How can you use your strengths to your advantage?"
+            }
+        ]
+    ]
+}

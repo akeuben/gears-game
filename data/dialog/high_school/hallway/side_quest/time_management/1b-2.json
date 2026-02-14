@@ -1,0 +1,83 @@
+[
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Yes. I realized that I’m not sure how I will manage work and do well in my classes."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What kind of work?"
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Serving. Probably about 15 hours per week, mainly weekends."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What did you learn from the workshop?"
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "I think I will have to use my time wisely.  They said to expect to study and work on assignments for at least 2-3 hours for every class. If I take 5 classes per term, that means a minimum of 10-15 hours per week on studying plus the 15 hours of class time."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's a lot."
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "It is.  Plus, I’m going to take lots of science courses and they have labs in addition to lecture time.  I’m stressed already and I haven’t started."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yikes, that’s like a full-time job."
+    },
+    {
+        "type": "option",
+        "source": "Joe",
+        "message": "It sure is.  But they said that many students don’t dedicate enough time to studying outside of class time. Also, they don’t make good use of their time while studying.",
+        "options": [
+            {
+                "text": "I’ve never really had to study in high school, so I’m not too worried about postsecondary.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1c-1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I’ve had to spend a lot of time studying in high school just to keep up.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1c-2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I usually do everything last minute and still end up doing okay.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1c-3"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, how's your part-time job going?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! It's going alright. Just finished a long shift."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds exhausting. What do you do there again?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I'm a barista at the coffee shop downtown. It's pretty busy, but the tips are good."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's cool. I should drop by sometime and see you in action."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Definitely! I'll make you the best latte you've ever had."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'll hold you to that. See you around, Marcus."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "See you! Take care."
+    }
+]

@@ -1,0 +1,27 @@
+{
+    "geared_up": {
+        "name": "Geared Up for Postsecondary",
+        "description": "Unlocked for completing the first chapter.",
+        "image": "Sticker_5.png"
+    },
+    "fueled_for_success": {
+        "name": "Fueled For Success",
+        "description": "Unlocked for completing the second chapter.",
+        "image": "Sticker_1.png"
+    },
+    "greatness_awaits": {
+        "name": "Greatness Awaits",
+        "description": "Unlocked for completing the third chapter.",
+        "image": "Sticker_2.png"
+    },
+    "future_scholar": {
+        "name": "Future Scholar Ahead",
+        "description": "Unlocked for completing the fourth chapter.",
+        "image": "Sticker_3.png"
+    },
+    "driven_to_learn": {
+        "name": "Driven To Learn",
+        "description": "Unlocked for completing the fifth chapter.",
+        "image": "Sticker_4.png"
+    }
+}

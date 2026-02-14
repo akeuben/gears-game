@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey %player%, are you going to the basketball game tonight?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'm not sure yet. Who are we playing against?"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "We're up against Lincoln High. It should be an exciting game."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yeah, I've heard they've got a really strong team this year."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "It sounds like a match worth watching."
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "What do you enjoy most about basketball games?",
+        "options": [
+            {
+                "text": "The intense competition.",
+                "actions": [{}]
+            },
+            {
+                "text": "The energy of the crowd.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

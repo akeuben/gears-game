@@ -1,0 +1,535 @@
+{
+    "name": "budget",
+    "activities": [
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Annual Budget"
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.7, 0.3],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "quoteblock",
+                            "html": "There are many things to consider within the costs of your education. In addition to tuition, books, and supplies, you may have other costs such as insurance, transportation, and household expenses. "
+                        },
+                        "position": [1, 1],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "instructions",
+                            "html": "This worksheet helps you look at your budget options. Collecting information is helpful when comparing the cost difference between living on campus, off campus, and at home. There are two sections, expenses and financial resources which are the money coming in and the money going out in a year. Each section has been broken down with some common categories such as tuition and rent. Start by filling in each block that applies to you, and once that is finished you will have concrete numbers to compare and help inform your financial decisions."
+                        },
+                        "position": [1, 2],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "helpful hints",
+                            "html": "<ul><li>Domestic versus International: If you attend a postsecondary in another country, the cost of tuition will be greater than if you were staying in your home country.</li><li>Tuition: Fees often include class costs, student union fees, health insurance, transport passes, lab fees, library fees, and gym passes.</li><li>Check to see if your postsecondary institution has a workshop on finances and scholarship/awards.</li><li>Check your institution's website for information about the cost of living where they reside and expenses such as tuition.</li><li>Additional fees may apply to specific programs. See the specific fee totals for your program in your institution's academic calendar.</li><li>Your books and supplies cost will be dependent on the courses you take and can vary from program to program.</li></ul>"
+                        },
+                        "position": [1, 3],
+                        "size": [2, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "verticallist",
+                            "title": "To Do:",
+                            "elements": [
+                                {
+                                    "type": "checkbox",
+                                    "checkbox": "true",
+                                    "label": "Collect Annual Expense Info"
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "checkbox": "true",
+                                    "label": "COLLECT FINANCIAL RESOURCES INFO"
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "checkbox": "true",
+                                    "label": "Compare the totals"
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "checkbox": "true",
+                                    "label": "DIVIDE ANNUAL TOTALS BY 12 TO SEE MONTHLY TOTALS"
+                                }
+                            ]
+                        },
+                        "position": [2, 1],
+                        "size": [1, 2]
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "ANNUAL FINANCIAL RESOURCES"
+            },
+            {
+                "type": "spreadsheet",
+                "bindings": {
+                    "provides": {
+                        "total-0-0": "channel0"
+                    }
+                },
+                "tables": [
+                    {
+                        "categoryHeader": "Resource",
+                        "valueHeaders": ["Amount"],
+                        "initialCategories": [
+                            "Scholarships",
+                            "Grants",
+                            "Bursaries",
+                            "Savings",
+                            "Employment",
+                            "Student Loans",
+                            "Line of Credit"
+                        ],
+                        "canAddRows": true,
+                        "canRemoveRows": true,
+                        "canEditCellName": true,
+                        "canEditCellValue": true,
+                        "totalText": "Annual Total"
+                    }
+                ]
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["x"],
+                "function": "return \"$\" + Math.floor(parseInt(x.replace(/\\D/g,''))/12).toLocaleString()",
+                "bindings": {
+                    "provides": {
+                        "result": "channel0a"
+                    },
+                    "recieves": {
+                        "x": "channel0"
+                    }
+                }
+            },
+            {
+                "type": "verticallist",
+                "title": "Monthly Budget",
+                "elements": [
+                    {
+                        "type": "checkbox",
+                        "bindings": {
+                            "recieves": {
+                                "subtitle": "channel0a"
+                            }
+                        },
+                        "label": "Divide Annual total by 12"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "ANNUAL EXPENSES"
+            },
+            {
+                "type": "spreadsheet",
+                "bindings": {
+                    "provides": {
+                        "total-0-0": "channel1",
+                        "total-0-1": "channel2",
+                        "total-0-2": "channel3"
+                    }
+                },
+                "tables": [
+                    {
+                        "categoryHeader": "Expense",
+                        "valueHeaders": ["On Campus", "At Home", "Off Campus"],
+                        "initialCategories": [
+                            "TUITION & FEES",
+                            "NOTES",
+                            "ANNUAL EXPENSES",
+                            "BOOKS & SUPPLIES",
+                            "RESIDENCE/RENT",
+                            "FOOD",
+                            "TRANSPORTATION",
+                            "UTILITIES",
+                            "INTERNET",
+                            "PHONE",
+                            "CLOTHING/PERSONAL",
+                            "PRESCRIPTIONS",
+                            "ENTERTAINMENT",
+                            "UNEXPECTED EXPENSE",
+                            "EMERGENCY SAVINGS"
+                        ],
+                        "canAddRows": true,
+                        "canRemoveRows": true,
+                        "canEditCellName": true,
+                        "canEditCellValue": true,
+                        "totalText": "Annual Totals"
+                    }
+                ]
+            },
+            {
+                "type": "verticallist",
+                "title": "Monthly Budget",
+                "elements": [
+                    {
+                        "type": "checkbox",
+                        "label": "Divide Annual totals by 12"
+                    },
+                    {
+                        "type": "checkbox",
+                        "bindings": {
+                            "recieves": {
+                                "subtitle": "channel1a"
+                            }
+                        },
+                        "label": "On Campus"
+                    },
+                    {
+                        "type": "checkbox",
+                        "bindings": {
+                            "recieves": {
+                                "subtitle": "channel2a"
+                            }
+                        },
+                        "label": "At Home"
+                    },
+                    {
+                        "type": "checkbox",
+                        "bindings": {
+                            "recieves": {
+                                "subtitle": "channel3a"
+                            }
+                        },
+                        "label": "Off Campus"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "MONTHLY BUDGET"
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.7, 0.3],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "quoteblock",
+                            "html": "Calculating monthly budgets helps keep finances in order throughout the year and it ensures that there are enough financial resources even in the later months of the school year. "
+                        },
+                        "position": [1, 1],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "instructions",
+                            "html": "Take a look at the monthly totals in the annual expense sheet. These totals give a general idea of how much funding is needed per month. However, some expenses, like tuition, come in one lump sum instead of an even bill per month. Collect information for your anticipated expenses, and fill in each category accordingly. The pie and bar charts help visualize and compare your running totals per month. If there are unexpected expenses or higher expenditure than planned, reassess as needed, the charts are interactive!"
+                        },
+                        "position": [1, 2],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "helpful hints",
+                            "html": "<ul><li>Planning to put aside money for unexpected expenses is a stress reducing habit. When emergencies or unplanned situations occur, you would already have a buffer fund prepared.</li><li>Similar to the unexpected expenses fund, a savings fund helps prepare you for your future goals, and builds a safety net for unanticipated circumstances.</li><li>Post secondary education is a notoriously expensive time in life so organizing finances varies a lot from situation to situation. Generally, allocating 30% of your monthly financial resources towards rent and utitilites is typical. Another 30% towards other essential life expenses is also common practice.</li><li>Some people find it helpful to add fee due dates to their phone calendar so that they receive notification in advance, and avoid late payment fees.</li><li>For folks who struggle keeping to budgets, setting limits on cards or withdrawing a finite amount of cash for the month can help reinforce financial goals.</li></ul>"
+                        },
+                        "position": [1, 3],
+                        "size": [2, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "verticallist",
+                            "title": "To Do:",
+                            "elements": [
+                                {
+                                    "type": "checkbox",
+                                    "checkbox": "true",
+                                    "label": "TAKE A LOOK AT THE MONTHLY TOTALS IN THE ANNUAL EXPENSE SHEET"
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "checkbox": "true",
+                                    "label": "COLLECT ITEMIZED EXPENSES INFO"
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "checkbox": "true",
+                                    "label": "Compare the totals"
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "checkbox": "true",
+                                    "label": "REASSESS AS NEEDED"
+                                }
+                            ]
+                        },
+                        "position": [2, 1],
+                        "size": [1, 2]
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "MONTHLY BUDGET"
+            },
+            {
+                "type": "spreadsheet",
+                "bindings": {
+                    "recieves": {
+                        "cell-0-0-0": "channel1a",
+                        "cell-0-1-0": "channel2a",
+                        "cell-0-2-0": "channel3a"
+                    }
+                },
+                "tables": [
+                    {
+                        "categoryHeader": "Item",
+                        "valueHeaders": ["Cost"],
+                        "initialCategories": [
+                            "On Campus",
+                            "At Home",
+                            "Off Campus"
+                        ],
+                        "canAddRows": false,
+                        "canRemoveRows": false,
+                        "canEditCellName": false,
+                        "canEditCellValue": false,
+                        "totalText": "Total",
+                        "header": "Annual Expenses"
+                    }
+                ]
+            },
+            {
+                "type": "spreadsheet",
+                "bindings": {
+                    "provides": {
+                        "total-0-0": "channel5"
+                    }
+                },
+                "tables": [
+                    {
+                        "categoryHeader": "Item",
+                        "valueHeaders": ["Cost"],
+                        "initialCategories": [
+                            "TUITION",
+                            "LAB FEES",
+                            "TEXTBOOKS",
+                            "HEALTH INSURANCE "
+                        ],
+                        "canAddRows": true,
+                        "canRemoveRows": true,
+                        "canEditCellName": true,
+                        "canEditCellValue": true,
+                        "totalText": "Total",
+                        "header": "Post Secondary"
+                    }
+                ]
+            },
+            {
+                "type": "spreadsheet",
+                "bindings": {
+                    "provides": {
+                        "total-0-0": "channel6"
+                    }
+                },
+                "tables": [
+                    {
+                        "categoryHeader": "Item",
+                        "valueHeaders": ["Cost"],
+                        "initialCategories": [
+                            "RESIDENCE/RENT",
+                            "UTILITIES",
+                            "RENTAL INSURANCE",
+                            "CAR INSURANCE",
+                            "CAR PAYMENT",
+                            "GAS",
+                            "INTERNET",
+                            "PHONE BILL",
+                            "GROCERIES",
+                            "PRESCRIPTIONS"
+                        ],
+                        "canAddRows": true,
+                        "canEditCellName": true,
+                        "canEditCellValue": true,
+                        "totalText": "Total",
+                        "header": "Living Essentials"
+                    }
+                ]
+            },
+            {
+                "type": "spreadsheet",
+                "bindings": {
+                    "provides": {
+                        "total-0-0": "channel7"
+                    }
+                },
+                "tables": [
+                    {
+                        "categoryHeader": "Item",
+                        "valueHeaders": ["Cost"],
+                        "initialCategories": [
+                            "UNEXPECTED",
+                            "EXPENSE FUND",
+                            "SAVINGS FUND",
+                            "ENTERTAINMENT"
+                        ],
+                        "canAddRows": true,
+                        "canRemoveRows": true,
+                        "canEditCellName": true,
+                        "canEditCellValue": true,
+                        "totalText": "Total",
+                        "header": "Other"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "MONTHLY BUDGET"
+            },
+            {
+                "type": "pie_chart",
+                "inputNames": [
+                    "Living Essentials",
+                    "Postsecondary",
+                    "Annual Expenses",
+                    "Other",
+                    "Remaining Balance"
+                ],
+                "bindings": {
+                    "recieves": {
+                        "Living Essentials": "channel6",
+                        "Postsecondary": "channel5",
+                        "Annual Expenses": "channel4",
+                        "Other": "channel7",
+                        "Remaining Balance": "remaining_balance"
+                    }
+                }
+            }
+        ]
+    ],
+    "globalActivities": [
+        {
+            "type": "dangerous_eval",
+            "bindingInputs": ["a", "b", "c"],
+            "defaultInputValues": {
+                "a": "0",
+                "b": "0",
+                "c": "0"
+            },
+            "function": "return \"\" + (parseInt(a.replace(/\\D/g,'')) + parseInt(b.replace(/\\D/g,'')) + parseInt(c.replace(/\\D/g,'')));",
+            "bindings": {
+                "provides": {
+                    "result": "channel4"
+                },
+                "recieves": {
+                    "a": "channel1a",
+                    "b": "channel2a",
+                    "c": "channel3a"
+                }
+            }
+        },
+        {
+            "type": "dangerous_eval",
+            "bindingInputs": [
+                "other",
+                "living_essentials",
+                "postsecondary",
+                "annual_expenses",
+                "budget"
+            ],
+            "defaultInputValues": {
+                "other": "0",
+                "living_essentials": "0",
+                "postsecondary": "0",
+                "annual_expenses": "0",
+                "budget": "0"
+            },
+            "function": "return \"\" + (parseInt(budget.replace(/\\D/g,'')) - parseInt(other.replace(/\\D/g,'')) - parseInt(living_essentials.replace(/\\D/g,'')) - parseInt(postsecondary.replace(/\\D/g,'')) - parseInt(annual_expenses.replace(/\\D/g,'')));",
+            "bindings": {
+                "provides": {
+                    "result": "remaining_balance"
+                },
+                "recieves": {
+                    "other": "channel7",
+                    "living_essentials": "channel6",
+                    "postsecondary": "channel5",
+                    "annual_expenses": "channel4",
+                    "budget": "channel0a"
+                }
+            }
+        },
+        {
+            "type": "dangerous_eval",
+            "bindingInputs": ["x"],
+            "function": "return \"$\" + Math.floor(parseInt(x.replace(/\\D/g,''))/12).toLocaleString()",
+            "bindings": {
+                "provides": {
+                    "result": "channel1a"
+                },
+                "recieves": {
+                    "x": "channel1"
+                }
+            }
+        },
+        {
+            "type": "dangerous_eval",
+            "bindingInputs": ["x"],
+            "function": "return \"$\" + Math.floor(parseInt(x.replace(/\\D/g,''))/12).toLocaleString()",
+            "bindings": {
+                "provides": {
+                    "result": "channel2a"
+                },
+                "recieves": {
+                    "x": "channel2"
+                }
+            }
+        },
+        {
+            "type": "dangerous_eval",
+            "bindingInputs": ["x"],
+            "function": "return \"$\" + Math.floor(parseInt(x.replace(/\\D/g,''))/12).toLocaleString()",
+            "bindings": {
+                "provides": {
+                    "result": "channel3a"
+                },
+                "recieves": {
+                    "x": "channel3"
+                }
+            }
+        },
+        {
+            "type": "floating",
+            "element": {
+                "type": "total",
+                "bindings": {
+                    "recieves": {
+                        "total": "remaining_balance"
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Good morning! Are you looking for someone?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yes, I'm here to see the guidance counsellor. Can you help me find their office?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Of course! The guidance counsellor's office is just inside the main building, down the hall on the left."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Thank you so much! I'll head there now."
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "No problem at all. If you get lost, feel free to ask anyone for directions."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I will. Thanks again!"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Time to find the guidance counsellor's office.",
+        "actions": [
+            {
+                "type": "hint",
+                "title": "Find the guidance counsellor's office",
+                "description": "You can click or select doors to move between rooms.",
+                "flag": "scene:visited:high_school:hallway"
+            }
+        ]
+    }
+]

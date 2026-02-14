@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, got any plans for the summer?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! Yeah, I'm planning a trip to the mountains with some friends."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds awesome! How long are you going for?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "We're thinking of staying for a week. Lots of hiking and maybe some camping."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I've always wanted to do something like that. You'll have to tell me all about it when you get back."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "For sure! Maybe we can plan a trip together next time."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'd love that. Have fun and stay safe!"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Thanks! Talk to you later."
+    }
+]

@@ -1,0 +1,234 @@
+{
+    "popup:minigame:jeopardy": {
+        "title": "Myths and Facts",
+        "lines": [
+            "<h>On the categories screen",
+            "%key:general:up%, %key:general:down%, %key:general:left%, %key:general:right%: move between options",
+            "%key:minigames:select%: choose the selected question",
+            "<h>On the question screen",
+            "%key:general:up%, %key:general:down%: switch between options",
+            "%key:minigames:select%: choose the selected answer",
+            "%key:general:back%: return to categories screen"
+        ]
+    },
+    "popup:minigame:textbook": {
+        "title": "Textbook Collection",
+        "lines": [
+            "<h>On the gameplay screen",
+            "%key:textbook_minigame:left%, %key:textbook_minigame:right%: move the bag left and right to catch books",
+            "%key:textbook_minigame:slow_movement%: hold to move slower",
+            "<h>On the question screen",
+            "%key:general:up%, %key:general:down%: switch between options",
+            "%key:minigames:select%: choose the selected answer and advance"
+        ]
+    },
+    "popup:minigame:cards": {
+        "title": "Urgency Matrix",
+        "lines": [
+            "%key:urgency_matrix_minigame:next_cell%, %key:urgency_matrix_minigame:previous_cell%: switch between categories",
+            "%key:minigames:select%: select cell, or pull the next card",
+            "When hightlighting a card, you can use Up and Down to scroll",
+            "<h>When there are no cards left",
+            "press %key:minigames:select% or %key:general:back% to leave the minigame"
+        ]
+    },
+    "popup:minigame:spreadsheet_wheel": {
+        "title": "Unexpected Expenses",
+        "lines": [
+            "Use Tab to select the menu items",
+            "Use Up and Down to increase or decrease the selected item"
+        ]
+    },
+
+    "popup:characterCreator": {
+        "title": "Character Creator",
+        "lines": [
+            "Use Tab to switch between the menu items",
+            "Use Enter to select items"
+        ]
+    },
+    "popup:controls": {
+        "title": "Controls",
+        "lines": [
+            "Use Tab to switch between the menu items",
+            "Use Enter to select items",
+            "Select the buttons to enter the rebinding menu",
+            "press %key:general:back% or the close button at the bottom to close the controls menu",
+            "<h>Key rebinding menu",
+            "When the key area is highlighted, press any key to add or remove it from the list of keys for this action"
+        ]
+    },
+    "popup:credits": {
+        "title": "Credits",
+        "lines": ["Press %key:general:back% to exit the credits"]
+    },
+    "popup:newChapter": {
+        "title": "Chapter Complete",
+        "lines": [
+            "Press %key:general:left% and %key:general:right% to highlight an option",
+            "Press %key:general:select% to select the option"
+        ]
+    },
+    "popup:titleScreen": {
+        "title": "Title Screen",
+        "lines": [
+            "Use Tab to switch between the menu items",
+            "Use Enter to select items"
+        ]
+    },
+    "popup:endgame": {
+        "title": "",
+        "lines": []
+    },
+    "popup:document": {
+        "title": "Documents",
+        "lines": [
+            "Use Tab to switch between the menu items",
+            "Use Enter to select items",
+            "Use Up and Down to scroll",
+            "Close the popup with %key:general:back%"
+        ]
+    },
+    "popup:activity": {
+        "title": "Activities",
+        "lines": [
+            "Use Tab to switch between the menu items",
+            "Use Enter to select items",
+            "Use Up and Down to scroll",
+            "Switch between pages or save and close with the buttons at the bottom"
+        ]
+    },
+    "popup:minigameSelector": {
+        "title": "Minigame Selector",
+        "lines": [
+            "Press %key:general:left% and %key:general:right% to switch between minigames",
+            "Use Enter open the selected minigame",
+            "Close the popup with %key:general:back%"
+        ]
+    },
+    "popup:zoom": {
+        "title": "Zoom",
+        "position": "tl",
+        "lines": [
+            "Use Tab to switch between the menu items",
+            "Use Enter to select items",
+            "Select polls in chat to access the options, then submit or press %key:general:back% to stop interacting with the poll"
+        ]
+    },
+    "popup:saveGame": {
+        "title": "Save Game",
+        "lines": [
+            "Press %key:general:left% and %key:general:right% to highlight an option",
+            "Press %key:general:select% to select the option transitions/chapter_5/transition_1"
+        ]
+    },
+
+    "phone:-1": {
+        "title": "Phone",
+        "lines": [
+            "%key:general:up%, %key:general:down%, %key:general:left%, %key:general:right%: move between apps on the home screen",
+            "%key:general:select%: open the selected app",
+            "%key:general:back%: close phone"
+        ]
+    },
+    "phone:0": {
+        "title": "Todo App",
+        "lines": [
+            "Press %key:general:left% and %key:general:right% to switch between the sidebar and content",
+            "Use %key:general:up% and %key:general:down% to scroll or switch categories",
+            "You can press %key:general:back% to close the app"
+        ]
+    },
+    "phone:1": {
+        "title": "Mail App",
+        "lines": [
+            "<h>Email list",
+            "Use %key:general:up% and %key:general:down% to scroll through the list of emails",
+            "Press %key:general:select% to open an email",
+            "You can press %key:general:back% to close the app",
+            "<h>Email screen",
+            "Use %key:general:up% and %key:general:down% to choose between options or attachments",
+            "Press %key:general:select% to choose the option or open the attachment",
+            "Press %key:general:back% to return to the email list"
+        ]
+    },
+    "phone:2": {
+        "title": "Map App",
+        "lines": [
+            "Use %key:general:left% and %key:general:right% to highlight where you want to travel to",
+            "Press %key:general:select% to open the travel menu for that location, and then again to confirm",
+            "You can press %key:general:back% to cancel traveling or close the app"
+        ]
+    },
+    "phone:3": {
+        "title": "Message App",
+        "lines": [
+            "<h>Conversation list",
+            "Use %key:general:up% and %key:general:down% to scroll through the list of conversations",
+            "Press %key:general:select% to open a conversation",
+            "You can press %key:general:back% to close the app",
+            "<h>Text screen",
+            "Use %key:general:up% and %key:general:down% scroll up through the conversation and choose between options",
+            "Press %key:general:select% to choose the selected option",
+            "Press %key:general:back% to return to the conversation list"
+        ]
+    },
+    "phone:4": {
+        "title": "Journal App",
+        "lines": [
+            "Press %key:general:left% and %key:general:right% to switch between the sidebar and content",
+            "Use %key:general:up% and %key:general:down% to scroll or switch categories",
+            "You can press %key:general:back% to close the app"
+        ]
+    },
+    "phone:5": {
+        "title": "Dictionary App",
+        "lines": ["Press Up and Down scroll"]
+    },
+    "phone:6": {
+        "title": "Achievements App",
+        "lines": [
+            "Press %key:general:left% and %key:general:right% to switch between the sidebar and content",
+            "Use %key:general:up% and %key:general:down% to scroll or switch categories",
+            "You can press %key:general:back% to close the app"
+        ]
+    },
+    "phone:7": {
+        "title": "Settings App",
+        "lines": [
+            "Use Tab to switch between the menu items",
+            "Use Enter to select items",
+            "Use Up and Down to scroll",
+            "You can press %key:general:back% to close the app"
+        ]
+    },
+
+    "dialog_history": {
+        "title": "Dialog History",
+        "lines": [
+            "Use %key:general:up% and %key:general:down% to scroll through the dialog history",
+            "Press %key:general:select% to play the voice line for the highlighted dialog line",
+            "Use %key:general:select% to open the highlighted document or activity",
+            "Press %key:general:open_dialog_history% or %key:general:back% to close dialog history"
+        ]
+    },
+    "dialog": {
+        "title": "Dialog",
+        "lines": [
+            "Press %key:general:select% to advance dialog",
+            "Use %key:general:up% and %key:general:down% choose options",
+            "Use %key:general:left% and %key:general:right% to select strategies or highlighted words"
+        ]
+    },
+    "scene": {
+        "title": "Scene",
+        "lines": [
+            "%key:general:left% and %key:general:right%: move selection between scene elements",
+            "%key:general:select%: select the highlighted element",
+            "%key:general:open_phone%: open the phone",
+            "%key:general:open_dialog_history%: open the dialog history",
+            "%key:general:dismiss_oldest_notification%: dismiss the oldest notification",
+            "%key:general:save_game%: save the game"
+        ]
+    }
+}

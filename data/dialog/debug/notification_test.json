@@ -1,0 +1,307 @@
+[
+    {
+        "type": "option",
+        "source": "Debug System",
+        "message": "Notification System Test",
+        "options": [
+            {
+                "text": "Send 25 notifications",
+                "actions": [
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "notification",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "notification",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "notification",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "notification",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "notification",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "notification",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "notification",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/notification_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Send wide notification",
+                "actions": [
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification, This is a test notification, This is a test notification, This is a test notification, This is a test notification, This is a test notification, This is a test notification, This is a test notification, This is a test notification, This is a test notification, This is a test notification, This is a test notification, ",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Test",
+                        "description": "This is a test notification",
+                        "flag": "notification_flag",
+                        "color": "red"
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/notification_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Clear Notifications",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "notification_flag",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "notification_flag",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/notification_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Back",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/test_menu"]
+                    }
+                ]
+            },
+            {
+                "text": "Close",
+                "actions": []
+            }
+        ]
+    }
+]

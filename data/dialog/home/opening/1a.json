@@ -1,0 +1,185 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "It's too early. Another day in the teenage circus.",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "debug_unlocked",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "settings_unlocked",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "chapter1:set",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "pompom_room",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "pompom_guidance_counsellor",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "pompom_psychologist",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "pompom_cafe",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "seen_controls",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "conditional",
+        "message": "",
+        "conditions": ["participant:enablekbcontrols"],
+        "trueDialog": {
+            "type": "option",
+            "source": "",
+            "message": "– When multiple dialogue line options appear below, you may choose one to continue. you can press %key:general:up% and %key:general:down% to switch between options and %key:general:select% to choose it –",
+            "options": [
+                {
+                    "text": "Well, another day, another opportunity! Alright, let's get ready.",
+                    "actions": [
+                        {
+                            "type": "flag",
+                            "flag": [
+                                {
+                                    "flag_name": "intro:eager",
+                                    "flag_action": "give"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "open_dialog",
+                            "dialog": ["home/opening/2a"]
+                        },
+                        {
+                            "type": "send_email",
+                            "email": ["guidance_counsellor/email_1"]
+                        },
+                        {
+                            "type": "hint",
+                            "title": "Unlocking strategies",
+                            "description": "Use the mouse or %key:general:up%, %key:general:left%, %key:general:down%, %key:general:right% Keys and %key:general:select% to select the page icon in dialog and unlock a strategy",
+                            "flag": "first_strategy",
+                            "color": "red",
+                            "sound": "hint"
+                        }
+                    ]
+                },
+                {
+                    "text": "I wish it was the weekend and I could sleep in.",
+                    "actions": [
+                        {
+                            "type": "flag",
+                            "flag": [
+                                {
+                                    "flag_name": "intro:reluctant",
+                                    "flag_action": "give"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "open_dialog",
+                            "dialog": ["home/opening/2a"]
+                        },
+                        {
+                            "type": "send_email",
+                            "email": ["guidance_counsellor/email_1"]
+                        },
+                        {
+                            "type": "hint",
+                            "title": "Unlocking strategies",
+                            "description": "Use the mouse or %key:general:up%, %key:general:left%, %key:general:down%, %key:general:right% Keys and %key:general:select% to select the page icon in dialog and unlock a strategy",
+                            "flag": "first_strategy",
+                            "color": "red",
+                            "sound": "hint"
+                        }
+                    ]
+                }
+            ]
+        },
+        "falseDialog": {
+            "type": "option",
+            "source": "",
+            "message": "– When multiple dialogue line options appear below, you may choose one to continue. Click on an option to choose it –",
+            "options": [
+                {
+                    "text": "Well, another day, another opportunity! Alright, let's get ready.",
+                    "actions": [
+                        {
+                            "type": "flag",
+                            "flag": [
+                                {
+                                    "flag_name": "intro:eager",
+                                    "flag_action": "give"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "open_dialog",
+                            "dialog": ["home/opening/2a"]
+                        },
+                        {
+                            "type": "send_email",
+                            "email": ["guidance_counsellor/email_1"]
+                        },
+                        {
+                            "type": "hint",
+                            "title": "Unlocking strategies",
+                            "description": "Use the mouse to select the page icon in dialog and unlock a strategy",
+                            "flag": "first_strategy",
+                            "color": "red",
+                            "sound": "hint"
+                        }
+                    ]
+                },
+                {
+                    "text": "I wish it was the weekend and I could sleep in.",
+                    "actions": [
+                        {
+                            "type": "flag",
+                            "flag": [
+                                {
+                                    "flag_name": "intro:reluctant",
+                                    "flag_action": "give"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "open_dialog",
+                            "dialog": ["home/opening/2a"]
+                        },
+                        {
+                            "type": "send_email",
+                            "email": ["guidance_counsellor/email_1"]
+                        },
+                        {
+                            "type": "hint",
+                            "title": "Unlocking strategies",
+                            "description": "Use the mouse to select the page icon in dialog and unlock a strategy",
+                            "flag": "first_strategy",
+                            "color": "red",
+                            "sound": "hint"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

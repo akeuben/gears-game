@@ -1,0 +1,46 @@
+[
+    {
+        "type": "option",
+        "source": "School Representative",
+        "message": "Hi you two, will you be moving to a new place while attending postsecondary?  This table provides information about finding housing while attending school.",
+        "options": [
+            {
+                "text": "I don't know, I'm keeping my mind open to that.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/4c"]
+                    }
+                ]
+            },
+            {
+                "text": "I might be.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/4c"]
+                    }
+                ]
+            },
+            {
+                "text": "I’m planning to move away to attend postsecondary.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/4c"]
+                    }
+                ]
+            },
+            {
+                "text": "I think I’ll be living at home.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/4d"]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

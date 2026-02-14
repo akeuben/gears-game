@@ -1,0 +1,18 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Looks like I got an email from Ms. White.",
+        "actions": [
+            {
+                "type": "send_text",
+                "text": "dominic/text_thread_4"
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Respond to Dominic",
+                "list": "story"
+            }
+        ]
+    }
+]

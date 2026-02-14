@@ -1,0 +1,23 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "I need to meet with the psychologist at school.",
+        "actions": [
+            {
+                "type": "add_todo_item",
+                "item": "Talk to Psychologist at School",
+                "list": "story"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "high_school:welcome_2",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

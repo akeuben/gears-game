@@ -1,0 +1,108 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Not at all.  I’m interested in hearing more about your story."
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "Well, I found out my writing isn’t as great as I thought it was. Instructors dock marks for sentence structure and care about punctuation.  I told them that I have ADHD and I don’t always pay attention to details, but they didn’t care."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "They don’t have to make exceptions for you if they don’t want to."
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "I found that out the hard way.  I also found out that I need extra time for completing tests.  We write exams in large rooms full of people and it is very distracting."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "That sounds very difficult."
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "I took your advice and booked a meeting with accessibility services, but I should have done it early like you told me to.  By the time I met with them, it was nearing the end of my first term."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Why so long?"
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "Apparently, I’m not the only one who didn’t book early or thought they could do well without supports."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What did you do?"
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "Nothing I could do.  My grades really suffered."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Do you have accommodations in place now?"
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "I do, but I was surprised because they will only give me 50% extra time for writing tests.  In high school the teachers gave me as much time as I wanted.  Being under a time constraint stresses me out."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Why won’t they give you the unlimited time?"
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "They said something about \"fairness\" to all students, but I don’t think it's fair that there are different rules for different places."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "And what about your writing?"
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "They don’t have a specific accommodation for my need, but they recommended I seek out writing services from student services.  I’m on my way there now for my first appointment."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Good luck.  I hope they can help."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yes, good luck."
+    },
+    {
+        "type": "message",
+        "source": "Rahat",
+        "message": "Thanks. And thanks Sam for your help last year.  I should have listened to you more, but at least I was able to remember your advice and seek help.  With better supports in place, I should be able to turn things around."
+    },
+    {
+        "type": "action",
+        "source": "Sam",
+        "message": "I think so too.  I’ll see you around.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["university/coffee_shop/chapter_5/1e"]
+            }
+        ]
+    }
+]

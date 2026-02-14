@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, are you going to the concert this weekend?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! Yes, I got tickets! I'm so excited."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Me too! It's going to be amazing. Who are you most excited to see?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I'm really looking forward to seeing the headliner. Their live shows are incredible."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Can't wait! See you there."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "See you!"
+    }
+]

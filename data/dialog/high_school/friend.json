@@ -1,0 +1,69 @@
+[
+    {
+        "type": "message",
+        "source": "",
+        "message": "- You walk through the walls of your school and run into an old friend -"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey, have you heard about the open house at the University next week?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yeah, I saw the flyer in the counselor's office. Are you planning on going?"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "I'm thinking about it. My older sister said that going to open houses really helped her when she was deciding where to apply. She said it gave her a good feel of the campus life and the people."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds good. It would be cool to get a real sense of what university life is like. Maybe we could even sit in on a lecture or something."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Exactly! Plus, we'll get the chance to talk to current students, faculty, and maybe even some admissions officers. It could give us a head start on our applications."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "You're right, it sounds like a pretty useful experience. And we could make a day out of it, grab some lunch after. How about we go together?"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Sounds like a plan!"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Great idea! Let's make the most out of our visit.",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "unlocked_university",
+                        "flag_action": "give"
+                    }
+                ]
+            },
+            {
+                "type": "hint",
+                "title": "Visit the University",
+                "description": "You can now access the university campus through the map app.",
+                "flag": "scene:visited:campus_map"
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Visit the Open House",
+                "list": "story"
+            }
+        ]
+    }
+]

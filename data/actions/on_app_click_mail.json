@@ -1,0 +1,53 @@
+{
+    "type": "waterfall",
+    "actions": [
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["mail:application_email"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "mail:application_email:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "mail:application_email",
+                            "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "open_dialog_chapter_4:1a",
+                            "flag_action": "give"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["mail:sas_email"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "mail:sas_email",
+                            "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "mail:sas_email:done",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "open_dialog_chapter_4:3a",
+                            "flag_action": "give"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

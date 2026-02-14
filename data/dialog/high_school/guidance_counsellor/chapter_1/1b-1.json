@@ -1,0 +1,13 @@
+[
+    {
+        "type": "action",
+        "source": "Guidance Counsellor",
+        "message": "It's okay, you aren't the only one. It's a big change, and feeling nervous about it happens to a lot of students.  Is there something in particular that's causing you to worry?",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/guidance_counsellor/chapter_1/1b"]
+            }
+        ]
+    }
+]

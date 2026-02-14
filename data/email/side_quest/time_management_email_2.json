@@ -1,0 +1,28 @@
+{
+    "from": "Joe",
+    "avatar": "test.jpg",
+    "subject": "Weekly Timetable Practice Exercise",
+    "content": "Hi %player%,<br><br>Here's the practice exercise they gave me for organizing a weekly timetable.<br><br>Best, <br><br>Joe",
+    "attachments": [
+        {
+            "text": "Timetable Exercise Instructions",
+            "actions": [
+                {
+                    "type": "document",
+                    "document": "high_school:timetable_instructions",
+                    "open": true
+                }
+            ]
+        },
+        {
+            "text": "Timetable Exercise",
+            "actions": [
+                {
+                    "type": "activity",
+                    "activity": "schedule_builder"
+                }
+            ]
+        }
+    ],
+    "important": true
+}

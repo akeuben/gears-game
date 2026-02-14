@@ -1,0 +1,258 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey Marcus, how’s it going?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%! I’m good, how about you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'm curious, what's your favorite animal?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "My favorite animal is a dolphin."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Dolphins are amazing! What’s your favorite color?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I love the color blue."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Blue is such a cool color! By the way, have you seen any dolphin-themed items that you liked?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yes, I saw a really cute dolphin plushie that I want."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds adorable! Thanks for sharing."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "No problem! See you around, %player%."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey, did you find out anything about Marcus?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yes, I did."
+    },
+    {
+        "type": "option",
+        "source": "%player%",
+        "message": "Their favorite animal is...",
+        "options": [
+            {
+                "text": "Cat.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Dolphin.",
+                "actions": [{}]
+            },
+            {
+                "text": "Dog.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Horse.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "Great! And their favorite color is...",
+        "options": [
+            {
+                "text": "Red.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Green.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Blue.",
+                "actions": [{}]
+            },
+            {
+                "text": "Yellow.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "Awesome! One last thing, they need...",
+        "options": [
+            {
+                "text": "A new backpack.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A new hat.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A dolphin plushie.",
+                "actions": [{}]
+            },
+            {
+                "text": "A new water bottle.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Perfect! Thanks so much for your help. I couldn’t have done it without you."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Happy to help. It’s going to be a great party!",
+        "actions": [
+            {
+                "type": "fail_todo_item",
+                "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                "list": "optional"
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["party_surprise:correct"],
+                "actions": [
+                    {
+                        "type": "badge",
+                        "badge": "optional:party"
+                    },
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                        "list": "optional"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "type": "option",
+        "source": "Debug System",
+        "message": "Flag System Test",
+        "options": [
+            {
+                "text": "Give Flag flag:test",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "flag:test",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/flag_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Revoke Flag flag:test",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "flag:test",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/flag_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Back",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/test_menu"]
+                    }
+                ]
+            },
+            {
+                "text": "Close",
+                "actions": []
+            }
+        ]
+    }
+]

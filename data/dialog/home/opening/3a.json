@@ -1,0 +1,18 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "I better head out right away if I plan on meeting with Ms. White. I wonder what she will say.",
+        "actions": [
+            {
+                "type": "send_email",
+                "email": ["guidance_counsellor/email_2"]
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Talk to Guidance Counsellor at School",
+                "list": "story"
+            }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Hey %player%, did you catch the latest episode of that TV show everyone is talking about?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "No, I haven't had the chance. Is it worth watching?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Definitely! The plot twists are mind-blowing."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "I couldn't believe what happened in the last scene!"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds like I need to start watching it."
+    },
+    {
+        "type": "option",
+        "source": "Alex",
+        "message": "You should! What kind of TV shows do you enjoy the most?",
+        "options": [
+            {
+                "text": "Thrillers and mysteries.",
+                "actions": [{}]
+            },
+            {
+                "text": "Comedies and sitcoms.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

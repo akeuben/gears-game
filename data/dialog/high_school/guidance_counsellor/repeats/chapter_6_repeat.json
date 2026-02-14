@@ -1,0 +1,41 @@
+[
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "Hello %player%, have a great first year!",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "- END GAME -",
+                "actions": [
+                    {
+                        "type": "open_popup",
+                        "popup": "endgame"
+                    },
+                    {
+                        "type": "go_to_scene",
+                        "scene": "endgame"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "save_after_credits",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "- EXPLORE MORE -",
+                "actions": [
+                    {
+                        "type": "change_background",
+                        "index": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,51 @@
+{
+    "from": "Dominic",
+    "avatar": "test.png",
+    "messages": [
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Hey %player%, its Dominic. Are you going to the open house today? I don’t see you here."
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "I don’t know, its Saturday.  I’d rather be doing something else."
+        },
+        {
+            "type": "message",
+            "source": "other",
+            "message": "I know, but it might be helpful and I’m a bit intimidated about going alone. Will you go with me?"
+        },
+        {
+            "type": "action",
+            "source": "you",
+            "message": "OK, I’ll be right there.",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "open_house:unlocked",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "unlocked_university",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "add_todo_item",
+                    "item": "Go to the Open House at the University",
+                    "list": "story"
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Respond to Dominic",
+                    "list": "story"
+                }
+            ]
+        }
+    ]
+}

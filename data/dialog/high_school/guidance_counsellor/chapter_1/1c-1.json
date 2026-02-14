@@ -1,0 +1,32 @@
+[
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "It is likely that you have had an assessment in the past from a psychologist or maybe a family doctor or pediatrician, and they determined if you have LD and/or ADHD. Do you recall doing that?",
+        "option_location": "beside",
+        "options": [
+            {
+                "text": "Yes.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1d-1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I don't remember.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1d-2"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

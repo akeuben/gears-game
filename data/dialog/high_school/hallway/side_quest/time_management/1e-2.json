@@ -1,0 +1,15 @@
+[
+    {
+        "type": "action",
+        "source": "Joe",
+        "message": "If I have to work while I go to school, it might be an option for me too.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": [
+                    "high_school/hallway/side_quest/time_management/1f-1"
+                ]
+            }
+        ]
+    }
+]

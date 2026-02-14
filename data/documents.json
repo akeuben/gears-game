@@ -1,0 +1,58 @@
+{
+    "high_school:tips_parents": {
+        "name": "Tips For Talking to Your Parents/Caregivers",
+        "description": "Tips for how to talk to your parents/caregivers about your diagnosis.",
+        "file": "high_school/tips_parents",
+        "stylesheet": "tipsParents",
+        "chapter": 1
+    },
+    "high_school:tips_report": {
+        "name": "Tips For Finding Your Report",
+        "description": "Tips for how to find your report.",
+        "file": "high_school/tips_report",
+        "stylesheet": "tipsReport",
+        "chapter": 1
+    },
+    "open_house:accessibility": {
+        "name": "Accessibility Services",
+        "description": "A pamphlet with additional information about the univerity's accessibility services.",
+        "file": "open_house/accessibility",
+        "stylesheet": "accesibilityServices",
+        "chapter": 3
+    },
+    "open_house:financial": {
+        "name": "Financial Services",
+        "description": "A pamphlet with additional information about the university's financial services.",
+        "file": "open_house/financial",
+        "stylesheet": "financialServices",
+        "chapter": 3
+    },
+    "high_school:reassessment": {
+        "name": "How to Get a Reassessment",
+        "description": "How to get your reassessment.",
+        "file": "high_school/reassessment",
+        "stylesheet": "reassessment",
+        "chapter": 1
+    },
+    "sas:timeline": {
+        "name": "Timeline For Registering With SAS",
+        "description": "Suggested Timeline for Registering with SAS",
+        "file": "sas/timeline",
+        "stylesheet": "timeline",
+        "chapter": 4
+    },
+    "high_school:timetable_instructions": {
+        "name": "Timetable Activity Instructions",
+        "description": "Instructions for the timetable activity sent by Joe",
+        "file": "high_school/timetable_instructions",
+        "stylesheet": "timetable_instructions",
+        "chapter": 6
+    },
+    "resources:resources_in_postsecondary": {
+        "name": "Resources in Postsecondary",
+        "description": "Resources students have in postsecondary",
+        "file": "resources/resources_in_postsecondary",
+        "stylesheet": "resources",
+        "chapter": 6
+    }
+}

@@ -1,0 +1,40 @@
+[
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Hi! You look a bit lost. Are you okay?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Oh, I'm fine. Just here for a quick visit. How about you?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "I'm on my way to the art room. We're working on a mural project today. It's going to be amazing!"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds really cool! I'd love to see it sometime."
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Definitely! Have a good day!"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Thanks! You too!",
+        "actions": [
+            {
+                "type": "hint",
+                "title": "Enter the high school building",
+                "description": "You can click or select doors to move between rooms.",
+                "flag": "scene:visited:high_school:hallway"
+            }
+        ]
+    }
+]

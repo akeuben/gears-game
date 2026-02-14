@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, how's your part-time job going?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! It's been really busy and stressful lately."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sorry to hear that. What happened?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "We're short-staffed, so I've been covering extra shifts. It's exhausting."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds tough. Make sure you're taking care of yourself too."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Thanks, I will. Just need to get through this busy period."
+    }
+]

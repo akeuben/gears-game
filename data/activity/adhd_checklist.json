@@ -1,0 +1,132 @@
+{
+    "name": "adhd_checklist",
+    "activities": [
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Checklist for ADHD Symptoms"
+            },
+            {
+                "type": "checklist",
+                "header": "Please answer the questions below, rating yourself on each of the criteria shown using the scale on the right side of the page. As you answer each question, select the button in the box that best describes how you have felt and conducted yourself over the past 6 months. Please give this completed checklist to your healthcare professional to discuss during your appointment.",
+                "scaleTitles": [
+                    "Never",
+                    "Rarely",
+                    "Sometimes",
+                    "Often",
+                    "Very Often"
+                ],
+                "categories": {
+                    "Part A": [
+                        {
+                            "prompt": "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+                            "scores": [0, 0, 1, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you have difficulty getting things in order when you have to do a task that requires organization?",
+                            "scores": [0, 0, 1, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you have problems remembering appointments or obligations?",
+                            "scores": [0, 0, 1, 1, 1]
+                        },
+                        {
+                            "prompt": "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you make careless mistakes when you have to work on a boring or difficult project?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you have difficulty keeping your attention when you are doing boring or repetitive work?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you have difficulty concentrating on what people say to you, even when they are speaking to you directly?",
+                            "scores": [0, 0, 1, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you misplace or have difficulty finding things at home or at work?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "How often are you distracted by activity or noise around you?",
+                            "scores": [0, 0, 0, 1, 1]
+                        }
+                    ]
+                },
+                "responseText": {
+                    "6..9": "It looks like ADHD is affecting your daily functioning. You may want to consider working with a learning strategist or ADHD coach to identify how you can minimize these daily challenges. If you currently take medication for ADHD, you may also want to consult with a physician or pediatrician about your dosage.",
+                    "3..5": "It looks like ADHD is somewhat affecting your daily functioning but you have some things under control. Even so, some things in postsecondary are going to be different. You may want to consider working with a learning strategist or ADHD coach to identify how you can minimize any daily challenges so the start of your postsecondary experience is a positive experience.",
+                    "0..2": "It looks like you have been working hard to manage your ADHD symptoms. Even so, in the postsecondary context, you might find that there are unexpected challenges. Should you find yourself in difficulty, consider seeking out a learning strategist or ADHD coach who can help you find ways to minimize those challenges."
+                }
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Checklist for ADHD Symptoms"
+            },
+            {
+                "type": "checklist",
+                "header": "Please answer the questions below, rating yourself on each of the criteria shown using the scale on the right side of the page. As you answer each question, select the button in the box that best describes how you have felt and conducted yourself over the past 6 months. Please give this completed checklist to your healthcare professional to discuss during your appointment.",
+                "scaleTitles": [
+                    "Never",
+                    "Rarely",
+                    "Sometimes",
+                    "Often",
+                    "Very Often"
+                ],
+                "categories": {
+                    "Part B": [
+                        {
+                            "prompt": "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+
+                        {
+                            "prompt": "How often do you feel overly active and compelled to do things, like you were driven by a motor?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you leave your seat in meetings or in other situations in which you are expected to stay seated?",
+                            "scores": [0, 0, 1, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you feel restless or fidgety?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you have difficulty unwinding and relaxing when you have time to yourself?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you find yourself talking too much when you are in social situations?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish it themselves?",
+                            "scores": [0, 0, 1, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you have difficulty waiting your turn in situations when turn taking is required?",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "How often do you interrupt others when they are busy?",
+                            "scores": [0, 0, 1, 1, 1]
+                        }
+                    ]
+                },
+                "responseText": {
+                    "6..9": "It looks like ADHD is affecting your daily functioning. You may want to consider working with a learning strategist or ADHD coach to identify how you can minimize these daily challenges. If you currently take medication for ADHD, you may also want to consult with a physician or pediatrician about your dosage.",
+                    "3..5": "It looks like ADHD is somewhat affecting your daily functioning but you have some things under control. Even so, some things in postsecondary are going to be different. You may want to consider working with a learning strategist or ADHD coach to identify how you can minimize any daily challenges so the start of your postsecondary experience is a positive experience.",
+                    "0..2": "It looks like you have been working hard to manage your ADHD symptoms. Even so, in the postsecondary context, you might find that there are unexpected challenges. Should you find yourself in difficulty, consider seeking out a learning strategist or ADHD coach who can help you find ways to minimize those challenges."
+                }
+            }
+        ]
+    ]
+}

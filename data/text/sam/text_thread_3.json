@@ -1,0 +1,37 @@
+{
+    "from": "Sam",
+    "avatar": "test.png",
+    "messages": [
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Okay. I was going to suggest we meet at the campus coffee shop and chat a bit."
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "I’m free tomorrow afternoon. We could meet there then."
+        },
+        {
+            "type": "action",
+            "source": "other",
+            "message": "That works for me.  I’ll see you at 1pm.",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "sam_text_complete_2",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Respond to Sam",
+                    "list": "story"
+                }
+            ]
+        }
+    ]
+}

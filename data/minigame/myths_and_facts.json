@@ -1,0 +1,115 @@
+{
+    "type": "jeopardy",
+    "avatar": "npc/psychologist",
+    "music": "jeopardy.mp3",
+    "name": "Myths and Facts",
+    "categories": [
+        {
+            "title": "ADHD",
+            "questions": [
+                {
+                    "question": "People with ADHD can pay attention if they want to.",
+                    "options": ["True", "False"],
+                    "reason": "True. Well, kind of.  Although people with ADHD can have trouble focusing, if they're very interested in something and find it enjoyable, they may focus on it intensely. For example, they can video game for hours or plan a fun activity with friends. This is called hyper-focusing.  You may have experienced this yourself. Take a moment to consider one thing you can focus on really well. The real key to managing ADHD is to find ways to pay attention when things are not as interesting or enjoyable.",
+                    "answer": 0
+                },
+                {
+                    "question": "ADHD isn't real. People with ADHD just need to be more disciplined.",
+                    "options": ["True", "False"],
+                    "reason": "False:  All people have times when they show symptoms of inattention and/or inattention and hyperactivity   However, to be diagnosed with ADHD, the severity of the symptoms affect life on a daily basis and not just every once in a while, e.g., performance at school and work, relationships with family and friends.  People with ADHD can't help being distracted or hyperactive and do not lack discipline.",
+                    "answer": 1
+                },
+                {
+                    "question": "ADHD is over-diagnosed resulting in too many children in school with ADHD.",
+                    "options": ["True", "False"],
+                    "reason": "False: Over the past few decades, professionals have become more aware of ADHD and have been diagnosing people with it. To the general public, it has seemed like an “ADHD explosion” and there have been jokes that “everyone has ADHD.”  While it is true that everyone has moments when they are having difficulty sustaining attention, it becomes a problem when it starts to impact a person's life on a daily basis.  Although medical professionals are not perfect and may misdiagnose the odd person, ADHD is a common condition in childhood and there has been no “explosion” as some people suggest. Rates of diagnosis have stayed around 5-8% of the population.",
+                    "pdf": "myths_and_facts_q3.pdf",
+                    "pdf_title": "CADDRA ADHD Research Digest",
+                    "answer": 1
+                },
+                {
+                    "question": "ADHD is caused by food allergies like gluten or by eating too much sugar.",
+                    "options": ["True", "False"],
+                    "reason": "False. Brain imaging studies show differences in brain structure between people with ADHD and people who don't have it.  Also, research shows that ADHD is partly hereditary* — one out of four people with ADHD have a parent with ADHD. Not eating red candy or gluten will not change genetics or make ADHD go away*. However, eating a well-balanced diet and getting regular exercise can help people sustain their attention better.",
+                    "answer": 1
+                },
+                {
+                    "question": "People with ADHD cannot learn.",
+                    "options": ["True", "False"],
+                    "reason": "False. People with ADHD are smart but they can be scattered and disorganized so learning suffers.  You might have good intentions to study for a test but find yourself watching TikTok videos instead.  Luckily, there are numerous ways to overcome learning challenges.",
+                    "answer": 1
+                }
+            ]
+        },
+        {
+            "title": "LD",
+            "questions": [
+                {
+                    "question": "People with learning disabilities (LD) cannot learn.",
+                    "options": ["True", "False"],
+                    "reason": "False: People with LDs are smart and can learn. Having an LD means that you learn in a different way. When learning something new, many parts of the brain have to work together.  For people with LD, one part of the brain doesn't work as well as it should and it can stop the other parts of the brain from working together to learn.  Luckily, there are numerous ways to get around this including the use of strategies, technology, and accommodations.",
+                    "answer": 1
+                },
+                {
+                    "question": "There is no such thing as a learning disability.",
+                    "options": ["True", "False"],
+                    "reason": "False: Sometimes, it is difficult for people without an LD to understand how LD affects a person because they cannot see it.  They can get frustrated if it takes people with LD longer to learn something new.  But brain scans shows that there are differences in the structure and function of the brain for people who have LDs and those differences in brain structure affect how they process information.",
+                    "answer": 1
+                },
+                {
+                    "question": "People with learning disabilities (LD) are lazy.",
+                    "options": ["True", "False"],
+                    "reason": "False: Sometimes people with LD start to get frustrated when they don't get things right away and this can lead to a decrease in motivation that looks like laziness.  Other people with LD work really hard but produce less within the same time as other people.  This can also be seen as laziness by others.",
+                    "answer": 1
+                },
+                {
+                    "question": "Dyslexia is a type of learning disability that affects reading.",
+                    "options": ["True", "False"],
+                    "reason": "True. Also referred to as a specific learning disability or learning in disability (LD) in reading, dyslexia is a subtype of LD.  People with an LD in reading can have challenges reading unfamiliar words, remembering what words look, reading quickly, and understanding what they read.",
+                    "answer": 0
+                },
+                {
+                    "question": "ADHD is a type of learning disability.",
+                    "options": ["True", "False"],
+                    "reason": "False: ADHD is not a learning disability; however, it does make learning difficult. For example, it is hard to learn when you struggle to focus on what the teacher is saying or when you can't see to be able to sit down and pay attention to a book.",
+                    "answer": 1
+                }
+            ]
+        },
+        {
+            "title": "ADHD & LD",
+            "questions": [
+                {
+                    "question": "People with ADHD/learning disability will have it their entire life.",
+                    "options": ["True", "False"],
+                    "reason": "True: LDs and ADHD are a life-long condition and continue to affect individuals into adulthood.  Many people learn to successfully cope with their challenges and find success despite their disability.  Also, ADHD symptoms may change as individuals get older and adulthood brings different obstacles (e.g., meeting work deadlines), but it is possible to adapt to new situations.",
+                    "answer": 0
+                },
+                {
+                    "question": "People with ADHD/learning disability are not very smart.",
+                    "options": ["True", "False"],
+                    "reason": "False: Intelligence has nothing to do with it!  Intelligence encompasses a wide range of abilities, including problem-solving, creativity, memory, and critical thinking. People with ADHD/LD can excel in many of these areas and sometimes grades don't reflect their strengths.  You may have experienced this yourself. Take a moment to consider the kinds of things you excel at.",
+                    "answer": 1
+                },
+                {
+                    "question": "You can have both ADHD and a learning disability.",
+                    "options": ["True", "False"],
+                    "reason": "True: A person with LD can have ADHD and a learning disability. The most common combination is a reading LD and ADHD.  Individuals can also have struggles in other areas such as mental health, autism, and social relationships.",
+                    "answer": 0
+                },
+                {
+                    "question": "Having ADHD and/or a learning disability only affects school work.",
+                    "options": ["True", "False"],
+                    "reason": "False: A diagnosis of ADHD or a learning disability affects all areas of life, not just school work. It may affect how you get along with others, your hobbies, how well you sleep, and even how you feel about yourself in the future.",
+                    "answer": 1
+                },
+                {
+                    "question": "Having LD and ADHD makes learning harder.",
+                    "options": ["True", "False"],
+                    "reason": "True. But learning something new is hard for everyone.  And not everyone is good at everything.  If that were true, most teenagers would be able to quit school and become social medial influencers.  However, the reality is that there are times when people with LD and ADHD will have to be more persistent and not give up as easily if they want to achieve their goals.",
+                    "answer": 0
+                }
+            ]
+        }
+    ]
+}

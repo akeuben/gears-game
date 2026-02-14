@@ -1,0 +1,191 @@
+{
+    "name": "university:coffee_shop",
+    "backgrounds": [
+        {
+            "image": "university/coffee_shop_animated.png",
+            "ambience": "cafe.wav",
+            "music": "cafe.mp3"
+        },
+        {
+            "image": "university/coffee_shop.png",
+            "ambience": "cafe.wav",
+            "music": "cafe.mp3"
+        }
+    ],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0.428,
+            "y": 0.151,
+            "x2": 0.55,
+            "y2": 0.836,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "university/map"
+            }
+        },
+        {
+            "type": "conditional_bounding_box",
+            "condition": "flag",
+            "flags": ["pompom_cafe"],
+            "elements": [
+                {
+                    "type": "bounding_box",
+                    "x": 0.38,
+                    "y": 0.18,
+                    "x2": 0.40,
+                    "y2": 0.22,
+                    "secret": true,
+                    "action": {
+                        "type": "combo",
+                        "actions": [
+                            {
+                                "type": "flag",
+                                "flag": [
+                                    {
+                                        "flag_name": "pompom_cafe",
+                                        "flag_action": "revoke"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "repeat",
+                                "name": "wheres_pompom",
+                                "repeat": 4,
+                                "repeat_type": "fixed",
+                                "actions": [
+                                    {
+                                        "type": "badge",
+                                        "badge": "easter_egg:pompom"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "notification",
+                                "title": "You Found a Hidden Pompom!",
+                                "description": "Found in the Coffee Shop.",
+                                "color": "green",
+                                "sound": "none"
+                            }
+                        ]
+                    },
+                    "sound": "pompom"
+                }
+            ]
+        },
+        {
+            "type": "conditional_bounding_box",
+            "condition": "flag",
+            "flags": ["coffee_shop:stigma_email"],
+            "elements": [
+                {
+                    "type": "bounding_box",
+                    "x": 0.62,
+                    "y": 0.18,
+                    "x2": 0.73,
+                    "y2": 0.49,
+                    "action": {
+                        "type": "waterfall",
+                        "actions": [
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["coffee_shop:stigma_email"],
+                                "actions": [
+                                    {
+                                        "type": "send_email",
+                                        "email": ["stigma_zoom_email"]
+                                    },
+                                    {
+                                        "type": "notification",
+                                        "title": "Stigma Awareness Email",
+                                        "description": "You have a new email!",
+                                        "color": "blue"
+                                    },
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "coffee_shop:stigma_email",
+                                                "flag_action": "revoke"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "change_background",
+                                        "index": 1
+                                    },
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "coffee_shop:not_animated",
+                                                "flag_action": "give"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "add_todo_item",
+                                        "item": "Join the Stigma Awareness Night Zoom Session Link",
+                                        "list": "optional"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "action": {
+        "type": "waterfall",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["coffee_shop:sam_dialog"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/coffee_shop/chapter_5/1a"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "coffee_shop:sam_dialog",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Meet Sam at the University Coffee Shop",
+                        "list": "story"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "coffee_shop:stigma_email",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flagOr",
+                "flags": ["coffee_shop:not_animated", "coffee_shop:before_sam"],
+                "actions": [
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

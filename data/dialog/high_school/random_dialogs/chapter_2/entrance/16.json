@@ -1,0 +1,258 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey Marcus, how’s it going?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%! I’m good, how about you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'm looking for a new TV show to binge-watch. What's your favorite TV show?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I love watching 'Friends.'"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Friends is a classic! What's your favorite drink?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I always go for a good cup of coffee."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Coffee is great! Have you come across any cool coffee gadgets recently?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yes, I've been wanting a new French press."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds awesome! Thanks for sharing."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "No problem! See you around, %player%."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey, did you find out anything about Marcus?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yes, I did."
+    },
+    {
+        "type": "option",
+        "source": "%player%",
+        "message": "Their favorite TV show is...",
+        "options": [
+            {
+                "text": "Breaking Bad.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Game of Thrones.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Friends.",
+                "actions": [{}]
+            },
+            {
+                "text": "The Office.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "Great! And their favorite drink is...",
+        "options": [
+            {
+                "text": "Tea.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Juice.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Coffee.",
+                "actions": [{}]
+            },
+            {
+                "text": "Soda.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "Awesome! One last thing, they need...",
+        "options": [
+            {
+                "text": "A new coffee machine.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A new French press.",
+                "actions": [{}]
+            },
+            {
+                "text": "A new mug.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A new grinder.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Perfect! Thanks so much for your help. I couldn’t have done it without you."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Happy to help. It’s going to be a great party!",
+        "actions": [
+            {
+                "type": "fail_todo_item",
+                "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                "list": "optional"
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["party_surprise:correct"],
+                "actions": [
+                    {
+                        "type": "badge",
+                        "badge": "optional:party"
+                    },
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                        "list": "optional"
+                    }
+                ]
+            }
+        ]
+    }
+]

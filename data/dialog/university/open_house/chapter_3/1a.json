@@ -1,0 +1,81 @@
+[
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Hi! I’m glad you made it.",
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yeah, I should probably know more about how this all works."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "For sure. I was talking to my cousin who has gone to postsecondary and he explained it is not just about the degree. It's also about being more independent – like paying for our education, knowing where we will live."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "It's exciting and also a bit intimidating. The school, the location, the program, and the campus life."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I agree, it's a bit of a maze. But, I think a postsecondary degree can open up more career opportunities."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Hey, why don't we check these tables and find out more about all that?",
+        "strategy": "chapter_3:pomodoro_technique"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sure, let's do it."
+    },
+    {
+        "type": "action",
+        "source": "Dominic",
+        "message": "Yeah! Which one do you wanna go to first?",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "open_house:restriction",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "map:travel_blocked",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "open_house:first_booth_not_done",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "open_house:second_booth_not_done",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "open_house:third_booth_not_done",
+                        "flag_action": "give"
+                    }
+                ]
+            },
+            {
+                "type": "complete_todo_item",
+                "item": "Go to the Open House at the University",
+                "list": "story"
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Explore all the Open House Stalls",
+                "list": "optional"
+            }
+        ]
+    }
+]

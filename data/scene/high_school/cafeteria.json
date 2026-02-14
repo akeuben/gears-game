@@ -1,0 +1,71 @@
+{
+    "name": "high_school:cafeteria",
+    "backgrounds": [
+        {
+            "image": "high_school/cafeteria.png",
+            "ambience": "cafe.wav",
+            "music": "school.mp3"
+        }
+    ],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0.73,
+            "y": 0.28,
+            "x2": 0.78,
+            "y2": 0.6,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "high_school/hallway"
+            },
+            "sound": "wood-door"
+        }
+    ],
+    "action": {
+        "type": "waterfall",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["shy_kid_2_dialog"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/side_quest/shy_kid/2a-1"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["shy_kid_3_dialog"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/side_quest/shy_kid/2a-2"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["coping_transition"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/coping/1a"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "coping_transition",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

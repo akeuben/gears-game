@@ -1,0 +1,24 @@
+[
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Fantastic! Check out this pamphlet and take some time to explore what will work best for you.",
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Thanks.",
+        "actions": [
+            {
+                "type": "document",
+                "document": "open_house:financial",
+                "open": true
+            },
+            {
+                "type": "open_dialog",
+                "dialog": ["university/open_house/chapter_3/3e"]
+            }
+        ]
+    }
+]

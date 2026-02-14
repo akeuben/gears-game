@@ -1,0 +1,46 @@
+{
+    "from": "Guidance Counselor",
+    "avatar": "test.jpg",
+    "subject": "Appointment With Guidance Counsellor",
+    "content": "Dear %player%,<br><br>I am writing to encourage all students to schedule a meeting with me to discuss their plans after they graduate from high school. Now is a good time to start thinking about the next exciting chapter of your life. <br><br>I’d like to chat with you about your options.  Are you available this morning? <br><br>Best regards,<br><br>Ms. White<br>Guidance Counselor",
+    "options": [
+        {
+            "text": "Good morning Ms. White,<br><br>I saw your email this morning and I would like to take you up on that offer. I currently have a spare during the first period. Would you be willing to make time for me then?<br><br>Sincerely, <br>%player%",
+            "actions": [
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/opening/3a"]
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Reply to Guidance Counsellor Email",
+                    "list": "story"
+                },
+                {
+                    "type": "badge",
+                    "badge": "story:first_email"
+                },
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "replied:first_email",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "achievements_unlocked",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Open the Achievements App on Your Phone",
+                    "description": "You got a new badge! Check it out!",
+                    "flag": "phone:opened_app:achievements"
+                }
+            ]
+        }
+    ],
+    "important": true
+}

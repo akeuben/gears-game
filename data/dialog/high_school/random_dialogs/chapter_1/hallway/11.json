@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, are you involved in any extracurricular activities?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! Yeah, I'm part of the school debate team. It's been a lot of fun."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's awesome! How often do you have debates?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "We have practice twice a week and competitions once a month."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds like a great way to improve your speaking skills."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Definitely! Plus, it's a great way to meet new people."
+    }
+]

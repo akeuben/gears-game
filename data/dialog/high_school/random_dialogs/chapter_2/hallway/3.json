@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Hey %player%, did you check out the new cafe that opened near school?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Not yet. Is it any good?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Yeah, it's really nice. They have the best coffee and the atmosphere is great for studying."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "I've been there too! Their pastries are delicious."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds like I need to check it out soon."
+    },
+    {
+        "type": "option",
+        "source": "Alex",
+        "message": "You definitely should! What do you usually look for in a cafe?",
+        "options": [
+            {
+                "text": "Good coffee and a quiet place to study.",
+                "actions": [{}]
+            },
+            {
+                "text": "A cozy atmosphere and tasty food.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

@@ -1,0 +1,36 @@
+[
+    {
+        "type": "action",
+        "source": "School Representative",
+        "message": "Enjoy the Open House guys!",
+        "setCharacter": "Dominic",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["open_house:first_booth_done"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6a"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["open_house:first_booth_not_done"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6b"]
+                    }
+                ]
+            }
+        ]
+    }
+]

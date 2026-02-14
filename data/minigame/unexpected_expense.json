@@ -1,0 +1,149 @@
+{
+    "type": "spreadsheet_wheel",
+    "music": "wheel.mp3",
+    "requiredSpins": 5,
+    "guarenteedLoseSpins": 3,
+    "defaultResources": {
+        "Initial Funds": 1085
+    },
+    "defaultCosts": {
+        "Rent": {
+            "default": 450,
+            "min": 150,
+            "error": "You need a place to live! Increase your Rent spending."
+        },
+        "Groceries": {
+            "default": 250,
+            "min": 100,
+            "error": "You need to eat something! Increase your Groceries spending."
+        },
+        "Books": {
+            "default": 200,
+            "min": 50,
+            "error": "You need your textbooks for class! Increase your Books spending."
+        },
+        "Clothes": {
+            "default": 150,
+            "min": 0,
+            "error": "You can't spend negative money! Increase your Clothes spending."
+        },
+        "Transportation": {
+            "default": 100,
+            "min": 25,
+            "error": "You need to get to school somehow! Increase Transportation spending."
+        },
+        "Entertainment": {
+            "default": 150,
+            "min": 0,
+            "error": "You can't spend negative money! Increase your Entertainment spending."
+        }
+    },
+    "wheelValues": {
+        "positive": {
+            "Grocery Money": {
+                "description": "Your parents bought you groceries for the month!",
+                "options": [
+                    {
+                        "value": 100,
+                        "description": "Accept"
+                    },
+                    {
+                        "value": 0,
+                        "description": "Reject"
+                    }
+                ]
+            },
+            "Old Textbook": {
+                "description": "Sell an old textbook.",
+                "options": [
+                    {
+                        "value": 50,
+                        "description": "Sell old textbook"
+                    }
+                ]
+            },
+            "Odd Job": {
+                "description": "Pick up an odd job on a free weekend.",
+                "options": [
+                    {
+                        "value": 100,
+                        "description": "Get paid for odd job"
+                    }
+                ]
+            },
+            "Birthday Money": {
+                "description": "Grandma sent you some birthday money.",
+                "options": [
+                    {
+                        "value": 50,
+                        "description": "Accept gift"
+                    }
+                ]
+            },
+            "Scholarship": {
+                "description": "You won a scolarship!",
+                "options": [
+                    {
+                        "value": 100,
+                        "description": "Accept scholarship"
+                    }
+                ]
+            }
+        },
+        "negative": {
+            "Lost Jacket": {
+                "description": "You forgot your winter jacket in class, and need to replace it.",
+                "options": [
+                    {
+                        "value": 90,
+                        "description": "Get new jacket"
+                    }
+                ]
+            },
+            "Hole in Shoe": {
+                "description": "There's a hole in your shoe, and they need to be replaced.",
+                "options": [
+                    {
+                        "value": 100,
+                        "description": "Get new shoes"
+                    }
+                ]
+            },
+            "Flat Tire": {
+                "description": "Your car got a flat tire, and needs to be towed.",
+                "options": [
+                    {
+                        "value": 300,
+                        "description": "Get your car towed"
+                    }
+                ]
+            },
+            "Friend in Town": {
+                "description": "Your friend is in town, and wants to go to dinner.",
+                "options": [
+                    {
+                        "value": 30,
+                        "description": "Meet them for coffee"
+                    },
+                    {
+                        "value": 120,
+                        "description": "Meet them for dinner"
+                    }
+                ]
+            },
+            "Parking Ticket": {
+                "description": "You got a parking ticket for parking in the wrong lot.",
+                "options": [
+                    {
+                        "value": 100,
+                        "description": "Pay it early."
+                    },
+                    {
+                        "value": 150,
+                        "description": "Pay it later."
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Haha.  Not quite.  Executive functioning or EF is a set of skills that includes attention but also the ability to organize, plan, monitor performance, and stop and think before acting.   Not having these skills as well developed as others can make daily life a bit more challenging."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Like how?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "For example, poor organization can lead to misplacing or losing things.  Forgetting about important dates, like dentist appointments. Or, not leaving the house on time to meet friends.  This can become frustrating for family and friends."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Everyone does things like that."
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "They do, but it is the frequency that it happens that makes it different for you as well as how it affects daily life.  For example, being late for everything means you might drive faster and then you get more speeding tickets than other people or get in more accidents.  Accidents and speeding tickets are expensive!"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Is ADHD something I can cure or get rid of?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "ADHD persists into adulthood, but some people may experience a reduction in symptoms, like hyperactivity, as they age. Strategies and medication, such as stimulants, can help regulate attention and impulse control."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "How common is ADHD?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Actually, there are a lot of people out there with ADHD.  It is one of the most common disabilities of childhood. You are not alone.  About 5 out of every 100 students your age have ADHD. In a regular classroom of 30 students, there will be 1-2 students with ADHD."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "That is a lot of people.",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "Psyc_Route_Complete",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "action",
+        "source": "Psychologist",
+        "message": "It is. Chances are you know at least a couple of people with ADHD.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/psychologist/chapter_2/1f-2"]
+            }
+        ]
+    }
+]

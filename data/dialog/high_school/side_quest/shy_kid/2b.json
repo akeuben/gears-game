@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "Thanks. I usually draw when I’m feeling overwhelmed. It helps me focus or... escape, I guess."
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "To be honest, I sometimes avoid things — schoolwork, talking to people, even fun stuff — because it just feels like too much all at once."
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "I think it’s part of my ADHD. When I know something will be hard or take a lot of energy, my brain kind of shuts down. So I just... don’t start at all."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I get that. Avoiding things doesn’t mean you’re lazy. It’s your brain trying to protect itself from burnout."
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "That means a lot to hear. I’ve felt like it was just me being unmotivated or making excuses. But talking to you makes it feel... okay, somehow."
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "Thanks for listening, %player%. I’m really glad I reached out. I think this might be the first time I’ve said that stuff out loud."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "You’re not alone in this. And I’m always here to talk, sketch, or just hang out whenever you need it."
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "You’re awesome. Next time, maybe we can even draw something together?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Absolutely. Looking forward to it."
+    },
+    {
+        "type": "action",
+        "source": "Jayden",
+        "message": "Goodbye, %player%.",
+        "actions": [
+            {
+                "type": "complete_todo_item",
+                "item": "Help Jayden Build Confidence in Social Interactions",
+                "list": "optional"
+            },
+            {
+                "type": "badge",
+                "badge": "optional:shy_kid"
+            }
+        ]
+    }
+]

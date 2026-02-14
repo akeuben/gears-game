@@ -1,0 +1,120 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Hi, Ms. White. You asked me to stop by?",
+        "setCharacter": "Guidance Counsellor",
+        "actions": [
+            {
+                "type": "complete_todo_item",
+                "item": "Meet With Ms. White",
+                "list": "story"
+            }
+        ]
+    },
+    {
+        "type": "action",
+        "source": "Guidance Counsellor",
+        "message": "Yes! Great to see you. I thought it would be good to see how you've been finding the learning experience so far. Have you found anything helpful?",
+        "actions": [
+            {
+                "type": "activity",
+                "activity": "final_reflection"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "That's so good to hear! You have been collecting a lot of resources on your journey."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yes, I've saved many of them."
+    },
+    {
+        "type": "action",
+        "source": "Guidance Counsellor",
+        "message": "I recommend you print them off and save them in a folder. You might want to refer back to them later on.",
+        "actions": [
+            {
+                "type": "hint",
+                "title": "Printing Documents",
+                "description": "You can print off documents in the journal app"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "For sure. I didn't know what to expect in postsecondary education, so being able to collect strategies before it started makes me feel less nervous."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "Good. If you're looking for more information or want to attend some events you missed, feel free to come back later on."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds good, thanks for all your help, Ms. White."
+    },
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "You're very welcome. Have a great first year!",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "- END GAME -",
+                "actions": [
+                    {
+                        "type": "open_popup",
+                        "popup": "endgame"
+                    },
+                    {
+                        "type": "go_to_scene",
+                        "scene": "endgame"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "save_after_credits",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "- EXPLORE MORE -",
+                "actions": [
+                    {
+                        "type": "change_background",
+                        "index": 0
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "high_school:endgame",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "high_school:exit_prompt",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "add_todo_item",
+                        "item": "Talk to Ms. White to end the game.",
+                        "list": "story"
+                    }
+                ]
+            }
+        ]
+    }
+]

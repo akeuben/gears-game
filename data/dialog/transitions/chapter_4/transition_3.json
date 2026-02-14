@@ -1,0 +1,31 @@
+[
+    {
+        "type": "action",
+        "source": "",
+        "message": "A few hours later...",
+        "actions": [
+            {
+                "type": "go_to_scene",
+                "scene": "home/room"
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Go to bed and complete Chapter 4",
+                "list": "story"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "chapter4:complete2",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "chapter4:home",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

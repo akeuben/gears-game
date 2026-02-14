@@ -1,0 +1,45 @@
+[
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Hi there! What brings you to the high school today?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey! I'm just here for a quick meeting. How about you?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "I was just heading to the library to return some books. They have a great collection here."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Nice! Maybe I'll check it out sometime. Any recommendations?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Definitely! They have a fantastic section on science fiction. You should give it a look."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Thanks for the tip! See you around."
+    },
+    {
+        "type": "action",
+        "source": "Alex",
+        "message": "See you! Have a good day.",
+        "actions": [
+            {
+                "type": "hint",
+                "title": "Find the guidance counsellor's office",
+                "description": "You can click or select doors to move between rooms.",
+                "flag": "scene:visited:high_school:hallway"
+            }
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "I hear you. I’ve done that too. But they said that kind of strategy usually doesn’t work well in postsecondary—especially with back-to-back deadlines and harder content."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hmm. I mean, I don’t want to crash and burn, but I’ve always managed before."
+    },
+    {
+        "type": "action",
+        "source": "Joe",
+        "message": "Yeah, but they showed us how stress builds up when you leave everything to the last minute. You end up getting more anxious and sleep-deprived, which can mess with your grades—and your mental health.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": [
+                    "high_school/hallway/side_quest/time_management/1d-1"
+                ]
+            }
+        ]
+    }
+]

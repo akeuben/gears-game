@@ -1,0 +1,18 @@
+{
+    "from": "Justin Case",
+    "avatar": "test.jpg",
+    "subject": "Stigma around Disabilities Post Session",
+    "content": "Thanks for attending the session about disability, stigma, and how accommodations work at the post-secondary level. <br><br>As promised here is the handout I referenced in the session: <br><br> 1. Handout: Read it and complete the checklist activity. <br><br>Regards,<br><br>Justin Case",
+    "attachments": [
+        {
+            "text": "1. Handout",
+            "actions": [
+                {
+                    "type": "activity",
+                    "activity": "zoom_stigma"
+                }
+            ]
+        }
+    ],
+    "important": true
+}

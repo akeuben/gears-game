@@ -1,0 +1,13 @@
+[
+    {
+        "type": "action",
+        "source": "Guidance Counsellor",
+        "message": "Hello, %player%, thank you for filling out the reflection yesterday.",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            }
+        ]
+    }
+]

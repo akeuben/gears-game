@@ -1,0 +1,74 @@
+{
+    "name": "final_reflection",
+    "stylesheet": "final_reflection",
+    "activities": [
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Reflection Exercise"
+            },
+            {
+                "type": "quoteblock",
+                "html": "Consider what you have learned, and what you want to learn"
+            },
+            {
+                "type": "multiselect",
+                "number": "1",
+                "prompt": "Have you found anything helpful?",
+                "options": [
+                    "Learning about ADHD/LD",
+                    "Attending the Accessibility Services Info Day",
+                    "Getting an idea of what accommodations might be helpful for me",
+                    "Developing some strategies for the stigma associated with ADHD/LD",
+                    "Talking with peers who have experienced similar situations",
+                    "Collecting time management skills",
+                    "Preparing for the differences between high school and postsecondary education"
+                ],
+                "other_fields": ["Other(s):"]
+            },
+            {
+                "type": "multiselect",
+                "number": "2",
+                "prompt": "I have learned about:",
+                "options": [
+                    "ADHD/LD",
+                    "Accessibility Services",
+                    "Accommodations for school",
+                    "Strategies to cope with stigma",
+                    "Time management skills"
+                ],
+                "other_fields": ["Other(s):"]
+            },
+            {
+                "type": "multiselect",
+                "number": "3",
+                "prompt": "I still want to know more about:",
+                "options": [
+                    "ADHD/LD",
+                    "Accessibility Services",
+                    "Accommodations for school",
+                    "Strategies to cope with stigma",
+                    "Time management skills"
+                ],
+                "other_fields": ["Other(s):"]
+            },
+            {
+                "type": "grid",
+                "columnWeights": [1.0],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "titledblock",
+                            "title": "To find out more I can:",
+                            "html": "<ul><li>Talk with a guidance counsellor</li><li>Make an appointment with Accessibility Services</li><li>See if friends have some suggestions</li></ul>"
+                        },
+                        "position": [1, 1],
+                        "size": [1, 1]
+                    }
+                ]
+            }
+        ]
+    ]
+}

@@ -1,0 +1,48 @@
+[
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "Would you like me to go over that again?",
+        "option_location": "beside",
+        "options": [
+            {
+                "text": "Yes, please. I'd like to hear it again.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1a"
+                        ]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "guidance_counsellor_redo",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "No, that's okay.",
+                "actions": [
+                    {
+                        "type": "change_background",
+                        "index": 0
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "guidance_counsellor_redo",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

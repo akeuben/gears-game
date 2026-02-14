@@ -1,0 +1,99 @@
+[
+    {
+        "type": "option",
+        "source": "Dominic",
+        "message": "Are you ready to go?",
+        "options": [
+            {
+                "text": "Let’s check out another booth.",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": [
+                            "open_house:first_booth_done",
+                            "open_house:second_booth_done",
+                            "open_house:third_booth_done"
+                        ],
+                        "actions": [
+                            {
+                                "type": "complete_todo_item",
+                                "item": "Explore all the Open House Stalls",
+                                "list": "optional"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I think that's everything I wanted to check out, let’s get out of here.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "open_house:restriction",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "map:travel_blocked",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "open_house:complete",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "chapter3:home",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": [
+                            "open_house:first_booth_done",
+                            "open_house:second_booth_done",
+                            "open_house:third_booth_done"
+                        ],
+                        "actions": [
+                            {
+                                "type": "complete_todo_item",
+                                "item": "Explore all the Open House Stalls",
+                                "list": "optional"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["open_house:give_todo"],
+                        "actions": [
+                            {
+                                "type": "add_todo_item",
+                                "item": "Return Home",
+                                "list": "story"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "open_house:give_todo",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "go_to_scene",
+                        "scene": "university/map"
+                    }
+                ]
+            }
+        ],
+        "option_location": "below",
+        "setCharacter": "Dominic"
+    }
+]

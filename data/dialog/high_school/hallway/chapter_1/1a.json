@@ -1,0 +1,61 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey Mr. Miller, what’s a Guidance Counsellor? I have a meeting with one but I’m not really sure what they do.",
+        "setCharacter": "Teacher"
+    },
+    {
+        "type": "message",
+        "source": "Teacher",
+        "message": "A Guidance Counsellor is someone at school who helps students with academic planning, career decisions, or personal challenges."
+    },
+    {
+        "type": "conditional",
+        "message": "",
+        "setCharacter": "",
+        "source": "",
+        "conditions": ["participant:enablekbcontrols"],
+        "trueDialog": {
+            "type": "message",
+            "source": "",
+            "message": "– If there’s anything in that definition you’re not sure about, the words will usually be highlighted and you can hover to get the definition or use %key:general:left% and %key:general:right% to select it. For example try highlighting the highlighted word: Guidance Counsellor. –",
+            "setCharacter": ""
+        },
+        "falseDialog": {
+            "type": "message",
+            "source": "",
+            "message": "– If there’s anything in that definition you’re not sure about, the words will usually be highlighted and you can hover to get the definition. For example try hovering over the highlighted word: Guidance Counsellor. –",
+            "setCharacter": ""
+        }
+    },
+    {
+        "type": "message",
+        "source": "",
+        "message": "– If you forget and want to look up the definition again, you can find it in your dictionary app on your phone. –",
+        "setCharacter": ""
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Oh cool. I’ll add that to my phone on my dictionary app so I can check any words that I'm not sure of later.",
+        "setCharacter": "Teacher",
+        "actions": [
+            {
+                "type": "notification",
+                "title": "You Unlocked the Dictionary App!",
+                "description": "Any definitions for highlighted words can be found in the dictionary app!",
+                "color": "red"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "dictionary_unlocked",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

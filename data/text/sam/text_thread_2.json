@@ -1,0 +1,32 @@
+{
+    "from": "Sam",
+    "avatar": "test.png",
+    "messages": [
+        {
+            "type": "message",
+            "source": "other",
+            "message": "If you’re interested, we could meet at the campus coffee shop after the SAS Info Day and chat a bit."
+        },
+        {
+            "type": "action",
+            "source": "you",
+            "message": "That works for me. See you after the Info Day event. I should be done around the evening after the SAS session time.",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "sam_text_complete_1",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Respond to Sam",
+                    "list": "story"
+                }
+            ]
+        }
+    ]
+}

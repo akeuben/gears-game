@@ -1,0 +1,15 @@
+[
+    {
+        "type": "action",
+        "source": "Joe",
+        "message": "I might try a full course load first and drop a class or two if I find it is too much.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": [
+                    "high_school/hallway/side_quest/time_management/1f-1"
+                ]
+            }
+        ]
+    }
+]

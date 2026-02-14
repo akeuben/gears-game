@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Yeah, I used to feel that way too. But the workshop made me realize it’s a big step up. The professors won’t slow down, and there’s way more independent work."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Is it really that bad?"
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Not only will I have to memorize information for exams and complete assignments on my own, but I’m supposed to read stuff outside of class, like book chapters and articles.  I’m a slow reader."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Huh, I figured I could just keep doing what I’ve been doing."
+    },
+    {
+        "type": "action",
+        "source": "Joe",
+        "message": "That might work for some classes, but probably not for science or anything with a heavy workload. They said even smart students struggle if they don’t manage their time well.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": [
+                    "high_school/hallway/side_quest/time_management/1d-1"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, what book are you reading?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! It's a mystery novel by Agatha Christie. I'm really into it."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Nice! I've been looking for a good book to read. Would you recommend it?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Absolutely. It's full of twists and turns. You'd love it."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'll have to check it out. Thanks for the recommendation!"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "No problem. Let me know what you think of it!"
+    }
+]

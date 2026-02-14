@@ -1,0 +1,27 @@
+[
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey %player%, do you have any plans for the weekend?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Not really. How about you?"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "I might go hiking if the weather is nice.",
+        "options": [
+            {
+                "text": "That sounds fun! Do you go hiking often?",
+                "actions": [{}]
+            },
+            {
+                "text": "I prefer staying indoors on weekends.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

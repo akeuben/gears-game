@@ -1,0 +1,42 @@
+[
+    {
+        "type": "action",
+        "source": "",
+        "message": "A few months later...",
+        "actions": [
+            {
+                "type": "go_to_scene",
+                "scene": "home/room"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "application_email",
+                        "flag_action": "give"
+                    }
+                ]
+            },
+            {
+                "type": "send_email",
+                "email": ["application/email_1"]
+            },
+            {
+                "type": "notification",
+                "title": "Admissions Email",
+                "description": "You received a response from your postsecondary application!",
+                "color": "blue"
+            },
+            {
+                "type": "complete_todo_item",
+                "item": "Meet Ms. White in Your High School",
+                "list": "story"
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Check your email for admission status",
+                "list": "story"
+            }
+        ]
+    }
+]

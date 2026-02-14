@@ -1,0 +1,47 @@
+{
+    "from": "Jayden",
+    "avatar": "test.jpg",
+    "subject": "Hi There!",
+    "content": "Hey %player%,<br><br>The Guidance Counselor suggested I try and connect with some of my peers. I hope that’s okay! We have a class together, and I wanted to say hi, but I’m not great at talking in person.<br><br>I thought emailing might be easier. I’m trying to get better at talking to people, and I was wondering if we could be pen pals?<br><br>Looking forward to hearing from you!<br><br>Jayden",
+    "ignoreFlag": "cancel_shy_kid",
+    "options": [
+        {
+            "text": "Hi Jayden,<br><br><strong>Being pen pals sounds like a great idea.</strong> I know it can be tough to talk to people in person, but I'm here to help however I can. <br><br>What do you like to do in your free time? Maybe we have some common interests. <br><br>Talk to you soon!",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "shy_kid_email_1_sent",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "ignore_shy_kid",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Hi Jayden,<br><br><strong>Sorry, I'm not really looking for a pen pal right now.</strong> I hope you find someone who can help you get more comfortable with talking to people.<br><br>Best of luck,<br><br>%player%",
+            "actions": [
+                {
+                    "type": "fail_todo_item",
+                    "item": "Help Jayden Build Confidence in Social Interactions",
+                    "list": "optional"
+                },
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "ignore_shy_kid",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "important": false
+}

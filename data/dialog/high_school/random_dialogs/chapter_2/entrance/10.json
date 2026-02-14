@@ -1,0 +1,258 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey Marcus, how’s it going?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%! I’m good, how about you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'm looking for a good read. What's your favorite book?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "My favorite book is '1984' by George Orwell."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's a classic! What’s your favorite drink to enjoy while reading?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I love drinking herbal tea."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Herbal tea sounds perfect! Have you seen any cool book accessories lately?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yes, I've been wanting a new reading lamp."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds great! Thanks for the recommendation."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "No problem! See you around, %player%."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey, did you find out anything about Marcus?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yes, I did."
+    },
+    {
+        "type": "option",
+        "source": "%player%",
+        "message": "Their favorite book is...",
+        "options": [
+            {
+                "text": "1984.",
+                "actions": [{}]
+            },
+            {
+                "text": "The Catcher in the Rye.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Pride and Prejudice.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "The Great Gatsby.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "Great! And their favorite drink is...",
+        "options": [
+            {
+                "text": "Coffee.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Herbal tea.",
+                "actions": [{}]
+            },
+            {
+                "text": "Hot chocolate.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Juice.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "Awesome! One last thing, they need...",
+        "options": [
+            {
+                "text": "A new bookshelf.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A new reading lamp.",
+                "actions": [{}]
+            },
+            {
+                "text": "A new bookmark.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A new journal.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Perfect! Thanks so much for your help. I couldn’t have done it without you."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Happy to help. It’s going to be a great party!",
+        "actions": [
+            {
+                "type": "fail_todo_item",
+                "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                "list": "optional"
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["party_surprise:correct"],
+                "actions": [
+                    {
+                        "type": "badge",
+                        "badge": "optional:party"
+                    },
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                        "list": "optional"
+                    }
+                ]
+            }
+        ]
+    }
+]

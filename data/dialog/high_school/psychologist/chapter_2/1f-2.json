@@ -1,0 +1,46 @@
+[
+    {
+        "type": "option",
+        "source": "Psychologist",
+        "message": "What would you like to know?",
+        "options": [
+            {
+                "text": "I’ve been hearing a lot about this word “neurodiversity” lately.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/psychologist/chapter_2/1b-3"]
+                    }
+                ]
+            },
+            {
+                "text": "I’d like to learn more about my LD.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/psychologist/chapter_2/1b-1"]
+                    }
+                ]
+            },
+            {
+                "text": "I’d like to learn more about my ADHD.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/psychologist/chapter_2/1b-2"]
+                    }
+                ]
+            },
+            {
+                "text": "Thanks, I’m all done asking questions.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/psychologist/chapter_2/1d-1"]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

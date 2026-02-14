@@ -1,0 +1,54 @@
+[
+    {
+        "type": "action",
+        "source": "Dominic",
+        "message": "Hi, I'm Dominic.",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "open_house:second_booth_done",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "open_house:second_booth_not_done",
+                        "flag_action": "revoke"
+                    }
+                ]
+            }
+        ],
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "And I'm %player%, nice to meet you."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Hello and welcome to the Open House!"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "How are you doing so far?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Good, everything is kinda new and nice."
+    },
+    {
+        "type": "action",
+        "source": "Dominic",
+        "message": "What kind of information do you have to share with us?",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["university/open_house/chapter_3/3b"]
+            }
+        ]
+    }
+]

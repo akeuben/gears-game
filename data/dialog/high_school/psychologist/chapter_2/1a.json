@@ -1,0 +1,39 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hello Dr. Kevin, I'm %player%.",
+        "setCharacter": "Psychologist"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Come on in. How can I help you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Can you tell me about what you do?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "I am a school psychologist.  It’s my job to help students with their education and learning needs. When teachers and parents need help understanding how students learn, I mainly figure this out through assessments, then make recommendations for what teachers, parents, and students can do to improve their learning."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I didn't know that was a job."
+    },
+    {
+        "type": "action",
+        "source": "Psychologist",
+        "message": "It's rewarding to help students with their learning.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/psychologist/chapter_2/1f-1"]
+            }
+        ]
+    }
+]

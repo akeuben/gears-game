@@ -1,0 +1,63 @@
+{
+    "from": "Jayden",
+    "avatar": "test.jpg",
+    "subject": "Let's get to know each other!",
+    "content": "Hi %player%,<br><br>Thanks for responding! In my free time, I enjoy drawing and listening to music. Sometimes I just like to walk around the school grounds and enjoy the peace and quiet. How about you? What do you like to do?<br><br>By the way, do you have any advice on how to get better at talking to people? I always freeze up when I try.<br><br>Looking forward to your reply!<br><br>Jayden",
+    "options": [
+        {
+            "text": "Hi Jayden! <br><br>Those sound like great hobbies! <strong>I enjoy some different things</strong>, but walking around the school grounds sounds nice, maybe I’ll try it sometime.<br><br>As for talking to people, it helps to start with small steps. Maybe try saying hi to someone new each day, or asking a simple question. It gets easier with practice. <br><br>Best of luck, <br><br>%player%",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "shy_kid_email_2_sent",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "ignore_shy_kid",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Hi Jayden! <br><br>Those sound like great hobbies! <strong>I like to draw too!</strong><br><br>As for talking to people, it helps to start with small steps. Maybe try saying hi to someone new each day, or asking a simple question. It gets easier with practice. <br><br>Best of luck, <br><br>%player%",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "shy_kid_email_2_sent",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "ignore_shy_kid",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "Hi Jayden! <br><br>Those sound like great hobbies! <strong>I like music too!</strong><br><br>As for talking to people, it helps to start with small steps. Maybe try saying hi to someone new each day, or asking a simple question. It gets easier with practice. <br><br>Best of luck, <br><br>%player%",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "shy_kid_email_2_sent",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "ignore_shy_kid",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "important": false
+}

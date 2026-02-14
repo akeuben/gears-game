@@ -1,0 +1,54 @@
+[
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Great, then you already know how challenges with executive functioning, such as organization and planning can have on daily functioning."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Is ADHD something I can cure or get rid of?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "ADHD persists into adulthood, but some people may experience a reduction in symptoms, like hyperactivity, as they age. Strategies and medication, such as stimulants, can help regulate attention and impulse control."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "How common is ADHD?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Actually, there are a lot of people out there with ADHD.  It is one of the most common disabilities of childhood. You are not alone.  About 5 out of every 100 students your age have ADHD. In a regular classroom of 30 students, there will be 1-2 students with ADHD."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "That is a lot of people.",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "Psyc_Route_Complete",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "action",
+        "source": "Psychologist",
+        "message": "It is. Chances are you know at least a couple of people with ADHD.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/psychologist/chapter_2/1f-2"]
+            }
+        ]
+    }
+]

@@ -1,0 +1,101 @@
+{
+    "name": "high_school:entrance",
+    "backgrounds": [
+        {
+            "image": "high_school/entrance.png",
+            "ambience": "birds.wav",
+            "music": "school-outside.mp3"
+        }
+    ],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0.442,
+            "y": 0.6,
+            "x2": 0.555,
+            "y2": 0.85,
+            "action": {
+                "type": "combo",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["coping_transition"],
+                        "actions": [
+                            {
+                                "type": "complete_todo_item",
+                                "item": "Meet up with Dominic",
+                                "list": "story"
+                            },
+                            {
+                                "type": "go_to_scene",
+                                "scene": "high_school/cafeteria"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "go_to_scene",
+                        "scene": "high_school/hallway"
+                    }
+                ]
+            },
+            "sound": "school-door"
+        }
+    ],
+    "action": {
+        "type": "waterfall",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:welcome"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/random_dialogs/chapter_1/entrance/"
+                        ]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "high_school:guidance_counsellor",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "high_school:welcome",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:welcome_2"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/side_quest/party_surprise/1a"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "high_school:welcome_2",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "add_todo_item",
+                        "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                        "list": "optional"
+                    }
+                ]
+            }
+        ]
+    }
+}

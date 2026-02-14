@@ -1,0 +1,8 @@
+{
+    "from": "Guidance Counselor",
+    "avatar": "test.jpg",
+    "subject": "Re: Appointment With Guidance Counsellor",
+    "content": "Good Morning %player%,<br><br>I’d love to meet with you then. See you in a bit. <br><br>Ms. White<br>Guidance Counselor",
+    "options": [],
+    "important": true
+}

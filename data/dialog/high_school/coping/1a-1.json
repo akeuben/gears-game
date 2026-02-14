@@ -1,0 +1,23 @@
+[
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "And does that help?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "It does. It took some practice, but I find that making a plan helps me feel more in control."
+    },
+    {
+        "type": "action",
+        "source": "Dominic",
+        "message": "I need that. The other day, I felt like I was drowning and not in control of anything.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/coping/2a"]
+            }
+        ]
+    }
+]

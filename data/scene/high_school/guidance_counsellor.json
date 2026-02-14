@@ -1,0 +1,257 @@
+{
+    "name": "high_school:guidance_counsellor",
+    "backgrounds": [
+        {
+            "image": "high_school/guidance_counsellor_office.png",
+            "music": "guidance-counsellor.mp3"
+        },
+        {
+            "image": "high_school/guidance_counsellor_office_empty.png",
+            "music": "guidance-counsellor.mp3"
+        }
+    ],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0.92,
+            "y": 0.15,
+            "x2": 1,
+            "y2": 0.91,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "high_school/hallway"
+            },
+            "sound": "wood-door"
+        },
+        {
+            "type": "conditional_bounding_box",
+            "condition": "flag",
+            "flags": ["pompom_guidance_counsellor"],
+            "elements": [
+                {
+                    "type": "bounding_box",
+                    "x": 0.875,
+                    "y": 0.32,
+                    "x2": 0.9,
+                    "y2": 0.365,
+                    "secret": true,
+                    "action": {
+                        "type": "combo",
+                        "actions": [
+                            {
+                                "type": "flag",
+                                "flag": [
+                                    {
+                                        "flag_name": "pompom_guidance_counsellor",
+                                        "flag_action": "revoke"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "repeat",
+                                "name": "wheres_pompom",
+                                "repeat": 4,
+                                "repeat_type": "fixed",
+                                "actions": [
+                                    {
+                                        "type": "badge",
+                                        "badge": "easter_egg:pompom"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "notification",
+                                "title": "You Found a Hidden Pompom!",
+                                "description": "Found in guidance counsellor's office.",
+                                "color": "green",
+                                "sound": "none"
+                            }
+                        ]
+                    },
+                    "sound": "pompom"
+                }
+            ]
+        },
+        {
+            "type": "bounding_box",
+            "x": 0.39,
+            "y": 0.28,
+            "x2": 0.585,
+            "y2": 0.91,
+            "action": {
+                "type": "waterfall",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["chapter1:set"],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": [
+                                    "high_school/guidance_counsellor/repeats/chapter_1_repeat"
+                                ]
+                            },
+                            {
+                                "type": "change_background",
+                                "index": 1
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["chapter2:set"],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": [
+                                    "high_school/guidance_counsellor/repeats/chapter_2_repeat"
+                                ]
+                            },
+                            {
+                                "type": "change_background",
+                                "index": 1
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["high_school:exit_prompt"],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": [
+                                    "high_school/guidance_counsellor/repeats/chapter_6_repeat"
+                                ]
+                            },
+                            {
+                                "type": "change_background",
+                                "index": 1
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flagOr",
+                        "flags": [
+                            "chapter2:set",
+                            "chapter3:set",
+                            "chapter4:set",
+                            "chapter5:set"
+                        ],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": [
+                                    "high_school/guidance_counsellor/repeats/generic_repeat"
+                                ]
+                            },
+                            {
+                                "type": "change_background",
+                                "index": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "action": {
+        "type": "waterfall",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:guidance_counsellor"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1a"
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:submit_application"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_4/1a"
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:endgame"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_6/1a"
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:exit_prompt"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/repeats/chapter_6_repeat"
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flagOr",
+                "flags": [
+                    "chapter2:set",
+                    "chapter3:set",
+                    "chapter4:set",
+                    "chapter5:set"
+                ],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/repeats/generic_repeat"
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "from": "Test Sender",
+    "avatar": "test.png",
+    "messages": [
+        {
+            "type": "message",
+            "source": "other",
+            "message": "This is an example text message"
+        },
+        {
+            "type": "message",
+            "source": "you",
+            "message": "This is an example response."
+        },
+
+        {
+            "type": "option",
+            "source": "other",
+            "message": "Choose one:",
+            "options": [
+                {
+                    "text": "Option #1",
+                    "actions": [
+                        {
+                            "type": "open_dialog",
+                            "dialog": ["debug/test1"]
+                        }
+                    ]
+                },
+                {
+                    "text": "Option #2",
+                    "actions": [
+                        {
+                            "type": "open_dialog",
+                            "dialog": ["debug/test2"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

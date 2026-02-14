@@ -1,0 +1,22 @@
+[
+    {
+        "type": "action",
+        "source": "",
+        "message": "\t&ndash; Welcome to your high school! You can navigate the high school by clicking on the doors in each area. \t&ndash;",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "high_school:guidance_counsellor",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "high_school:welcome",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

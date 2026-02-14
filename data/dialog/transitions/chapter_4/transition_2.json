@@ -1,0 +1,35 @@
+[
+    {
+        "type": "action",
+        "source": "",
+        "message": "A few days later...",
+        "actions": [
+            {
+                "type": "go_to_scene",
+                "scene": "home/room"
+            },
+            {
+                "type": "send_email",
+                "email": ["sas/email_2"]
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Join the Annual Accessibility Info Day Zoom Session Link",
+                "list": "story"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "accesibility_zoom",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "map:travel_blocked",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

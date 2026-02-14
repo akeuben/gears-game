@@ -1,0 +1,57 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, Joe! Long time no see — how’s it going?"
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Hey! I’m good. Just trying to survive second semester. What about you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Same. I’m looking forward to spring break, but my parents are on my case about spending some time looking for a summer job."
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "I was just thinking about a job too. I’m planning to go to college in the fall, but I need to save some money to pay for tuition."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I might have to do the same thing."
+    },
+    {
+        "type": "option",
+        "source": "Joe",
+        "message": "I actually just came from a workshop on time management for postsecondary. They were talking about how to manage time outside of classes.",
+        "options": [
+            {
+                "text": "Yeah... I don’t know. That kind of stuff’s not really my thing.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1b-1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Was it useful?",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1b-2"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

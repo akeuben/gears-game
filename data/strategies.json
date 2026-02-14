@@ -1,0 +1,112 @@
+{
+    "chapter_1:help_to_start_studying": {
+        "title": "Help to start studying",
+        "content": "Starting can be the hardest part of studying.  This handout shares some tips for how to get started.",
+        "attachment": true
+    },
+    "chapter_1:staying_focussed_while_studying": {
+        "title": "Staying focussed while studying",
+        "content": "Use these tips to help you stay on-task while studying.",
+        "attachment": true
+    },
+    "chapter_2:approaches_to_studying": {
+        "title": "Approaches to studying",
+        "content": "Two approaches to studying, spaced practice and interleaving, can support retention of material in long-term memory.",
+        "attachment": true
+    },
+    "chapter_3:pomodoro_technique": {
+        "title": "Pomodoro technique",
+        "content": "The pomodoro technique increases productivity and focus by minimizing fatigue and task-switching. Use it with tips for staying focussed while studying and approaches to studying.",
+        "attachment": true
+    },
+    "chapter_3:study_strategies": {
+        "title": "Study strategies",
+        "content": "The strategies listed here can enhance your learning of any material. Different strategies work well in different contexts, so be sure to align your strategy with the way your learning will be assessed.",
+        "attachment": true
+    },
+    "chapter_3:active_learning_retrieval_practice": {
+        "title": "Active learning: Retrieval practice",
+        "content": "Active learning improves memory strength and understanding.  It helps more than passive learning which usually involves listening or reading without interaction (e.g., rereading notes).  Here are some ways to engage in retrieval using active learning techniques.",
+        "attachment": true
+    },
+    "chapter_3:reading_strategies": {
+        "title": "Reading Strategies",
+        "content": "Use these reading strategies to understand and recall large amounts of text.  They are especially helpful for textbook learning and exam prep.",
+        "attachment": false
+    },
+    "chapter_3:tiny_habits": {
+        "title": "Tiny Habits",
+        "content": "Change can be difficult but creating tiny habits can result in big changes. Check out how to implement tiny habits for success.",
+        "attachment": true
+    },
+    "chapter_3:notetaking_methods": {
+        "title": "Notetaking methods",
+        "content": "Taking good notes helps you remember what you have learned through readings and lectures. Quality notes are a valuable tool to use while studying and preparing for exams.",
+        "attachment": true
+    },
+    "chapter_4:task_prioritization_with_priorities_worksheet": {
+        "title": "Task prioritization (with priorities worksheet from McGill)",
+        "content": "Three steps provide structure for how students can prioritize tasks for the week.",
+        "attachment": true
+    },
+    "chapter_4:keeping_track_of_assignments": {
+        "title": "Keeping track of assignments",
+        "content": "With multiple classes and different assignments, it can be difficult to keep track of everything without a system in place.",
+        "attachment": true
+    },
+    "chapter_4:reading_research_articles": {
+        "title": "Reading research articles",
+        "content": "This is a strategy to read and understand jargon-heavy science and social science research articles.",
+        "attachment": true
+    },
+    "chapter_4:completing_tests_on_time": {
+        "title": "Completing tests on time",
+        "content": "Test taking is its own skill.  This strategy outlines how to approach questions strategically and to keep track of time.",
+        "attachment": true
+    },
+    "chapter_4:test_taking_overcoming_nervousness": {
+        "title": "Test taking: overcoming nervousness",
+        "content": "It’s normal to feel nervous about upcoming tests.  A little bit of nervousness can actually be helpful but excessive anxiety can interfere with test performance.  Use these strategies to manage anxiety.",
+        "attachment": false
+    },
+    "chapter_5:office_hours_101": {
+        "title": "Office hours 101",
+        "content": "Office hours are opportunities to meet with an instructor.  Here is an explanation of how to make an appointment and how to prepare for a meeting.",
+        "attachment": true
+    },
+    "chapter_5:meeting_with_instructors": {
+        "title": "Meeting with instructors",
+        "content": "At some point in our education, we may need to meet with the instructor or teaching assistant (TA). It might seem scary but here are some tips for having a successful meeting.",
+        "attachment": true
+    },
+    "chapter_5:navigating_a_bad_grade": {
+        "title": "Navigating a bad grade",
+        "content": "At some point, we may get a grade that we think is wrong or unfair. Here are some ways to challenge a grade with an instructor.",
+        "attachment": true
+    },
+    "chapter_5:connecting_with_instructors": {
+        "title": "Connecting with instructors",
+        "content": "Communicating and building connections with your instructors may help you achieve desired levels of academic achievement and a stronger understanding of course content.",
+        "attachment": true
+    },
+    "chapter_6:getting_started_with_group_work": {
+        "title": "Getting started with group work",
+        "content": "Group work. That dreaded phrase. Start off well by making a plan for cooperation.",
+        "attachment": true
+    },
+    "chapter_6:assigning_roles_in_group_work": {
+        "title": "Assigning roles in group work",
+        "content": "Avoid unnecessary conflict in group work by identifying roles and utilizing member strengths.",
+        "attachment": true
+    },
+    "chapter_6:time_task_estimation": {
+        "title": "Time-task estimation",
+        "content": "We all work at different speeds. Get a better understanding of how much time you need to complete tasks so there are no more all-nighters in your future.",
+        "attachment": true
+    },
+    "chapter_6:reading_instructions_and_questions_carefully": {
+        "title": "Reading instructions and questions carefully",
+        "content": "There is nothing worse than completing an assignment or test to find out that you have not read the instructions or questions carefully. Here are five tips for avoiding mistakes.",
+        "attachment": true
+    }
+}

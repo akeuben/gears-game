@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, did you get that new tech gadget everyone is talking about?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! Yeah, I got the new smartwatch. It's pretty cool."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Nice! What features do you like the most?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I love the fitness tracking and being able to control music from my wrist."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds awesome. I might get one too!"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "You should! It's definitely worth it."
+    }
+]

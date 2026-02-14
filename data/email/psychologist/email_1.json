@@ -1,0 +1,39 @@
+{
+    "from": "Psychologist",
+    "avatar": "test.jpg",
+    "subject": "Re: Appointment Request With Psychologist",
+    "content": "Dear %player%,<br><br>I would be happy to talk to you.  Come by my office tomorrow. <br><br>Best regards,<br><br>Dr. Kevin<br>School Psychologist<br>k.john@educ.com<br>",
+    "options": [
+        {
+            "text": "Sounds perfect, see you then!",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "chapter1:complete",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "hint",
+                    "title": "Complete Chapter 1",
+                    "description": "Select the bed at home to complete the chapter.",
+                    "flag": "chapter2:set"
+                },
+                {
+                    "type": "add_todo_item",
+                    "item": "Go to bed and complete Chapter 1",
+                    "list": "story"
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Reply to Psychologist Email",
+                    "list": "story"
+                }
+            ]
+        }
+    ],
+    "important": true
+}

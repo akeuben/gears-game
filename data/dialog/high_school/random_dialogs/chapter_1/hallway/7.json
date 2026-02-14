@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, I heard you joined a new club. What's it about?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yeah, it's the environmental club. We're working on projects to help make the school more eco-friendly."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's awesome! What kind of projects are you working on?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Right now, we're focusing on a recycling initiative and planning a community garden."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds like a lot of fun. Let me know if you need any help!"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Definitely! We could use all the hands we can get. Thanks!"
+    }
+]

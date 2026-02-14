@@ -1,0 +1,28 @@
+[
+    {
+        "type": "option",
+        "source": "Psychologist",
+        "message": "Do you need me to go over that again?",
+        "options": [
+            {
+                "text": "Yes, please. I'd like to hear it again.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/psychologist/chapter_2/1a"]
+                    }
+                ]
+            },
+            {
+                "text": "No, that's okay.",
+                "actions": [
+                    {
+                        "type": "change_background",
+                        "index": 0
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    }
+]

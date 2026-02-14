@@ -1,0 +1,162 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Why should I worry about that now?"
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "It can take time to get an assessment, so if you need more recent documentation, you might have to wait a while – a few months in some cases."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "Having an updated assessment is important if you intend to ask for learning supports or accommodations like extra time on tests or writing tests in a separate room."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "Also, learning needs change over time, and the recommendations in your old report may not be useful for the postsecondary context."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Okay."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "You will need a recent report or documentation about your diagnosis so you can share it with staff at your postsecondary institution."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Okay, thank you."
+    },
+    {
+        "type": "action",
+        "source": "Guidance Counsellor",
+        "message": "Here is more information on getting an updated assessment.",
+        "actions": [
+            {
+                "type": "document",
+                "document": "high_school:reassessment",
+                "open": true
+            }
+        ]
+    },
+    {
+        "type": "action",
+        "source": "Guidance Counsellor",
+        "message": "Until you can get an updated assessment to find out more about your learning profile, it is important to understand how your disability can affect your learning.",
+        "actions": [
+            {
+                "type": "notification",
+                "title": "You Unlocked the Journal App!",
+                "description": "Any unlocked documents or activities can be seen again in the journal app!",
+                "color": "red"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That makes sense."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "As a next step, I recommend you make an appointment with the psychologist,  Dr. Kevin.  He is a great person to talk to about disabilities like LD and ADHD.  You can send him an email when you get home."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Ok."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "I will also send you some homework to do before you meet with Dr. Kevin.  It will ask you to review your assessment documents and identify your strengths and needs.  Send it back to me when you are done, ok?",
+        "strategy": "chapter_1:help_to_start_studying"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "I will.",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:guidance_counsellor"],
+                "actions": [
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Talk to Guidance Counsellor at School",
+                        "list": "story"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "ignore_shy_kid",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "chapter1:high_school:hallway",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "map:travel_blocked",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "chapter1:home",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "journal_unlocked",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "high_school:guidance_counsellor",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "add_todo_item",
+                        "item": "Return Home and Wait For An Email From Ms. White",
+                        "list": "story"
+                    },
+                    {
+                        "type": "document",
+                        "document": "high_school:tips_parents",
+                        "open": false
+                    },
+                    {
+                        "type": "document",
+                        "document": "high_school:tips_report",
+                        "open": false
+                    },
+                    {
+                        "type": "document",
+                        "document": "high_school:reassessment",
+                        "open": false
+                    },
+                    {
+                        "type": "notification",
+                        "title": "If you want to talk to a character again, click on them or select them.",
+                        "description": "This allows you to explore various dialogue options!",
+                        "flag": "guidance_counsellor_redo",
+                        "color": "red"
+                    }
+                ]
+            }
+        ]
+    }
+]

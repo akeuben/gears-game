@@ -1,0 +1,22 @@
+{
+    "myths_and_facts": {
+        "name": "Myths and Facts",
+        "description": "A game to test your understanding of various myths and facts about ADHD and LD.",
+        "chapter": 2
+    },
+    "unexpected_expense": {
+        "name": "Unexpected Expenses",
+        "description": "A game to help you start thinking about how unexpected expenses can throw off your budget for post secondary.",
+        "chapter": 3
+    },
+    "textbook": {
+        "name": "Textbook",
+        "description": "",
+        "chapter": 5
+    },
+    "urgency": {
+        "name": "Urgency Matrix",
+        "description": "A game to help you start thinking about how to organize future tasks.",
+        "chapter": 5
+    }
+}

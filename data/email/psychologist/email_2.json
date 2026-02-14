@@ -1,0 +1,37 @@
+{
+    "from": "Psychologist",
+    "avatar": "test.jpg",
+    "subject": "Post Appointment With Psychologist",
+    "content": "Hi %player%,<br><br>Thanks for coming to see me today.  I always tell students it is a good idea to understand how your disability affects you.  If you want to explore this more, check out these checklists for LD and ADHD. <br><br>Best regards,<br><br>Dr. Kevin<br>School Psychologist<br>k.john@educ.com<br>",
+    "attachments": [
+        {
+            "text": "LD Checklist",
+            "actions": [
+                {
+                    "type": "activity",
+                    "activity": "ld_checklist"
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Complete the LD Checklist",
+                    "list": "optional"
+                }
+            ]
+        },
+        {
+            "text": "ADHD Checklist",
+            "actions": [
+                {
+                    "type": "activity",
+                    "activity": "adhd_checklist"
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Complete the ADHD Checklist",
+                    "list": "optional"
+                }
+            ]
+        }
+    ],
+    "important": true
+}

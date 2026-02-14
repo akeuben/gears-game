@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%, did you hear about the new student who just transferred?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yeah, I heard. Do you know anything about them?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Not much, just that they moved here from a different city."
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "I saw them in the hallway earlier. They seemed a bit nervous."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I remember feeling the same way when I was new here."
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "It's always tough being the new kid. How did you all handle it when you were new?",
+        "options": [
+            {
+                "text": "I tried to make friends as quickly as possible.",
+                "actions": [{}]
+            },
+            {
+                "text": "I focused on my studies until I got more comfortable.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

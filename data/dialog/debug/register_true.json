@@ -1,0 +1,13 @@
+[
+    {
+        "type": "action",
+        "source": "Debug System",
+        "message": "true",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["debug/register_check"]
+            }
+        ]
+    }
+]

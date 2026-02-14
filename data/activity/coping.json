@@ -1,0 +1,669 @@
+{
+    "name": "coping",
+    "activities": [
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Coping"
+            },
+            {
+                "type": "titledblock",
+                "title": "How do you respond to difficult or stressful events in your life?",
+                "html": "These questions ask you to indicate what you generally do and feel when you experience stressful events related to school and academics. Think about a time(s) when you have been stressed and consider how you managed that event(s)."
+            },
+            {
+                "type": "quoteblock",
+                "html": "Please try to respond to each item separately in your mind from each other item. Choose your answers thoughtfully and make your answers as true FOR YOU as you can. Please answer every item. There are no \"right\" or \"wrong\" answers, so choose the most accurate answer for YOU--not what you think \"most people\" would say or do. Indicate what YOU usually do when YOU experience a stressful event."
+            },
+            {
+                "type": "checklist_advanced",
+                "bindings": {
+                    "provides": {
+                        "PS-mean": "PS",
+                        "HH-mean": "HH",
+                        "AV-mean": "AV",
+                        "UC-mean": "UC",
+                        "ER-mean": "ER",
+                        "SS-mean": "SS"
+                    }
+                },
+                "header": "Coping Scale Activity",
+                "scaleTitles": [
+                    "Never",
+                    "Usually Don't",
+                    "A Little",
+                    "A Medium Amount",
+                    "A Lot"
+                ],
+                "questions": [
+                    {
+                        "question": "I think hard about what steps to take",
+                        "category": "PS"
+                    },
+                    {
+                        "question": "I laugh about the situation.",
+                        "category": "HH"
+                    },
+                    {
+                        "question": "I work less or just don't do assignments that are less important",
+                        "category": "AV"
+                    },
+                    {
+                        "question": "I can't stop thinking about why this is happening.",
+                        "category": "UC"
+                    },
+                    {
+                        "question": "I recognize that I'm trying my best in the situation.",
+                        "category": "ER"
+                    },
+                    {
+                        "question": "I tell myself that everything will be all right.",
+                        "category": "ER"
+                    },
+                    {
+                        "question": "I try to see it in a different light, to make it seem more positive",
+                        "category": "ER"
+                    },
+                    {
+                        "question": "I decide I'm okay the way I am, even though I'm not perfect.",
+                        "category": "ER"
+                    },
+                    {
+                        "question": "I get mad, annoyed or irritated",
+                        "category": "UC"
+                    },
+                    {
+                        "question": "I get extra help from tutors or peers",
+                        "category": "SS"
+                    },
+                    {
+                        "question": "I put things off even when they matter.",
+                        "category": "AV"
+                    },
+                    { "question": "I make jokes about it", "category": "HH" },
+                    {
+                        "question": "I get upset and let my emotions out",
+                        "category": "UC"
+                    },
+                    {
+                        "question": "I try to grow as a person as a result of the experience",
+                        "category": "ER"
+                    },
+                    {
+                        "question": "I get used to the idea that it happened",
+                        "category": "ER"
+                    },
+                    {
+                        "question": "I seek guidance or help from a mentor, teacher, or counsellor.",
+                        "category": "SS"
+                    },
+                    {
+                        "question": "I get upset by things that don't usually bother me.",
+                        "category": "UC"
+                    },
+                    {
+                        "question": "I take a day off from school to sleep or relax (a \"mental health day\")",
+                        "category": "AV"
+                    },
+                    { "question": "I pray or meditate", "category": "HH" },
+                    {
+                        "question": "I try to get advice or help from other people about what to do",
+                        "category": "SS"
+                    },
+                    {
+                        "question": "I take action to try to make the situation better",
+                        "category": "PS"
+                    },
+                    {
+                        "question": "I blame myself for things that happened.",
+                        "category": "UC"
+                    },
+                    {
+                        "question": "I maintain routines that help me function (study blocks, breaks).",
+                        "category": "HH"
+                    },
+                    { "question": "I criticize myself", "category": "UC" },
+                    {
+                        "question": "I become quiet (talk less or not at all to others)",
+                        "category": "HH"
+                    },
+                    {
+                        "question": "I try to find comfort in my religion or spiritual beliefs",
+                        "category": "HH"
+                    },
+                    {
+                        "question": "I just freeze and can’t do anything.",
+                        "category": "UC"
+                    },
+                    { "question": "I stop trying (give up)", "category": "AV" },
+                    {
+                        "question": "I skip school to avoid the problem",
+                        "category": "AV"
+                    },
+                    {
+                        "question": "I concentrate my efforts on doing something about the situation",
+                        "category": "PS"
+                    },
+                    {
+                        "question": "I look for something good in what is happening",
+                        "category": "ER"
+                    },
+                    {
+                        "question": "I end up lying around or sleeping a lot",
+                        "category": "AV"
+                    },
+                    {
+                        "question": "I get emotional support from others",
+                        "category": "SS"
+                    },
+                    {
+                        "question": "I use alcohol or other drugs to make myself feel better.",
+                        "category": "AV"
+                    },
+                    {
+                        "question": "I do something to think about it less, such as going to movies, watching Tv, reading, daydreaming, surfing the internet, or shopping",
+                        "category": "AV"
+                    },
+                    {
+                        "question": "I try to come up with a strategy about what to do",
+                        "category": "PS"
+                    },
+                    {
+                        "question": "I take it out on other people (lash out, be mean, be sarcastic)",
+                        "category": "ER"
+                    },
+                    {
+                        "question": "I take part in enjoyable extracurricular activities",
+                        "category": "HH"
+                    },
+                    {
+                        "question": "I get comfort and understanding from someone",
+                        "category": "SS"
+                    }
+                ]
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=0 && v<=1.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "PS-low"
+                    },
+                    "recieves": {
+                        "mean": "PS"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=1.5 && v<=2.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "PS-medium"
+                    },
+                    "recieves": {
+                        "mean": "PS"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=2.5 && v<=4}`",
+                "bindings": {
+                    "provides": {
+                        "result": "PS-high"
+                    },
+                    "recieves": {
+                        "mean": "PS"
+                    }
+                }
+            },
+
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=0 && v<=1.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "HH-low"
+                    },
+                    "recieves": {
+                        "mean": "HH"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=1.5 && v<=2.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "HH-medium"
+                    },
+                    "recieves": {
+                        "mean": "HH"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=2.5 && v<=4}`",
+                "bindings": {
+                    "provides": {
+                        "result": "HH-high"
+                    },
+                    "recieves": {
+                        "mean": "HH"
+                    }
+                }
+            },
+
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=0 && v<=1.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "AV-low"
+                    },
+                    "recieves": {
+                        "mean": "AV"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=1.5 && v<=2.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "AV-medium"
+                    },
+                    "recieves": {
+                        "mean": "AV"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=2.5 && v<=4}`",
+                "bindings": {
+                    "provides": {
+                        "result": "AV-high"
+                    },
+                    "recieves": {
+                        "mean": "AV"
+                    }
+                }
+            },
+
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=0 && v<=1.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "UC-low"
+                    },
+                    "recieves": {
+                        "mean": "UC"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=1.5 && v<=2.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "UC-medium"
+                    },
+                    "recieves": {
+                        "mean": "UC"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=2.5 && v<=4}`",
+                "bindings": {
+                    "provides": {
+                        "result": "UC-high"
+                    },
+                    "recieves": {
+                        "mean": "UC"
+                    }
+                }
+            },
+
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=0 && v<=1.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "ER-low"
+                    },
+                    "recieves": {
+                        "mean": "ER"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=1.5 && v<=2.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "ER-medium"
+                    },
+                    "recieves": {
+                        "mean": "ER"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=2.5 && v<=4}`",
+                "bindings": {
+                    "provides": {
+                        "result": "ER-high"
+                    },
+                    "recieves": {
+                        "mean": "ER"
+                    }
+                }
+            },
+
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=0 && v<=1.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "SS-low"
+                    },
+                    "recieves": {
+                        "mean": "SS"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=1.5 && v<=2.49}`",
+                "bindings": {
+                    "provides": {
+                        "result": "SS-medium"
+                    },
+                    "recieves": {
+                        "mean": "SS"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["mean"],
+                "function": "const v=parseFloat(mean);return `${v>=2.5 && v<=4}`",
+                "bindings": {
+                    "provides": {
+                        "result": "SS-high"
+                    },
+                    "recieves": {
+                        "mean": "SS"
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Coping"
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Problem-solving",
+                "text": "You seem to rely less on problem-solving strategies when stress comes up. The challenge is that without problem-solving, the root of stress often sticks around. Even small steps — like breaking a task into parts, making a plan, or brainstorming solutions — could give you more control and reduce stress.\n\nYou don’t need to solve everything at once. Start by practicing problem-solving on smaller challenges. Each success builds your confidence for tackling bigger ones.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "PS-low"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Problem-solving",
+                "text": "You use problem-solving strategies sometimes, which shows you have the skills to take action when you need to. That’s a really positive sign.\n\nThe key now is consistency. If you use problem-solving more regularly — especially for academic or practical stressors — you’ll likely feel more confident and less overwhelmed.\n\nThink about when problem-solving has worked for you in the past. Try applying it more intentionally to new situations. Even combining it with other strategies, like relaxation or support-seeking, can make it stronger.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "PS-medium"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Problem-solving",
+                "text": "You rely a lot on problem-solving coping. That’s a real strength — it shows you’re proactive, resourceful, and willing to take steps to manage challenges.\n\nThe only caution is that not all problems can be ‘fixed’ right away. Sometimes, if you focus too much on solving, you might feel frustrated with things outside your control.\n\nYour strong problem-solving skills are a great foundation. Pairing them with emotional coping (like mindfulness, support from others, or relaxation) can give you balance when situations aren’t fully solvable.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "PS-high"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Emotional Regulation",
+                "text": "You may not use emotional regulation strategies very often, which suggests that when stress comes up, emotions might feel overwhelming or harder to manage.\n\nThe challenge is that without tools to regulate emotions, stress can build up quickly and affect your focus, motivation, and relationships. Learning even one or two simple techniques — like deep breathing, grounding, or journaling — can give you more stability.\n\nYou don’t have to be perfect at it. Start with one small practice when you notice stress rising, and build from there. Over time, these tools will make tough situations feel more manageable.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "ER-low"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Emotional Regulation",
+                "text": "You use emotional regulation strategies sometimes, which means you already have skills to calm and manage your feelings when needed.\n\nThe next step is using them more consistently and proactively. For example, instead of waiting until stress is really high, you could practice small techniques daily — like mindful pauses, positive self-talk, or setting boundaries.\n\nYou’re already on the right track. By making emotional regulation a more regular habit, you’ll strengthen your resilience and recover from stress more quickly.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "ER-medium"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Emotional Regulation",
+                "text": "You rely heavily on emotional regulation strategies, which shows you’re self-aware and skilled at calming and managing your emotions in healthy ways.\n\nThe key to watch for is balance — sometimes focusing too much on regulation might make you overlook the problem itself. Pairing emotional regulation with problem-solving or reaching out for support can give you the best of both worlds.\n\nYour strong emotional regulation is a real asset. Keep using it, and remember you don’t have to carry emotions alone — it’s healthy to combine self-regulation with sharing your feelings or taking action.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "ER-high"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Social Support",
+                "text": "You don’t often rely on others for support, which shows independence and self-reliance. That can be a strength — you may be good at managing things on your own.\n\nThe challenge is that when stress builds, going it alone can feel isolating. Everyone needs support sometimes, and reaching out doesn’t mean you’re weak.\n\nConsider experimenting with asking for small amounts of support, like talking through an idea with a classmate or sharing how your day went with a friend. Even little steps can make challenges feel lighter.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "SS-low"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Social Support",
+                "text": "You reach out for support sometimes, which shows you know the value of leaning on others when it feels right. That balance already gives you a good foundation.\n\nThe next step is using support a little more proactively. Instead of waiting until stress feels heavy, try checking in with someone earlier. You might find it helps prevent things from piling up.\n\nYou’re already on the right track. By combining support with your own coping skills, you’ll have a stronger safety net and feel less pressure to handle everything alone.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "SS-medium"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Social Support",
+                "text": "You often turn to others for support, which shows you value connection and understand that sharing your struggles can ease stress. That’s a real strength.\n\nOne thing to watch is balance — sometimes leaning too heavily on others can leave you feeling dependent or frustrated if they aren’t available. Pairing support-seeking with your own problem-solving or self-regulation strategies can help you feel even more empowered.\n\nYou’ve built a strong network of support, and that’s an incredible asset. Keep using it.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "SS-high"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Healthy Habits",
+                "text": "You don’t rely much on healthy outlets like humour, extracurriculars, or spiritual practices during stress. That suggests you may lean more on other coping styles instead.\n\nWithout positive outlets, stress can feel heavier and harder to release. Building even one or two healthy habits — like joining a club, joking around with friends, or practicing a grounding activity — can give you energy and perspective.\n\nTry adding one small activity that feels enjoyable and restorative. Even a few minutes every day of something fun or meaningful can make a difference.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "HH-low"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Healthy Habits",
+                "text": "It’s nice to see that you have some healthy outlets for stress, like humour, activities, or spirituality. That’s a strong sign you know how to balance challenges with positive resources.\n\nUsing healthy habits regularly — not just when you remember — can help prevent stress from building up. Think of them as part of your daily or weekly routine.\n\nEven a few minutes every day of something fun or meaningful can make a difference.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "HH-medium"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Healthy Habits",
+                "text": "It’s nice to see that you rely a lot on positive outlets like humour, extracurricular involvement, or faith. That shows strong resilience, creativity, and an ability to draw on supportive, life-affirming practices.\n\nSometimes people who are very active in healthy outlets can use them to distract from underlying stressors. Pairing these habits with problem-solving or emotional regulation ensures you’re caring for both enjoyment and responsibility.\n\nKeep your healthy habits as a core part of your routine and remember to combine them with reflection and action when needed. You’ve built a strong protective buffer against stress.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "HH-high"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Unproductive Coping",
+                "text": "You don’t rely much on self-blame, giving up, or unhelpful venting. That’s a real strength — it means you’re less likely to get stuck in negative cycles that can make stress worse.\n\nEven if you rarely use these strategies, it can still be useful to notice when they do sneak in, like during high stress. Recognizing them early helps you shift back to healthier ways of coping.\n\nKeep building on the positive strategies you already use.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "UC-low"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Unproductive Coping",
+                "text": "You sometimes cope by blaming yourself, feeling stuck, or venting strongly. This shows you’re aware of your stress and trying to express it, which is important.\n\nAlthough these strategies can release tension in the moment, they don’t usually solve the problem — and self-blame can hurt your confidence. The key is balance: it’s okay to vent sometimes, but try to pair it with reflection or problem-solving.\n\nBy practicing more constructive outlets — like writing down solutions after venting, or using self-compassion instead of self-blame — you’ll feel more supported and less drained.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "UC-medium"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Unproductive Coping",
+                "text": "It seems like you often turn to self-blame, giving up, or venting when stressed. That shows you’re feeling the weight of your challenges and actively trying to let those emotions out.\n\nRelying heavily on these strategies can keep stress going instead of easing it. Self-blame lowers confidence, helplessness makes things feel impossible, and repeated venting can leave you more upset.\n\nYou don’t need to stop venting or expressing frustration altogether — but shifting toward self-kindness, small problem-solving steps, or talking with someone who can support you constructively will help you feel stronger and more in control.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "UC-high"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Avoidant Coping",
+                "text": "It looks like you tend to face challenges head-on instead of avoiding them.\n\nBy not avoiding, you probably stay on top of deadlines, keep relationships clearer, and reduce the buildup of stress that comes from putting things off.\n\nAt the same time, it’s okay to give yourself permission to step back once in a while. Short periods of healthy distraction — like watching a show, going for a walk, or scrolling social media — can give your mind a reset. Avoidance isn’t always unhealthy if it’s intentional and temporary.\n\nYou already have strong coping skills. Consider building in moments of healthy avoidance as a choice — not a habit — to promote wellness.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "AV-low"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Avoidant Coping",
+                "text": "It looks like you sometimes cope by stepping back, distracting yourself, or putting things off. That’s actually a pretty common and sometimes helpful way to handle stress — it can give you a short break and protect you from feeling overwhelmed.\n\nThe good thing is, occasional avoidance can help you recharge. The challenge is, if it happens too often, it can start adding stress — like deadlines piling up or leaving things unresolved.\n\nOne way to strengthen your coping is to use avoidance intentionally — like taking a break or watching a show after a study session — and then pairing it with active strategies, such as breaking tasks into small steps, using a short timer, or reaching out to talk through stress.\n\nThe fact that your avoidance is moderate suggests you already have some balance. With a few small tweaks, you can make your coping even more effective so stress doesn’t build up.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "AV-medium"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Avoidant Coping",
+                "text": "It looks like you cope by stepping back, distracting yourself, or putting things off to get through stress in the ways that feel safest or least overwhelming right now. Avoiding can sometimes give temporary relief, so it makes sense why you lean on it.\n\nAvoidance usually helps in the short term, but in the long run it can make the problem feel bigger or add new stress.\n\nTry to notice when avoidance shows up — for example, are you scrolling on your phone instead of studying, or putting off an important conversation? Just being aware of those patterns is a powerful first step.\n\nInstead of avoiding, you could try some small, manageable strategies, like breaking a big task into smaller steps; setting a short timer (10–15 min) just to ‘start’; talking through worries with a trusted person; or using grounding or relaxation techniques to lower stress before tackling the problem.\n\nIt’s okay to take breaks and distract yourself sometimes — rest is important. The key is balancing that with action, so avoidance doesn’t keep you stuck.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "AV-high"
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Coping"
+            },
+            {
+                "type": "reflection",
+                "number": "1",
+                "prompt": "What strategies do you use very often?"
+            },
+            {
+                "type": "reflection",
+                "number": "2",
+                "prompt": "How helpful are those strategies?"
+            },
+            {
+                "type": "reflection",
+                "number": "3",
+                "prompt": "Would you like to make some changes to the way you cope?"
+            },
+            {
+                "type": "reflection",
+                "number": "4",
+                "prompt": "What would you like do more of?"
+            },
+            {
+                "type": "reflection",
+                "number": "5",
+                "prompt": "What you like to do less of?"
+            },
+            {
+                "type": "reflection",
+                "number": "6",
+                "prompt": "What is one productive coping strategy you can try that you don’t already use? Productive coping strategies include: physical recreation, working hard and achieving, solving the problem, seeking professional help, seeking social support, social action, investing in close friends, focusing on the positive, accepting your best efforts and seeking relaxing diversions."
+            }
+        ]
+    ]
+}

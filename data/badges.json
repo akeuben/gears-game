@@ -1,0 +1,62 @@
+{
+    "story:first_email": {
+        "name": "First Email",
+        "description": "You replied to your first email!",
+        "hidden": false
+    },
+    "story:all_locations": {
+        "name": "Explorer",
+        "description": "You have visited every location!",
+        "hidden": false
+    },
+    "story:all_apps": {
+        "name": "App Guru",
+        "description": "You have unlocked all apps on the phone!",
+        "hidden": false
+    },
+    "minigame:flawless": {
+        "name": "Flawless",
+        "description": "You got a perfect score on a Jeopardy quiz!",
+        "hidden": false
+    },
+    "optional:shy_kid": {
+        "name": "Shy No More",
+        "description": "You helped a shy student step out of their comfort zone!",
+        "hidden": false
+    },
+    "optional:party": {
+        "name": "Party Surprise",
+        "description": "You helped plan out a party perfectly!",
+        "hidden": false
+    },
+    "minigame:cost_balancer": {
+        "name": "Cost Balancer",
+        "description": "You balanced your costs to stay positive!",
+        "hidden": false
+    },
+    "minigame:bomb_defuser": {
+        "name": "Bomb Defuser",
+        "description": "Get a perfect score in the textbook collection minigame.",
+        "hidden": false
+    },
+    "easter_egg:cheater": {
+        "name": "Cheater",
+        "description": "You really shouldn't mess with things you don't know...",
+        "hidden": true
+    },
+    "easter_egg:sleepy": {
+        "name": "Sleepy Head",
+        "description": "You just couldn't resist the bed! You've selected it 10 times when there's work to do.",
+        "hidden": true
+    },
+    "easter_egg:pompom": {
+        "name": "Where's Pompom?",
+        "description": "You found all the hidden Pompoms!",
+        "hidden": true
+    },
+    "easter_egg:resiliency": {
+        "name": "Resiliency",
+        "description": "You selected three responses that focused on overcoming adversity in the third poll, or by choosing the positive option in the first or second poll.",
+        "hidden": true
+    }
+}

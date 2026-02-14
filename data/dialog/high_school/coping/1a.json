@@ -1,0 +1,94 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey Dominic, what's new?",
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Not much. I spent the Sunday at the bike race at the Hot Brakes event. I came in 5th in my age group."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's really good. I wouldn't mind going for a ride with you. Maybe we can go tomorrow?"
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Maybe. My mom is mad because my grades aren't very good and has threatened to take my bike away if I don't do better."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's not fair. You are doing so well with your racing."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Exams are next week, and she's acting if I don't get straight A's, I'm gonna ruin my life or something."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Are those the biology and English exams? I have those too."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Yeah, I'm also behind on a major project in social studies and need to submit an English essay. My teachers gave me extensions but I need to get them done ASAP."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds like a lot all at once."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Yeah. It's not all my fault. I was distracted because I was having problems with my boyfriend, so I got behind."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'm sorry to hear that. Are things okay with you two now?"
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Not sure. We are talking, but we still have some things to work out. Now I don't know where to start with my schoolwork."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I've been there. Sometimes everything seems urgent and overwhelming."
+    },
+    {
+        "type": "option",
+        "source": "Dominic",
+        "message": "Riding my bike helps me destress so its not helpful if I can't ride.",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "When I get behind and stressed, I try to make a plan. I write a list of tasks and put the most urgent at the top.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/coping/1a-1"]
+                    }
+                ]
+            },
+            {
+                "text": "When I get behind and stressed, I feel paralyzed and don't know where to start. I end up distracting  myself with other things.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/coping/1a-2"]
+                    }
+                ]
+            }
+        ]
+    }
+]

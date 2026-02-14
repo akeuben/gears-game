@@ -1,0 +1,49 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Excuse me, sorry. I've changed my mind, I think that pamphlet might be of use to me after all."
+    },
+    {
+        "type": "action",
+        "source": "School Representative",
+        "message": "Of course! Here you go.",
+        "actions": [
+            {
+                "type": "document",
+                "document": "open_house:accessibility",
+                "open": true
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Thank you so much!"
+    },
+    {
+        "type": "action",
+        "source": "School Representative",
+        "message": "You're welcome, I'm glad I could help.",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "open_house:repeat_2b",
+                        "flag_action": "give"
+                    }
+                ]
+            },
+            {
+                "type": "open_dialog",
+                "dialog": ["university/open_house/chapter_3/6a"]
+            }
+        ],
+        "setCharacter": "Dominic"
+    }
+]

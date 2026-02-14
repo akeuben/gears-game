@@ -1,0 +1,83 @@
+[
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Some people use the word neurodiversity to describe the idea that people experience the world around them in many different ways. Instead of seeing differences as a deficit, people who are different in how they think, learning and behaviour should be accepted. "
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Am I neurodiverse?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Often neurodiversity is associated with autism but some people with learning disabilities and ADHD and other disabilities will refer to themselves as neurodiverse too. Neurodiversity is an umbrella term that represents people who see themselves as different from the norm. "
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Why would I want to refer to myself as neurodiverse?"
+    },
+    {
+        "type": "option",
+        "source": "Psychologist",
+        "message": "Some people like it because it represents the idea that being different isn’t something to be fixed.  Instead, it acknowledges the diversity of human brains and minds. ",
+        "options": [
+            {
+                "text": "I’m told a lot that my disability isn’t something to celebrate.",
+                "actions": [
+                    {
+                        "type": "void"
+                    }
+                ]
+            },
+            {
+                "text": "I like the idea of celebrating differences.",
+                "actions": [
+                    {
+                        "type": "void"
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    },
+    {
+        "type": "action",
+        "source": "Psychologist",
+        "message": "Yes, unfortunately, people who are neurodiverse still get a lot of messages that there is something wrong with them, but embracing neurodiversity is about recognizing the unique strengths and perspectives that neurodiverse individuals bring to the table.",
+        "actions": [
+            {
+                "type": "waterfall",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["Psyc_Route_Complete"],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": [
+                                    "high_school/psychologist/chapter_2/1f-2"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "true",
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": [
+                                    "high_school/psychologist/chapter_2/1f-1"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

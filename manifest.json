@@ -1,0 +1,16 @@
+{
+    "short_name": "GEARS",
+    "name": "GEARS: Gearing up for Education, Achieving Real-world Success",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "256x256",
+            "purpose": "any",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#d8a67a",
+    "background_color": "#29495c"
+}

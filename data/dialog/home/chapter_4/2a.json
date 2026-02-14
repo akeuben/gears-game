@@ -1,0 +1,33 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Oh! Someone just sent me another email.",
+        "actions": [
+            {
+                "type": "send_email",
+                "email": ["sas/email_1"]
+            },
+            {
+                "type": "notification",
+                "title": "SAS Email",
+                "description": "You received a new email!",
+                "color": "blue"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "mail:sas_email",
+                        "flag_action": "give"
+                    }
+                ]
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Check your email for SAS email",
+                "list": "story"
+            }
+        ]
+    }
+]

@@ -1,0 +1,111 @@
+.document > main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.path-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 160px auto;
+    gap: 120px;
+    align-items: start;
+    grid-auto-rows: max-content;
+    column-gap: 30px;
+    background-color: var(--background-color);
+    padding: 20px;
+    width: 100%;
+}
+
+.icon-container {
+    aspect-ratio: 1;
+}
+
+.road-svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 90px;
+    transform: none;
+    width: 80px;
+    height: 100%;
+    z-index: 0;
+}
+
+@media print {
+    .road-svg {
+        display: none;
+    }
+
+    .icon-container {
+        display: none !important;
+    }
+    .path-container {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .timeline-box {
+        gap: 0px;
+    }
+}
+
+.icon-container {
+    z-index: 1;
+    background-color: var(--border-color);
+    border: solid var(--foreground-color) 15px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.brown-box {
+    box-shadow: 4px 4px var(--highlight-color);
+    border-radius: 10px;
+    border: 1px solid var(--background-color);
+    background-color: var(--foreground-color);
+    width: fit-content;
+}
+
+.step-number {
+    font-size: 100px;
+    color: var(--border-color);
+    margin-top: -15px;
+}
+
+.step-text {
+    font-size: xx-large;
+    color: var(--background-color);
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.answer-text {
+    color: var(--text-color) !important;
+    white-space: normal;
+    word-wrap: break-word;
+    font-size: large;
+    line-height: 1.6;
+}
+
+.step-answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.timeline-box {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    align-items: start;
+    gap: 20px;
+    height: 100%;
+}

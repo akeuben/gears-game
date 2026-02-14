@@ -1,0 +1,74 @@
+{
+    "type": "waterfall",
+    "actions": [
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["accesibility_zoom", "chapter_5_Route:1"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "accesibility_zoom",
+                            "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "map:travel_blocked",
+                            "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "chapter4:complete1",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "chapter4:home",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "time:night",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "change_background",
+                    "index": "1"
+                },
+                {
+                    "type": "add_todo_item",
+                    "item": "Go to bed and complete Chapter 4",
+                    "list": "story"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["accesibility_zoom", "chapter_5_Route:2"],
+            "actions": [
+                {
+                    "type": "change_background",
+                    "index": "1"
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/chapter_5/2a"]
+                },
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "accesibility_zoom",
+                            "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "map:travel_blocked",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

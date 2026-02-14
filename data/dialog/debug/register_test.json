@@ -1,0 +1,125 @@
+[
+    {
+        "type": "option",
+        "source": "Debug System",
+        "message": "Register System Test test_register = %test_register%, test_register_2 = %test_register_2%",
+        "options": [
+            {
+                "text": "Set test_register to 0",
+                "actions": [
+                    {
+                        "type": "register",
+                        "registerActions": [
+                            {
+                                "register": "test_register",
+                                "action": "set",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/register_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Add 10 to test_register",
+                "actions": [
+                    {
+                        "type": "register",
+                        "registerActions": [
+                            {
+                                "register": "test_register",
+                                "action": "add",
+                                "value": 10
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/register_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Subtract 10 from test_register",
+                "actions": [
+                    {
+                        "type": "register",
+                        "registerActions": [
+                            {
+                                "register": "test_register",
+                                "action": "subtract",
+                                "value": 10
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/register_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Set test_register to test_register_2 (%test_register_2%)",
+                "actions": [
+                    {
+                        "type": "register",
+                        "registerActions": [
+                            {
+                                "register": "test_register",
+                                "action": "set",
+                                "value": "test_register_2"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/register_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Delete test_register",
+                "actions": [
+                    {
+                        "type": "register",
+                        "registerActions": [
+                            {
+                                "register": "test_register",
+                                "action": "delete"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/register_test"]
+                    }
+                ]
+            },
+            {
+                "text": "Check register",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/register_check"]
+                    }
+                ]
+            },
+            {
+                "text": "Back",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/test_menu"]
+                    }
+                ]
+            },
+            {
+                "text": "Close",
+                "actions": []
+            }
+        ]
+    }
+]

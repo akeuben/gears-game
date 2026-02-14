@@ -1,0 +1,72 @@
+{
+    "adhd": {
+        "words": ["ADHD"],
+        "plural": false,
+        "definition": "This word is Attention Deficit Hyperactivity Disorder. It is of the most common neurodevelopmental disorders of childhood!"
+    },
+    "ld": {
+        "words": ["LD"],
+        "plural": false,
+        "definition": "LD stands for learning disability."
+    },
+    "diagnosis": {
+        "words": ["Diagnosis"],
+        "plural": false,
+        "definition": "A diagnosis describes some traits that you have that fit categories of a Disability; but those traits are not the full picture, there is much more to people than their diagnosis. "
+    },
+    "guidance": {
+        "words": ["Guidance", "Counsellor"],
+        "plural": true,
+        "definition": "Supportive advisors in your school who you can talk to about your classes, goals, and any challenges you might be facing. They can be especially helpful in providing understanding and guidance to make sure your school experience is positive and successful."
+    },
+    "psychoeducational_1": {
+        "words": ["Psychoeducational", "Assessment"],
+        "plural": true,
+        "definition": "Identify areas of strength and weakness in a learning profile.  It can be broad and involved questions concerning cognitive, academic, social, emotional, behavioural and adaptive functioning."
+    },
+    "psychoeducational_2": {
+        "words": ["Psychoeducational", "Report"],
+        "plural": true,
+        "definition": "A report written by a professional doctor or psychologist detailing your strengths, needs and suggestions to help support you. It usually relates to your cognitive abilities and academic performance can specify a diagnosis of a learning disability, ADHD or other disorder affecting learning."
+    },
+    "psychologist": {
+        "words": ["Psychologist"],
+        "plural": true,
+        "definition": "A professional who understands how our minds work and can help us figure out our thoughts and feelings. They're like friendly experts who talk with you to help you better understand yourself, which can be especially useful for students in managing challenges and emotions. Most psychologists who conduct psychoeducational assessments specialize in the field of school psychology."
+    },
+    "private": {
+        "words": ["Private", "Practice"],
+        "plural": true,
+        "definition": "Many school division have psychologists on staff who provide services to students including psychoeducational assessments and counselling. Services in schools are paid for by school divisions. However, some psychologists have their own practices in the community where parents can pay out of pocket for services. "
+    },
+    "records": {
+        "words": ["Record"],
+        "plural": true,
+        "definition": "Psychological reports or medical reports that provide details about learning profiles.  Records must be kept by the organization (i.e., school division) or individuals (i.e., medical doctor or psychologist) who generated it for at least 10 years. Individuals can request a copy of their record at any time. "
+    },
+    "individual": {
+        "words": ["Individual", "Program", "Plan"],
+        "plural": false,
+        "definition": "Also known as Individual Education Plan (IEP) or Learner Support Plan (LSP). A document which helps bridge the findings from the assessment report to your learning. This plan is full of information and strategies to help you learn effectively and navigate your disability."
+    },
+    "postsecondary": {
+        "words": ["Postsecondary"],
+        "plural": false,
+        "definition": "Education or learning opportunities that come after high school. Also referred to as higher education, it includes colleges, universities, vocational schools, and other specialized training programs that offer further education and training to help students prepare for their careers and achieve their academic and professional goals."
+    },
+    "disability": {
+        "words": ["Disability"],
+        "plural": false,
+        "definition": "A general term to represent different physical or mental conditions that can affect daily functioning.  Disabilities that can affect learning at school include learning, attention (ADHD), autism, and intellectual disabilities."
+    },
+    "assessment": {
+        "words": ["Assessment"],
+        "plural": true,
+        "definition": "An evaluation conducted by a professional such as a physician or psychologist to identify the causes of school-related problems."
+    },
+    "pediatrician": {
+        "words": ["Pediatrician"],
+        "plural": true,
+        "definition": "A medical doctor who has specialized training in the physical, behavioural and developmental issues that affect children.  Pediatric care starts at birth and lasts until adulthood."
+    }
+}

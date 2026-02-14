@@ -1,0 +1,23 @@
+[
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Me too. But then I end up with an even worse problem. Like now - all these assignments and exams all at once."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Same. And I just want to crawl up into a ball and cry."
+    },
+    {
+        "type": "action",
+        "source": "Dominic",
+        "message": "The other day, I felt like I was drowning and not in control of anything.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/coping/2a"]
+            }
+        ]
+    }
+]

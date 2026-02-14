@@ -1,0 +1,96 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey! Are you Jayden?"
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "Oh, hi! Yeah, that’s me. You must be %player%."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yep! It’s nice to finally meet you in person."
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "Nice to meet you too. I was nervous about this, but I’m glad I reached out."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I think it’s really cool that you did! It takes courage to put yourself out there."
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "Thanks. This actually isn't as scary as I thought."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I get that. Small steps make a big difference!"
+    },
+    {
+        "type": "message",
+        "source": "Jayden",
+        "message": "Yeah, I think I might try talking to more people now."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That’s awesome! You’re doing great."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, I was just about to head to the cafeteria. Want to join me? I’m kind of hungry, and it might be a nice place to chat more."
+    },
+    {
+        "type": "option",
+        "source": "Jayden",
+        "message": "Yeah! That sounds good. There’s a quiet corner I usually sit in. We can go there.",
+        "options": [
+            {
+                "text": "Perfect, let's go!",
+                "actions": [
+                    {
+                        "type": "go_to_scene",
+                        "scene": ["high_school/cafeteria"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "shy_kid_2_dialog",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Great! I'll meet you there.",
+                "actions": [
+                    {
+                        "type": "go_to_scene",
+                        "scene": ["high_school/cafeteria"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "shy_kid_3_dialog",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

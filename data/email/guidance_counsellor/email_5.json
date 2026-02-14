@@ -1,0 +1,45 @@
+{
+    "from": "Guidance Counselor",
+    "avatar": "test.jpg",
+    "subject": "Meeting With Guidance Counsellor",
+    "content": "Hi %player%,<br><br>Since you've completed several steps preparing for the start of postsecondary, let's chat about what you've learned. Stop by my office when you get a chance.<br><br>Talk with you soon, <br><br>Ms. White<br>High School Guidance Counsellor<br>m.white@educ.com",
+    "options": [
+        {
+            "text": "Sounds good, I can stop by later today.",
+            "actions": [
+                {
+                    "type": "complete_todo_item",
+                    "item": "Respond to Ms. White's Email",
+                    "list": "story"
+                },
+                {
+                    "type": "add_todo_item",
+                    "item": "Meet With Ms. White",
+                    "list": "story"
+                },
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "high_school:endgame",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "chapter6:locked",
+                            "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "map:travel_blocked",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "send_text",
+                    "text": "dominic/text_thread_5"
+                }
+            ]
+        }
+    ],
+    "important": true
+}

@@ -1,0 +1,119 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "School hasn't always been the easiest for me. I tend to learn differently from others and I'm concerned that will impact my postsecondary experience. I want to do my best."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "There are certainly challenges to postsecondary education. Students in postsecondary have more responsibility and instructors have different expectations from students than they do in high school. If you aren't careful, it can be easy to slip through the cracks. That said, however, it is nice to see a student being proactive about their future."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "So, what do I need to know?"
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "One of the most important first steps you can take is to understand how to get the support you need. To get the right supports in place for you, I recommend you first make sure you understand your disability."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What is a disability?"
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "A disability is just a word used to describe some traits that you have. If you have enough of those traits that impact your daily functioning, then you have a disability."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Like what?"
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "Like difficulties with learning and attention that affect organization, reading and writing, or even relationships with people."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Why is knowing if I have a disability important?"
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "There are a few reasons. Many schools don’t provide certain supports unless a student has a formal diagnosis.  Usually, it's from a psychologist or a pediatrician."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I see."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "It also helps you understand yourself - why you do certain things or how you learn best.  If you understand your needs, you can advocate for them. Also, by having a shared way of talking about your disability, it helps others understand you and helps you advocate."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Like my family and friends?"
+    },
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "Exactly. You have been getting support in high school, but do you know what kind of disability you've been getting support for? This information can be key to your success in postsecondary.",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "I don't know.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1c-1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I have learning disability.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1c-2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I have ADHD.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1c-3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I have a learning disability and ADHD.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1c-1"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

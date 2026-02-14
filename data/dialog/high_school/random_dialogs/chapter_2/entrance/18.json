@@ -1,0 +1,258 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey Marcus, how’s it going?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%! I’m good, how about you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'm thinking of trying a new restaurant. What's your favorite place to eat?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I love 'Savory Delights.'"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds delicious! What's your favorite dessert there?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Their cheesecake is the best."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Cheesecake is amazing! Have you seen any cool dining accessories recently?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yes, I've been wanting a new set of dinner plates."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds awesome! Thanks for sharing."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "No problem! See you around, %player%."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey, did you find out anything about Marcus?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yes, I did."
+    },
+    {
+        "type": "option",
+        "source": "%player%",
+        "message": "Their favorite restaurant is...",
+        "options": [
+            {
+                "text": "Savory Delights.",
+                "actions": [{}]
+            },
+            {
+                "text": "Tasty Treats.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Gourmet Bites.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Delicious Eats.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "Great! And their favorite dessert is...",
+        "options": [
+            {
+                "text": "Cheesecake.",
+                "actions": [{}]
+            },
+            {
+                "text": "Chocolate cake.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Ice cream.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Apple pie.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "Awesome! One last thing, they need...",
+        "options": [
+            {
+                "text": "A new set of dinner plates.",
+                "actions": [{}]
+            },
+            {
+                "text": "A new set of cutlery.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A new set of glasses.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "A new serving tray.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "beside"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Perfect! Thanks so much for your help. I couldn’t have done it without you."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Happy to help. It’s going to be a great party!",
+        "actions": [
+            {
+                "type": "fail_todo_item",
+                "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                "list": "optional"
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["party_surprise:correct"],
+                "actions": [
+                    {
+                        "type": "badge",
+                        "badge": "optional:party"
+                    },
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                        "list": "optional"
+                    }
+                ]
+            }
+        ]
+    }
+]

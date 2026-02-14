@@ -1,0 +1,48 @@
+{
+    "name": "test",
+    "internalName": "test",
+    "activities": [
+        [
+            {
+                "type": "grid",
+                "columnWeights": [0.5, 0.5],
+                "rowWeights": [0.5, 0.5],
+                "spacing": 10,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "reflection",
+                            "prompt": "Test Prompt"
+                        },
+                        "position": [1, 1],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "reflection",
+                            "prompt": "Test Prompt"
+                        },
+                        "position": [2, 1],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "reflection",
+                            "prompt": "Test Prompt"
+                        },
+                        "position": [1, 2],
+                        "size": [2, 1]
+                    }
+                ]
+            },
+            {
+                "type": "reflection",
+                "prompt": "Ex Reflection Prompt 2"
+            },
+            {
+                "type": "scale",
+                "prompt": "Choose a value from 1 to 10"
+            }
+        ]
+    ]
+}

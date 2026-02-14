@@ -1,0 +1,217 @@
+{
+    "name": "university:map",
+    "backgrounds": [
+        {
+            "image": "university/map.png",
+            "ambience": "birds.wav",
+            "music": "university.mp3"
+        }
+    ],
+    "elements": [
+        {
+            "type": "popover",
+            "x": 0.15,
+            "y": 0.13,
+            "x2": 0.43,
+            "y2": 0.42,
+            "message": "Open House",
+            "action": {
+                "type": "combo",
+                "actions": [
+                    {
+                        "type": "go_to_scene",
+                        "scene": ["university/open_house"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "open_house:visited",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": [
+                            "classroom:visited",
+                            "coffee_shop:visited",
+                            "lecture_hall:visited",
+                            "open_house:visited"
+                        ],
+                        "actions": [
+                            {
+                                "type": "badge",
+                                "badge": "story:all_locations"
+                            },
+                            {
+                                "type": "flag",
+                                "flag": [
+                                    {
+                                        "flag_name": "explorer_badge",
+                                        "flag_action": "revoke"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+
+        {
+            "type": "popover",
+            "x": 0.52,
+            "y": 0.06,
+            "x2": 0.81,
+            "y2": 0.42,
+            "message": "Lecture Hall",
+            "action": {
+                "type": "combo",
+                "actions": [
+                    {
+                        "type": "go_to_scene",
+                        "scene": "university/lecture_hall"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "lecture_hall:visited",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": [
+                            "classroom:visited",
+                            "coffee_shop:visited",
+                            "lecture_hall:visited",
+                            "open_house:visited"
+                        ],
+                        "actions": [
+                            {
+                                "type": "badge",
+                                "badge": "story:all_locations"
+                            },
+                            {
+                                "type": "flag",
+                                "flag": [
+                                    {
+                                        "flag_name": "explorer_badge",
+                                        "flag_action": "revoke"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "popover",
+            "x": 0.17,
+            "y": 0.42,
+            "x2": 0.4,
+            "y2": 0.75,
+            "message": "Coffee Shop",
+            "action": {
+                "type": "combo",
+                "actions": [
+                    {
+                        "type": "go_to_scene",
+                        "scene": "university/coffee_shop"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "coffee_shop:visited",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": [
+                            "classroom:visited",
+                            "coffee_shop:visited",
+                            "lecture_hall:visited",
+                            "open_house:visited"
+                        ],
+                        "actions": [
+                            {
+                                "type": "badge",
+                                "badge": "story:all_locations"
+                            },
+                            {
+                                "type": "flag",
+                                "flag": [
+                                    {
+                                        "flag_name": "explorer_badge",
+                                        "flag_action": "revoke"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "type": "popover",
+            "x": 0.75,
+            "y": 0.52,
+            "x2": 1.0,
+            "y2": 0.8,
+            "message": "Classroom",
+            "action": {
+                "type": "combo",
+                "actions": [
+                    {
+                        "type": "go_to_scene",
+                        "scene": "university/classroom"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "classroom:visited",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": [
+                            "classroom:visited",
+                            "coffee_shop:visited",
+                            "lecture_hall:visited",
+                            "open_house:visited"
+                        ],
+                        "actions": [
+                            {
+                                "type": "badge",
+                                "badge": "story:all_locations"
+                            },
+                            {
+                                "type": "flag",
+                                "flag": [
+                                    {
+                                        "flag_name": "explorer_badge",
+                                        "flag_action": "revoke"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

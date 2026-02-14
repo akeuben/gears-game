@@ -1,0 +1,71 @@
+{
+    "type": "waterfall",
+    "actions": [
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["open_house:restriction"],
+            "actions": [
+                {
+                    "type": "open_dialog",
+                    "dialog": [
+                        "university/open_house/chapter_3/open_house_generic_cant_leave"
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["chapter6:locked"],
+            "actions": [
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/chapter_6/1b"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["accesibility_zoom"],
+            "actions": [
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/home_leave_zoom"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["time:night"],
+            "actions": [
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/home_generic_night"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["chapter1:high_school:hallway"],
+            "actions": [
+                {
+                    "type": "go_to_scene",
+                    "scene": "high_school/hallway"
+                },
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "chapter1:keiko:leave_home",
+                            "flag_action": "give"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

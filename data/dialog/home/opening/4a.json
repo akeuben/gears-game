@@ -1,0 +1,24 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "What did I have to do today? Let me check out my to-do list on my phone.",
+        "actions": [
+            {
+                "type": "hint",
+                "title": "Open the To-Do App On Your Phone",
+                "description": "Open the to-do app on your phone to see what you need to do.",
+                "flag": "phone:opened_app:todo"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "todo_unlocked",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,6 @@
+{
+    "name": "main-menu",
+    "backgrounds": [{ "image": "university/map.png" }],
+    "elements": [],
+    "canSafelyUnload": true
+}

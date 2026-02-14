@@ -1,0 +1,52 @@
+[
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey, %player%! Did you finish the homework for Mr. Lee's class?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yeah, I did. It was pretty tough though. How about you?"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "I managed to get through it. I had to stay up late to finish."
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Good morning, everyone! What are you talking about?"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "We were just discussing Mr. Lee's homework. Did you finish it, Alex?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Barely! I had to ask Marcus for some help."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds like Mr. Lee's homework is giving everyone a hard time."
+    },
+    {
+        "type": "option",
+        "source": "Alex",
+        "message": "Yeah, it's definitely challenging. How do you guys usually deal with difficult homework?",
+        "options": [
+            {
+                "text": "I try to start early and break it into smaller tasks.",
+                "actions": [{}]
+            },
+            {
+                "text": "I usually work on it with friends.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

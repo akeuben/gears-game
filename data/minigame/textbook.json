@@ -1,0 +1,126 @@
+{
+    "type": "textbook",
+    "music": "textbook.mp3",
+    "questions": [
+        {
+            "question": "During your first week of classes, you realize that after your early morning class lecture on Tuesday and Thursdays, you don’t have another lecture until 1pm.  It is not worth going home so you have some time to kill.  What do you do?",
+            "answers": [
+                {
+                    "answer": "You grab a coffee and find a quiet place to do some preparation for your classes and start on assignments.",
+                    "score": 5,
+                    "feedback": "Good choice.  Unlike high school where the school day is structured, post-secondary students are expected to organize their own time. To stay on top of things, plan to spend a few hours every day studying and working on assignments outside of class.  As well, keep in mind that many students with disabilities need more time to study than classmates and in postsecondary, everything takes longer than you think."
+                },
+                {
+                    "answer": "You grab a coffee and hook up with some classmates to play an impromptu game of soccer in a green space for an hour and then you do some studying in a group.",
+                    "score": 5,
+                    "feedback": "There is nothing wrong with a bit of social time but if you don’t study now, you will have to make up the studying time later. Also, group studying doesn’t work for everyone. Get to know what works for you as learner. Unlike high school where the school day is structured, post-secondary students are expected to organize their own time. To stay on top of things, plan to spend a few hours every day studying and working on assignments outside of class.  As well, keep in mind that many students with disabilities need more time to study than classmates and in postsecondary, everything takes longer than you think."
+                },
+                {
+                    "answer": "You feel the semester has just started.  There is no rush so you decide to take advantage of the down time and hang out with some friends, check social media, and have a long lunch",
+                    "score": -5,
+                    "feedback": "To stay on top of things, plan to spend a few hours every day studying and working on assignments outside of class.  Unlike high school where the school day is structured, post-secondary students are expected to organize their own time. As well, keep in mind that many students with disabilities need more time to study than classmates and in postsecondary, everything takes longer than you think. You can get behind in your classes fast."
+                }
+            ]
+        },
+        {
+            "question": "After attending your first day of classes in postsecondary, you have a stack of syllabi (course outlines) that outlines the course assignments, exams, grading scheme and other important dates. What do you do?",
+            "answers": [
+                {
+                    "answer": "Decide to leave them until you figure you need info from them.",
+                    "score": -5,
+                    "feedback": "If you do this, you might miss important information. There is nothing worse than missing a deadline or getting a poor grade because you didn’t follow instructions."
+                },
+                {
+                    "answer": "Read them to add the class schedule to your calendar.",
+                    "score": 3,
+                    "feedback": "That’s a great start but you are missing a step.  You likely won’t remember everything if you have multiple classes.  Take the next step by recording deadlines in your calendar and start to build a study schedule."
+                },
+                {
+                    "answer": "Note all the timelines and start building a study schedule.",
+                    "score": 5,
+                    "feedback": "Recording important dates makes it easier to remember when tasks are assigned which helps with planning. This kind of proactive choice sets you up for a smoother term."
+                }
+            ]
+        },
+        {
+            "question": "During your first week of classes, you discover that all of your lectures are large, containing 400 students.  The noise and disruptions from your peers are so distracting, you can’t focus on what the instructor is saying.",
+            "answers": [
+                {
+                    "answer": "The next week, you start sitting at the front of the class so there are no bobbing heads in front of you",
+                    "score": 5,
+                    "feedback": "This is a great strategy. There may be other strategies that work too.  Don’t be afraid to consult with a learning strategist or an academic advisor to find other ways of coping.  This is a good opportunity to reflect on how you learn best."
+                },
+                {
+                    "answer": "No one else seems to be bothered by it, so you feel like something is wrong with you.  You decide to stick it out to see if it gets better",
+                    "score": -3,
+                    "feedback": "You are not alone. It is likely that many of your peers are bothered, but some of them have found ways to learn in the context.  Don’t be afraid to consult with a learning strategist or an academic advisor to find ways of coping."
+                },
+                {
+                    "answer": "You decide that large lectures are not for you.  You immediately withdraw from your courses and look for another institution that has smaller classes",
+                    "score": -5,
+                    "feedback": "It’s great that you are starting to realize how you learn best.  In the long term, switching institutions might be a consideration, but in the short term, withdrawing has its consequences.  Don’t be afraid to consult with a learning strategist or an academic advisor to find ways of coping in the short term. When looking at postsecondary options, consider if large classes will be a good fit for your learning."
+                }
+            ]
+        },
+        {
+            "question": "You’re finding it hard to both take notes and listen while instructors teach, but classmates seem to be able to do it without a problem. What could you do?",
+            "answers": [
+                {
+                    "answer": "Talk to your Student Accessibility Services counsellor to see if they know of any options to help your situation.",
+                    "score": 5,
+                    "feedback": "Discussing your learning struggles with your SAS counsellor is often a good place to start because they can make suggestions for accommodations or point you towards other resources and strategies to learn note taking."
+                },
+                {
+                    "answer": "Ask a friend how they manage to take notes while listening.",
+                    "score": 3,
+                    "feedback": "You might not be too keen on sharing your disability with a friend. Discussing your learning experience struggles with your SAS counsellor is often a good place to start because they can make suggestions for accommodation or point you towards other resources and strategies to learn note taking."
+                },
+                {
+                    "answer": "Ask a peer for their notes after each class",
+                    "score": 1,
+                    "feedback": "You may be able to get away with this in the short term, but you can’t rely on peers for every lecture.  Discussing your learning experience struggles with your SAS counsellor is often a good place to start because they can make suggestions for accommodation or point you towards other resources and strategies to learn note taking."
+                }
+            ]
+        },
+        {
+            "question": "You have taken your first major exam of the semester and were surprised that you didn’t do as well as you expected.  You thought you had studied a lot for it and were prepared.",
+            "answers": [
+                {
+                    "answer": "You reconsider if you had studied well enough for the exam and check over the exam to see what questions you got wrong",
+                    "score": 5,
+                    "feedback": "Many students think they are studying a lot but they are not being efficient with their studying.  Other may need more repetition and practice than they think to retain information.  It also a good idea to review what you get wrong to identify gaps in your learning. "
+                },
+                {
+                    "answer": "After the pain of the grade has worn off, you do some soul-searching and consider that your studying may not have been as effective as you thought",
+                    "score": 3,
+                    "feedback": "Many students think they are studying a lot but they are not being efficient with their studying.  Some learners may need more repetition and practice than they think to retain information. Studying is a learned skill. Seek out resources that can help you with this skill. It also a good idea to review what you get wrong to identify gaps in your learning."
+                },
+                {
+                    "answer": "You decide the instructor has made an unreasonably difficult exam and you make an appointment to complain about your grade and ask to re-do it",
+                    "score": -5,
+                    "feedback": "Unfortunately, you won’t get much sympathy from your instructor.  Many students think they are studying a lot but they are not being efficient with their studying.  Others may need more repetition and practice than they think to retain information. It also a good idea to review what you get wrong to identify gaps in your learning. "
+                }
+            ]
+        },
+        {
+            "question": "The middle of the term is approaching, and you suddenly realize that you have three assignments due next week worth a significant portion of your grade.  Only one of them has been started.",
+            "answers": [
+                {
+                    "answer": "Even though you are aware of the impending due dates, you are so overwhelmed that you start watching videos online.",
+                    "score": -5,
+                    "feedback": "Many postsecondary students find themselves in this situation at least once in their program. Chaulk this one up to a learning experience.  In postsecondary, courses tend to have fewer assignments worth more of the grade.  Miss one and it could significantly affect you. Seek out help to get a plan in place and learn strategies for avoiding this problem in the future."
+                },
+                {
+                    "answer": "Complain about the instructor not reminding the class about the due date and ask for an extension.",
+                    "score": -5,
+                    "feedback": "You can complain all you want, but knowing when deadlines are is critical in postsecondary because instructors are unlikely to remind students.  Many instructors won’t allow extensions either. Take the time to learn how to use your calendar effectively and be time-wise. "
+                },
+                {
+                    "answer": "You take a look at the assignments, prioritize them from most to least import and map out a schedule to complete them.  Clear your social calendar. You may not be able to do as well as you would like on each one, but you have a plan.",
+                    "score": 5,
+                    "feedback": "This is a great coping strategy.  Don’t be too hard on yourself.   Many postsecondary students find themselves in this situation at least once in their program.  Chaulk this one up to a learning experience.  In postsecondary, courses tend to have fewer assignments worth more of the grade.  Miss one and it could significantly affect you. Seek out help to get a plan in place and learn strategies for avoiding this problem in the future."
+                }
+            ]
+        }
+    ]
+}

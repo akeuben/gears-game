@@ -1,0 +1,17 @@
+[
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Fair enough. Everyone’s got their own way of figuring things out."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Anyway, I gotta head to class. Catch you later."
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "See you around."
+    }
+]

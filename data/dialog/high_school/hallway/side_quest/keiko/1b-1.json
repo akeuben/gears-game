@@ -1,0 +1,39 @@
+[
+    {
+        "type": "message",
+        "source": "Keiko",
+        "message": "That’s good advice. I was a bit unsure about meeting with her but maybe I will.  Thanks."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "No problem.  I hope you find out more about your disability."
+    },
+    {
+        "type": "action",
+        "source": "Keiko",
+        "message": "You too.",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter1:keiko:leave_home"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter1:keiko:leave_home",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "go_to_scene",
+                        "scene": "home/room"
+                    }
+                ]
+            }
+        ]
+    }
+]

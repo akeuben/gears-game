@@ -1,0 +1,40 @@
+[
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Hello? Is this the entrance to the high school?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yes, it is! Are you new here?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "I am. My name is Alex. I'm just starting high school and I'm a bit lost. Can you help me find my way? I just need to find the entrance to the school."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Nice to meet you, Alex. I'm %player%. You can enter through that door over there. I can show you."
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Thank you, %player%! Can you show me the way?"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Sure thing, Alex!",
+        "actions": [
+            {
+                "type": "hint",
+                "title": "Show Alex the way into the high school",
+                "description": "You can click or select doors to move between rooms.",
+                "flag": "scene:visited:high_school:hallway"
+            }
+        ]
+    }
+]

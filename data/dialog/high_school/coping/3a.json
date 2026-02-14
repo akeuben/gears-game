@@ -1,0 +1,18 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Thanks for showing me those resources, they were really helpful! I do got to go now though, I have a meeting with Ms. White. See you later!"
+    },
+    {
+        "type": "action",
+        "source": "Dominic",
+        "message": "You're welcome! Goodbye!",
+        "actions": [
+            {
+                "type": "go_to_scene",
+                "scene": "high_school/hallway"
+            }
+        ]
+    }
+]

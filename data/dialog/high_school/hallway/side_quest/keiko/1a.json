@@ -1,0 +1,38 @@
+[
+    {
+        "type": "message",
+        "source": "Keiko",
+        "message": "Hey, I’m Keiko.  I see you just saw Ms. White.  She is super nice."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Yeah, I wanted to ask her about applying to postsecondary. I have a disability but I’m not sure how that will affect future schooling."
+    },
+    {
+        "type": "option",
+        "source": "Keiko",
+        "message": "I have a disability too. I have trouble with reading and mathematics.  But I just recently learned what that means.",
+        "options": [
+            {
+                "text": "That must have been a big moment. Ms. White was really helpful at pointing out resources for me.  Maybe she can help you too?",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/hallway/side_quest/keiko/1b-1"]
+                    }
+                ]
+            },
+            {
+                "text": "How was this kept from you for so long?",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/hallway/side_quest/keiko/1b-2"]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

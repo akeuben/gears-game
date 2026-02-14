@@ -1,0 +1,16 @@
+{
+    "from": "Dominic",
+    "avatar": "test.png",
+    "messages": [
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Hey %player%. Thanks for coming with me to the open house. I probably would've been too intimidated going alone to learn anything useful."
+        },
+        {
+            "type": "message",
+            "source": "other",
+            "message": "Take care, I'll see you in class!"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "There are a lot of myths or misunderstandings about disabilities, like LD and ADHD, floating around. If you are interested in learning more about these disabilities, check out this game. "
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Thank you. I will take a look.",
+        "actions": [
+            {
+                "type": "minigame",
+                "minigame": "myths_and_facts"
+            },
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/psychologist/chapter_2/1e-1"]
+            }
+        ]
+    }
+]

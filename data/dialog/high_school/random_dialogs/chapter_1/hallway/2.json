@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey , heading to practice?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yeah, just grabbing my gear. Coach has us working on our defense today."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds intense. How's the team looking for the next game?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "We're doing pretty well. Just need to tighten up a few plays and we should be good."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Nice! I'll be cheering you on from the stands."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Thanks! We can use all the support we can get."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "No problem. Good luck out there!"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Thanks! Catch you later."
+    }
+]

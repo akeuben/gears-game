@@ -1,0 +1,54 @@
+[
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Time management is not easy for any postsecondary student."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sometimes I struggle with time management and I’m not sure how to fix that."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "The key is figuring out how to build a flexible routine that balances how you prefer to study and what your goals are. For me, the first major problem was when exams were coming up. All the missed work and study time piled up which meant I had to do everything in a crunch and the results were not great."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "So, what did you do to avoid that the next time?"
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "What worked well for me was breaking tasks down into smaller pieces so that they felt easier to start. So, instead of thinking that I need to eventually study for an exam, I broke it down into needing to study twenty minutes per day, every day for that class."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "So, I’m seeing how time management is something I need to work on."
+    },
+    {
+        "type": "action",
+        "source": "Sam",
+        "message": "That’s a pretty common one for a lot of students. Something that helped me get a feel for how to prioritize tasks was an activity called the Urgency Matrix. You’re given a list of tasks that you evaluate and learn where to place along the lines of urgency and importance. Here, give it a shot.",
+        "actions": [
+            {
+                "type": "minigame",
+                "minigame": "urgency"
+            }
+        ]
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Thanks for sharing your tips for time management.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["university/coffee_shop/chapter_5/1b"]
+            }
+        ]
+    }
+]

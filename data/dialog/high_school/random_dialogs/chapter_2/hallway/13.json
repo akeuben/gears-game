@@ -1,0 +1,28 @@
+[
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%, have you heard the latest gossip?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "No, what's going on?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Apparently, someone saw a UFO last night just outside of town."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Wow, that's crazy! Do you believe it?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I'm not sure, but it's fun to think about."
+    }
+]

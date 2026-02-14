@@ -1,0 +1,215 @@
+{
+    "name": "high_school:hallway",
+    "backgrounds": [
+        {
+            "image": "high_school/hallway.png",
+            "ambience": "school.wav",
+            "music": "school.mp3"
+        }
+    ],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0.205,
+            "y": 0.15,
+            "x2": 0.346,
+            "y2": 0.71,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "high_school/guidance_counsellor"
+            },
+            "sound": "wood-door"
+        },
+        {
+            "type": "bounding_box",
+            "x": 0.42,
+            "y": 0.15,
+            "x2": 0.585,
+            "y2": 0.71,
+            "action": {
+                "type": "combo",
+                "actions": [
+                    {
+                        "type": "go_to_scene",
+                        "scene": "high_school/entrance"
+                    }
+                ]
+            },
+            "sound": "wood-door"
+        },
+        {
+            "type": "bounding_box",
+            "x": 0.66,
+            "y": 0.15,
+            "x2": 0.8,
+            "y2": 0.71,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "high_school/psychologist"
+            },
+            "sound": "wood-door"
+        }
+    ],
+    "action": {
+        "type": "waterfall",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["dictionary_tutorial"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/hallway/chapter_1/1a"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "dictionary_tutorial",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["shy_kid_email_3_sent"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/side_quest/shy_kid/1a"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "shy_kid_email_3_sent",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["side_quest:party_surprise"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "side_quest:party_surprise",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/random_dialogs/chapter_2/entrance/"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter1:high_school:hallway"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter1:high_school:hallway",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "map:travel_blocked",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/hallway/side_quest/keiko/1a"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter1:high_school:hallway"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter1:high_school:hallway",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/hallway/side_quest/keiko/1a"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter2:high_school:hallway"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter2:high_school:hallway",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "probability",
+                        "probability": "0.7",
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": [
+                                    "high_school/random_dialogs/chapter_2/hallway/"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter6:time_management"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter6:time_management",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1a"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

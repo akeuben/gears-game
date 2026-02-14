@@ -1,0 +1,36 @@
+{
+    "from": "Student Accessibility Services",
+    "avatar": "test.jpg",
+    "subject": "Student Accessibility Services Annual Accessibility Info Day",
+    "content": "Hello new students joining us next term! <br><br>Here is the link to our annual Accessibility Info Day. We’d love if you joined us!<br><br>Regards,<br><br>Jennifer Wilks<br>Student Accessibility Services Advisor<br>jwilks@PSU.ca<br>Administration Block 555, Unit 1",
+    "attachments": [
+        {
+            "text": "Join Virtual Meeting",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "time:night",
+                            "flag_action": "give"
+                        }
+                    ]
+                },
+                {
+                    "type": "zoom",
+                    "presentation": "sas"
+                },
+                {
+                    "type": "send_email",
+                    "email": ["sas/email_3"]
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Join the Annual Accessibility Info Day Zoom Session Link",
+                    "list": "story"
+                }
+            ]
+        }
+    ],
+    "important": true
+}

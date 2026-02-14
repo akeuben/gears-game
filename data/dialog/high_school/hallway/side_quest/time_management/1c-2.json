@@ -1,0 +1,25 @@
+[
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Then you might already have some good habits in place. That’ll help a lot. But they did say postsecondary is even more demanding—like, double the study time we’re used to."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Wow. That’s kind of overwhelming. I already feel maxed out sometimes."
+    },
+    {
+        "type": "action",
+        "source": "Joe",
+        "message": "Same. That’s why they suggested building a weekly schedule and blocking off time for everything—classes, study, even meals and breaks. It helps you see how your week really fills up.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": [
+                    "high_school/hallway/side_quest/time_management/1d-1"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,271 @@
+{
+    "presentation": "stigma",
+    "participants": [],
+    "chat": [
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 12
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 26
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 16
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Justin Case",
+                    "message": {
+                        "title": "Because I have LD or ADHD, people think:",
+                        "id": "poll1",
+                        "choices": [
+                            "I am not as intelligent",
+                            "I'm trying to get special treatment or an advantage over others",
+                            "I am more creative and think out of the box",
+                            "ADHD is invented by drug companies to make a profit",
+                            "I have pretended to have ADHD just to get access to medication",
+                            "I have a disability because I watched too many TV shows or played too many video games",
+                            "I'm not cut out for postsecondary education",
+                            "I'm not motivated and should just try harder",
+                            "I'm awesome and people treat me like the special person I am"
+                        ],
+                        "badge": {
+                            "name": "easter_egg:resiliency",
+                            "reason": {
+                                "type": "choice",
+                                "choice": 8
+                            }
+                        }
+                    },
+                    "delay": 2
+                }
+            ],
+            "endDelay": 46
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 21
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 17
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Justin Case",
+                    "message": {
+                        "title": "In the past, I have:",
+                        "id": "poll2",
+                        "choices": [
+                            "Felt bad because of others’ attitudes toward my disability",
+                            "Been hesitant to tell others that I have a disability",
+                            "Worried about telling people I receive counselling or are on medication",
+                            "Had people treat me differently after I disclose my disability",
+                            "Had people ignore my strengths and positive traits",
+                            "Had people compare me to the another successful person they know with LD/ADHD",
+                            "Felt the love and support of family and friends despite my challenges"
+                        ],
+                        "badge": {
+                            "name": "easter_egg:resiliency",
+                            "reason": {
+                                "type": "choice",
+                                "choice": 6
+                            }
+                        }
+                    },
+                    "delay": 2
+                }
+            ],
+            "endDelay": 40
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 21
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 23
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 42
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 12
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Justin Case",
+                    "message": {
+                        "title": "In the past, I have:",
+                        "id": "poll3",
+                        "choices": [
+                            "Overcoming the adversity of having a disability has made me a better person.",
+                            "I have strengths because of my disability that others don’t have.",
+                            "I’m more empathetic toward others because I understand what it’s like to experience adversity.",
+                            "Having a disability has made me a better problem solver.",
+                            "I work harder to overcome challenges because things haven’t been as easy for me."
+                        ],
+                        "badge": {
+                            "name": "easter_egg:resiliency",
+                            "reason": {
+                                "type": "count",
+                                "count": 3
+                            }
+                        }
+                    },
+                    "delay": 2
+                }
+            ],
+            "endDelay": 34
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 15
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 14
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 19
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 12
+                }
+            ],
+            "messages": [],
+            "endDelay": 26
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 18
+                }
+            ],
+            "messages": [],
+            "endDelay": 30
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 31
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 33
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 10
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+.text-container {
+    margin: auto;
+    position: relative;
+}
+
+.text-container::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background-color: #a6e6c9;
+}
+
+.highlight-words {
+    color: #a6e6c9;
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.divider {
+    border: none;
+    height: 5px;
+    background-color: #a6e6c9;
+    width: 80%;
+    margin: 40px auto 0;
+}

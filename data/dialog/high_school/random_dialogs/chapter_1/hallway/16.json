@@ -1,0 +1,28 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, do you have any plans for the summer vacation?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! I'm planning a trip to the beach with my family. What about you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'm thinking of going to a music festival with some friends."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "That sounds like a lot of fun! Hope you have a great time."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Thanks! Enjoy your beach trip too."
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey %player%, did you join any new clubs this year?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'm thinking about it. How about you?"
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "I joined the art club. It's been a lot of fun so far."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I'm in the robotics club. We're working on some cool projects."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds interesting. I might check out a few clubs too."
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "What type of club interests you the most?",
+        "options": [
+            {
+                "text": "Creative arts clubs.",
+                "actions": [{}]
+            },
+            {
+                "text": "Science and tech clubs.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey %player%, have you tried the new game that just came out?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Not yet. Is it any good?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "It's fantastic! The graphics are stunning and the gameplay is really smooth."
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "I just started playing it, and I'm already hooked."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I'll have to check it out. What's it about?"
+    },
+    {
+        "type": "option",
+        "source": "Marcus",
+        "message": "It's an open-world adventure game. What's your favorite type of video game?",
+        "options": [
+            {
+                "text": "Role-playing games.",
+                "actions": [{}]
+            },
+            {
+                "text": "First-person shooters.",
+                "actions": [{}]
+            },
+            {
+                "text": "Something else...",
+                "actions": [{}]
+            }
+        ]
+    }
+]

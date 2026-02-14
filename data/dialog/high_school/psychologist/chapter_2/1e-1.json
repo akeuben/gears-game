@@ -1,0 +1,78 @@
+[
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Congratulations!  You now know more about LD and ADHD than most peers your age!  Understanding these disabilities might be helpful in the future if peers or adults make assumptions about you.   You can dispel the myths they hold about you.",
+        "strategy": "chapter_12:approaches_to_studying"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That’s great! What does all this mean for when I go to postsecondary?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Postsecondary is also the time when you start adulthood. Adulthood comes with increased responsibilities and independence."
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "I recommend you talk to some peers who are in postsecondary about how they found the transition.  They might have some good tips for you.  Also, the postsecondary closest to you is having an open house this week. You should stop by! They provide a lot of good information and there are opportunities to find out more about how the campus works.  You might meet some students there too."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Thank you!",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:psychologist"],
+                "actions": [
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Talk to Psychologist at School",
+                        "list": "story"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter2:home",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "chapter2:high_school:hallway",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "chapter2:complete",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "high_school:psychologist",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "add_todo_item",
+                        "item": "Go to bed and complete Chapter 2",
+                        "list": "story"
+                    },
+                    {
+                        "type": "hint",
+                        "title": "Complete Chapter 2",
+                        "description": "Select the bed at home to complete the chapter.",
+                        "flag": "chapter3:set"
+                    }
+                ]
+            }
+        ]
+    }
+]

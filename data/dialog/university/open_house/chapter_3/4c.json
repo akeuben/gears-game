@@ -1,0 +1,130 @@
+[
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Yeah, me too.",
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "I’m here to provide information about how to find housing.  It’s a good idea to think about housing early on."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "My sister wanted to live in residence when she went to college but by the time she applied, all the spots were filled and there was a long waitlist."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What did she do?"
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "She had to scramble to find something off campus."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "That sounds stressful."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "It was. Luckily, she found a room to rent, but she lives with 5 other roommates and her rent is pretty expensive."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I don’t want that to happen to me."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Best to plan ahead."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "How long ahead should I start looking for housing when getting ready to start postsecondary?"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "If you want to live on campus students should start applying for campus housing early, at the time of applying to the postsecondary institution."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What if I decide to live somewhere else outside the school?"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "Same thing. The earlier you start looking for housing the better. Many people think they can find a place right as or just before the classes start and end up having a hard time finding a place. It can be competitive."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Oh wow! Now that would be a big problem."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "How do I find out more about my housing options?"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "The postsecondary institution website will have a page on housing. It will list housing options, both on-campus and around the city."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "How do I know which option is a good fit for me?"
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "This pamphlet provides more detailed information about housing options. It also provides some pros and cons about your options that may help guide your decision-making."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Thanks.  I’ll see you around.",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            },
+            {
+                "type": "activity",
+                "activity": "housing"
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["open_house:first_booth_done"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6a"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["open_house:first_booth_not_done"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6b"]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,187 @@
+{
+    "type": "waterfall",
+    "actions": [
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["open_dialog:4"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "open_dialog:4",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/opening/4a"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["open_dialog:5"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "open_dialog:5",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/opening/5a"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["open_dialog_chapter_4:2a"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "open_dialog_chapter_4:2a",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/chapter_4/2a"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["open_dialog_chapter_4:3a"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "open_dialog_chapter_4:3a",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/chapter_4/3a"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["open_dialog_chapter_4:1a"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "open_dialog_chapter_4:1a",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/chapter_4/1a"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["sam_text_complete_1"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "sam_text_complete_1",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/chapter_4/4a-1"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["sam_text_complete_2"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "sam_text_complete_2",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["home/chapter_4/4a-2"]
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["transition:chapter_4:1"],
+            "actions": [
+                {
+                    "type": "go_to_scene",
+                    "scene": "transition"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["transition:chapter_4:2"],
+            "actions": [
+                {
+                    "type": "go_to_scene",
+                    "scene": "transition"
+                }
+            ]
+        },
+        {
+            "type": "conditional",
+            "condition": "flag",
+            "flags": ["browser_shown"],
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "browser_shown",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                },
+                {
+                    "type": "open_dialog",
+                    "dialog": ["high_school/coping/3a"]
+                }
+            ]
+        }
+    ]
+}

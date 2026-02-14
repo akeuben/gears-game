@@ -1,0 +1,352 @@
+{
+    "presentation": "sas",
+    "participants": [
+        "Carlos",
+        "Kathy",
+        "Aaliyah",
+        "Farid",
+        "Susan",
+        "John",
+        "Mia",
+        "Dominic",
+        "Sam",
+        "Billy",
+        "Jimmy",
+        "Zahara",
+        "Omar",
+        "Tenzin",
+        "Rafael",
+        "Naomi",
+        "Emeka",
+        "Isla",
+        "Lily",
+        "Dmitri",
+        "Sofia",
+        "Hiroshi",
+        "Fatima",
+        "Jabari",
+        "Luca",
+        "Denise",
+        "David",
+        "Priya",
+        "Mateo",
+        "Aisha",
+        "Madison",
+        "Jin-Soo",
+        "Malik",
+        "Jesse",
+        "Anika",
+        "Kwame",
+        "Santiago",
+        "Zainab",
+        "Juan",
+        "Thiago",
+        "Leilani",
+        "Bao",
+        "Nia",
+        "Alejandro",
+        "Yasmin",
+        "Arnav",
+        "Chiara",
+        "Tariq",
+        "Amara",
+        "Daiki",
+        "Imani",
+        "Zubair",
+        "Kehlani",
+        "Luan",
+        "Rosalía",
+        "Hasan"
+    ],
+    "chat": [
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Lily",
+                    "message": "Lily Sam from Newfoundland. Hello everyone",
+                    "delay": 8
+                },
+                {
+                    "from": "Juan",
+                    "message": "Juan Carlos from Mexico City. Hola",
+                    "delay": 10
+                },
+                {
+                    "from": "Madison",
+                    "message": "Madison from Alberta. Pleased to be here",
+                    "delay": 12
+                },
+                {
+                    "from": "Jesse",
+                    "message": "Jesse from the windy city (Chicago). Hello y'all",
+                    "delay": 13
+                },
+                {
+                    "from": "Denise",
+                    "message": "Denise, Greetings from Winnipeg, Yahoo!",
+                    "delay": 15
+                },
+                {
+                    "from": "David",
+                    "message": "David from Calgary",
+                    "delay": 16
+                }
+            ],
+            "endDelay": 18
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 20
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 7
+                }
+            ],
+            "messages": [],
+            "endDelay": 7
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 12
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 16
+                },
+                {
+                    "dialogIndex": 2,
+                    "startTime": 33
+                },
+                {
+                    "dialogIndex": 3,
+                    "startTime": 45
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Jennifer Wilks",
+                    "message": {
+                        "title": "Accomodations for Exams",
+                        "id": "accForExams",
+                        "choices": [
+                            "Extra time for exams/tests",
+                            "Write exams/tests in a distraction free space",
+                            "Stop-the-clock breaks",
+                            "Text-to-speech for exams"
+                        ],
+                        "optional": true
+                    },
+
+                    "delay": 4
+                },
+                {
+                    "from": "Jennifer Wilks",
+                    "message": {
+                        "title": "Accommodations for the Classroom and Assistive Technology",
+                        "id": "accForClass",
+                        "choices": [
+                            "Audio recording",
+                            "Use laptop during lectures for note-taking",
+                            "Text-to-speech software",
+                            "Voice dictation"
+                        ],
+                        "optional": true
+                    },
+
+                    "delay": 34
+                }
+            ],
+            "endDelay": 18
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 15
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 13
+                },
+                {
+                    "dialogIndex": 2,
+                    "startTime": 36
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Madison",
+                    "message": "I currently get as much time as I want to write exam.  Will I get that?",
+                    "delay": 12
+                },
+                {
+                    "from": "Madison",
+                    "message": "That is going to be a big change for me",
+                    "delay": 35
+                },
+                {
+                    "from": "Juan",
+                    "message": "me too",
+                    "delay": 36
+                }
+            ],
+            "endDelay": 14
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 17
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Juan",
+                    "message": "I also have tutor. Will I get that as an accommodation?",
+                    "delay": 16
+                }
+            ],
+            "endDelay": 15
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [],
+            "endDelay": 23
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 42
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Thiago",
+                    "message": "Thanks!",
+                    "delay": 20
+                },
+                {
+                    "from": "Jesse",
+                    "message": "I had an assessment from junior high, grade 8 I think.  Can I use that?",
+                    "delay": 40
+                },
+                {
+                    "from": "Jesse",
+                    "message": "Thanks",
+                    "delay": 65
+                }
+            ],
+            "endDelay": 25
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                },
+                {
+                    "dialogIndex": 1,
+                    "startTime": 16
+                }
+            ],
+            "messages": [],
+            "endDelay": 82
+        },
+        {
+            "voices": [
+                {
+                    "dialogIndex": 0,
+                    "startTime": 1
+                }
+            ],
+            "messages": [
+                {
+                    "from": "Lily",
+                    "message": "Thank you",
+                    "delay": 9
+                },
+                {
+                    "from": "Juan",
+                    "message": "Thanks for all this useful info",
+                    "delay": 10
+                },
+                {
+                    "from": "Madison",
+                    "message": "Have a good day",
+                    "delay": 12
+                },
+                {
+                    "from": "Jesse",
+                    "message": "Goodbye, thanks",
+                    "delay": 13
+                },
+                {
+                    "from": "Denise",
+                    "message": "Thanks",
+                    "delay": 14
+                },
+                {
+                    "from": "David",
+                    "message": "Have a great day, thank you so much!",
+                    "delay": 15
+                }
+            ],
+            "endDelay": 20
+        }
+    ]
+}

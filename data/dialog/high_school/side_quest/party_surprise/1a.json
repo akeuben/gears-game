@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Hey %player%, I need your help! My best friend’s graduation party is coming up, and I want to plan a surprise party. Can you help me out?"
+    },
+    {
+        "type": "option",
+        "source": "Madison",
+        "message": "I was thinking of surprising them for their graduation party, and I want to get info from them, but if I ask them directly, they might get suspicious. Can you find out for me? I think they are inside the school right now. I will follow up with you inside after you finish talking to them.",
+        "options": [
+            {
+                "text": "Of course, I can do that. I’ll talk to them casually to get the details. See you later.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "side_quest:party_surprise",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "party_surprise:correct",
+                                "flag_action": "give"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Sorry, I'm a little busy right now, maybe next time. See you later!",
+                "actions": [
+                    {
+                        "type": "fail_todo_item",
+                        "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                        "list": "optional"
+                    }
+                ]
+            }
+        ]
+    }
+]

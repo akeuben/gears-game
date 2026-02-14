@@ -1,0 +1,745 @@
+{
+    "name": "home:room",
+    "backgrounds": [
+        {
+            "image": "home/room.png",
+            "music": "bedroom.mp3"
+        },
+        {
+            "image": "home/room_night.png",
+            "music": "bedroom-night.ogg"
+        }
+    ],
+    "elements": [
+        {
+            "type": "conditional_bounding_box",
+            "condition": "flag",
+            "flags": ["achievements_unlocked"],
+            "elements": [
+                {
+                    "type": "bounding_box",
+                    "x": 0.335,
+                    "y": 0.48,
+                    "x2": 0.41,
+                    "y2": 0.59,
+                    "action": {
+                        "type": "open_popup",
+                        "popup": "minigameSelector"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "conditional_bounding_box",
+            "condition": "flag",
+            "flags": ["achievements_unlocked", "pompom_room"],
+            "elements": [
+                {
+                    "type": "bounding_box",
+                    "x": 0.035,
+                    "y": 0.86,
+                    "x2": 0.06,
+                    "y2": 0.905,
+                    "secret": true,
+                    "action": {
+                        "type": "combo",
+                        "actions": [
+                            {
+                                "type": "flag",
+                                "flag": [
+                                    {
+                                        "flag_name": "pompom_room",
+                                        "flag_action": "revoke"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "repeat",
+                                "name": "wheres_pompom",
+                                "repeat": 4,
+                                "repeat_type": "fixed",
+                                "actions": [
+                                    {
+                                        "type": "badge",
+                                        "badge": "easter_egg:pompom"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "notification",
+                                "title": "You Found a Hidden Pompom!",
+                                "description": "Found in the bedroom.",
+                                "color": "green",
+                                "sound": "none"
+                            }
+                        ]
+                    },
+                    "sound": "pompom"
+                }
+            ]
+        },
+        {
+            "type": "conditional_bounding_box",
+            "condition": "flag",
+            "flags": ["achievements_unlocked"],
+            "elements": [
+                {
+                    "type": "bounding_box",
+                    "x": 0.1,
+                    "y": 0.59,
+                    "x2": 0.54,
+                    "y2": 0.85,
+                    "action": {
+                        "type": "waterfall",
+                        "actions": [
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["chapter1:complete"],
+                                "actions": [
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "psychologist:met",
+                                                "flag_action": "give"
+                                            },
+                                            {
+                                                "flag_name": "high_school:psychologist",
+                                                "flag_action": "give"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "set_chapter",
+                                        "new_chapter": 2,
+                                        "bumper_sticker": "geared_up"
+                                    },
+                                    {
+                                        "type": "complete_todo_item",
+                                        "item": "Go to bed and complete Chapter 1",
+                                        "list": "story"
+                                    },
+                                    {
+                                        "type": "open_dialog",
+                                        "dialog": ["home/chapter_2/1a"]
+                                    },
+                                    {
+                                        "type": "conditional",
+                                        "condition": "flag",
+                                        "flags": ["shy_kid_email_1_sent"],
+                                        "actions": [
+                                            {
+                                                "type": "send_email",
+                                                "email": [
+                                                    "side_quest/shy_kid_email_2"
+                                                ]
+                                            },
+                                            {
+                                                "type": "flag",
+                                                "flag": [
+                                                    {
+                                                        "flag_name": "ignore_shy_kid",
+                                                        "flag_action": "give"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "conditional",
+                                        "condition": "flag",
+                                        "flags": ["ignore_shy_kid"],
+                                        "actions": [
+                                            {
+                                                "type": "fail_todo_item",
+                                                "item": "Help Jayden Build Confidence in Social Interactions",
+                                                "list": "optional"
+                                            },
+                                            {
+                                                "type": "flag",
+                                                "flag": [
+                                                    {
+                                                        "flag_name": "ignore_shy_kid",
+                                                        "flag_action": "revoke"
+                                                    },
+                                                    {
+                                                        "flag_name": "cancel_shy_kid",
+                                                        "flag_action": "give"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "type": "send_email",
+                                                "email": [
+                                                    "side_quest/shy_kid_email_reject"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["chapter2:complete"],
+                                "actions": [
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "unlocked_all_locations",
+                                                "flag_action": "give"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "set_chapter",
+                                        "new_chapter": 3,
+                                        "bumper_sticker": "fueled_for_success"
+                                    },
+                                    {
+                                        "type": "add_todo_item",
+                                        "item": "Respond to Dominic",
+                                        "list": "story"
+                                    },
+
+                                    {
+                                        "type": "complete_todo_item",
+                                        "item": "Go to bed and complete Chapter 2",
+                                        "list": "story"
+                                    },
+                                    {
+                                        "type": "conditional",
+                                        "condition": "flag",
+                                        "flags": ["shy_kid_email_2_sent"],
+                                        "actions": [
+                                            {
+                                                "type": "send_email",
+                                                "email": [
+                                                    "side_quest/shy_kid_email_3"
+                                                ]
+                                            },
+                                            {
+                                                "type": "flag",
+                                                "flag": [
+                                                    {
+                                                        "flag_name": "ignore_shy_kid",
+                                                        "flag_action": "give"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "conditional",
+                                        "condition": "flag",
+                                        "flags": ["ignore_shy_kid"],
+                                        "actions": [
+                                            {
+                                                "type": "fail_todo_item",
+                                                "item": "Help Jayden Build Confidence in Social Interactions",
+                                                "list": "optional"
+                                            },
+                                            {
+                                                "type": "send_email",
+                                                "email": [
+                                                    "side_quest/shy_kid_email_reject"
+                                                ]
+                                            },
+                                            {
+                                                "type": "flag",
+                                                "flag": [
+                                                    {
+                                                        "flag_name": "ignore_shy_kid",
+                                                        "flag_action": "revoke"
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "hint",
+                                        "title": "You Unlocked the Messages App!",
+                                        "description": "View the Messages app in your phone.",
+                                        "flag": "phone:opened_app:messages"
+                                    },
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "messages_unlocked",
+                                                "flag_action": "give"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "explorer_badge",
+                                                "flag_action": "give"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "open_house_start",
+                                                "flag_action": "give"
+                                            },
+                                            {
+                                                "flag_name": "open_house:give_todo",
+                                                "flag_action": "give"
+                                            },
+                                            {
+                                                "flag_name": "coffee_shop:before_sam",
+                                                "flag_action": "give"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "send_text",
+                                        "text": "dominic/text_thread_1"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["chapter3:complete"],
+                                "actions": [
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "high_school:submit_application",
+                                                "flag_action": "give"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "conditional",
+                                        "condition": "flag",
+                                        "flags": [
+                                            "open_house:second_booth_not_done"
+                                        ],
+                                        "actions": [
+                                            {
+                                                "type": "fail_todo_item",
+                                                "item": "Explore all the Open House Stalls",
+                                                "list": "optional"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "conditional",
+                                        "condition": "flag",
+                                        "flags": [
+                                            "open_house:third_booth_not_done"
+                                        ],
+                                        "actions": [
+                                            {
+                                                "type": "fail_todo_item",
+                                                "item": "Explore all the Open House Stalls",
+                                                "list": "optional"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "set_chapter",
+                                        "new_chapter": 4,
+                                        "bumper_sticker": "greatness_awaits"
+                                    },
+                                    {
+                                        "type": "complete_todo_item",
+                                        "item": "Go to bed and complete Chapter 3",
+                                        "list": "story"
+                                    },
+                                    {
+                                        "type": "add_todo_item",
+                                        "item": "Meet Ms. White in Your High School",
+                                        "list": "story"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["chapter4:complete1"],
+                                "actions": [
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "chapter4:complete1",
+                                                "flag_action": "revoke"
+                                            },
+                                            {
+                                                "flag_name": "coffee_shop:sam_dialog",
+                                                "flag_action": "give"
+                                            },
+                                            {
+                                                "flag_name": "coffee_shop:before_sam",
+                                                "flag_action": "revoke"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "set_chapter",
+                                        "new_chapter": 5,
+                                        "bumper_sticker": "future_scholar"
+                                    },
+                                    {
+                                        "type": "complete_todo_item",
+                                        "item": "Go to bed and complete Chapter 4",
+                                        "list": "story"
+                                    },
+                                    {
+                                        "type": "add_todo_item",
+                                        "item": "Meet Sam at the University Coffee Shop",
+                                        "list": "story"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["chapter4:complete2"],
+                                "actions": [
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "chapter4:complete2",
+                                                "flag_action": "revoke"
+                                            },
+                                            {
+                                                "flag_name": "coffee_shop:sam_dialog",
+                                                "flag_action": "give"
+                                            },
+                                            {
+                                                "flag_name": "coffee_shop:before_sam",
+                                                "flag_action": "revoke"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "set_chapter",
+                                        "new_chapter": 5,
+                                        "bumper_sticker": "future_scholar"
+                                    },
+                                    {
+                                        "type": "complete_todo_item",
+                                        "item": "Go to bed and complete Chapter 4",
+                                        "list": "story"
+                                    },
+                                    {
+                                        "type": "add_todo_item",
+                                        "item": "Meet Sam at the University Coffee Shop",
+                                        "list": "story"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["chapter5:complete"],
+                                "actions": [
+                                    {
+                                        "type": "set_chapter",
+                                        "new_chapter": 6,
+                                        "bumper_sticker": "driven_to_learn"
+                                    },
+                                    {
+                                        "type": "complete_todo_item",
+                                        "item": "Go to bed and complete Chapter 5",
+                                        "list": "story"
+                                    },
+                                    {
+                                        "type": "open_dialog",
+                                        "dialog": ["home/chapter_6/1a"]
+                                    },
+                                    {
+                                        "type": "send_email",
+                                        "email": ["guidance_counsellor/email_5"]
+                                    },
+                                    {
+                                        "type": "add_todo_item",
+                                        "item": "Respond to Ms. White's Email",
+                                        "list": "story"
+                                    },
+                                    {
+                                        "type": "flag",
+                                        "flag": [
+                                            {
+                                                "flag_name": "chapter6:locked",
+                                                "flag_action": "give"
+                                            },
+                                            {
+                                                "flag_name": "chapter6:time_management",
+                                                "flag_action": "give"
+                                            },
+                                            {
+                                                "flag_name": "map:travel_blocked",
+                                                "flag_action": "give"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "true",
+                                "actions": [
+                                    {
+                                        "type": "open_dialog",
+                                        "dialog": ["home/home_generic_bed"]
+                                    },
+                                    {
+                                        "type": "conditional",
+                                        "condition": "repeat",
+                                        "name": "sleepy_head",
+                                        "repeat": 10,
+                                        "repeat_type": "fixed",
+                                        "actions": [
+                                            {
+                                                "type": "badge",
+                                                "badge": "easter_egg:sleepy"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "action": {
+        "type": "waterfall",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter1:home"],
+                "actions": [
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Return Home and Wait For An Email From Ms. White",
+                        "list": "story"
+                    },
+                    {
+                        "type": "send_email",
+                        "email": ["guidance_counsellor/email_3"]
+                    },
+                    {
+                        "type": "add_todo_item",
+                        "item": "Complete Homework from Ms. White",
+                        "list": "story"
+                    },
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Go back home and wait for an Email from Ms. White",
+                        "list": "story"
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter1:home",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "chapter1:high_school:hallway",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "time:night",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter2:home"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter2:high_school:hallway",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "chapter2:home",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "time:night",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["home/chapter_2/2a"]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    },
+                    {
+                        "type": "send_email",
+                        "email": ["psychologist/email_2"]
+                    },
+                    {
+                        "type": "add_todo_item",
+                        "item": "Complete the LD Checklist",
+                        "list": "optional"
+                    },
+                    {
+                        "type": "add_todo_item",
+                        "item": "Complete the ADHD Checklist",
+                        "list": "optional"
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter3:home"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter3:home",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "time:night",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "activity:budgeting",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    },
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Return Home",
+                        "list": "story"
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["home/chapter_3/1a"]
+                    },
+                    {
+                        "type": "send_text",
+                        "text": "dominic/text_thread_2"
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter4:home"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter4:home",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "time:night",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter5:home"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter5:home",
+                                "flag_action": "revoke"
+                            },
+                            {
+                                "flag_name": "chapter_5_transition",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "go_to_scene",
+                        "scene": "transition"
+                    },
+                    {
+                        "type": "complete_todo_item",
+                        "item": "Go back home",
+                        "list": "story"
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter5:complete"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "time:night",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["time:night"],
+                "actions": [
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

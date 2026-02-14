@@ -1,0 +1,111 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey Sam!",
+        "setCharacter": "Sam"
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Hey, its nice to meet you in person! Let me just close my study notes so we can chat."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Thanks for meeting with me.  I didn’t know that my postsecondary offered an orientation."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Yes, they try to provide information to incoming students so there are fewer surprises.  They have been doing this for a few years now. "
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "And you are a student mentor?"
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "I try to connect with students with disabilities.  As a student with a disability myself, I think it is important to share my experience and answer questions. "
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I appreciate that.  I’ve been doing a lot of exploring whether postsecondary is right for me.  I just applied, though, so I’m excited and nervous at the same time. "
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Embarking on new ventures and experiences has always been very terrifying for me. Being a person with an invisible disability, I’ve always played it safe, stuck close to things I know."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "It is easy to not take risks."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "When it came time for postsecondary, I realized that it was time to take that brave step into unknown territory. New environment, new rules, new expectations…. On some levels I liked the idea of some of the ‘newness’, but the totality of it seemed overwhelming and freaked me out. I was having nightmares, couldn’t sleep well, and my anxiety was mounting over the summer prior to my move into postsecondary life."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Wow. That is rough."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "It was.  I’m not sure what made me change my frame of mind, but all of a sudden, like overnight, I decided I would approach the ‘newness’ with a positive and open frame of mind. I started to tell myself “this will be great”, “I’m going to do just fine, I got this”."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Did thinking positive thoughts like that help?"
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Yeah. A few days of thinking like that and my anxiety melted away. Instead of telling people what I was worried about, I started telling them what I was excited about."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "But that doesn’t make all the challenges go away.  That’s what I’m concerned about."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "I knew things would be tough and confusing at times but I had decided to trust that I’d be able to figure things out. When people say, “Change the way you think and you’ll change the way you feel”, they’re not wrong. It’s tough to do but once that barrier has been crossed, you’ll be impressed with how capable you really are."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I’ll try to remember that."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Once my mindset changed, I took every opportunity to seek advice from those who had lived through a similar change. Now I’m giving back."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I really appreciate that. How has postsecondary been going?"
+    },
+    {
+        "type": "action",
+        "source": "Sam",
+        "message": "Midterms are coming up, which is stressful, but if I stick to my study plans it should be ok.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": [
+                    "university/coffee_shop/side_quest/accommodations/1a"
+                ]
+            }
+        ]
+    }
+]

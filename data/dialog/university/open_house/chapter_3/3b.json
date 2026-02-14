@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "I’m here to provide information about finances to pay for your education.",
+        "setCharacter": "Dominic"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "School seems pretty expensive."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "It does, and when it comes to paying for your postsecondary education, you should be aware of the resources available to you including scholarships and grants."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Now we're talking! My older sister is attending college and is constantly asking my parents for money because she doesn’t follow her budget. They have threatened to cut her off."
+    },
+    {
+        "type": "message",
+        "source": "School Representative",
+        "message": "You don’t need that kind of stress. Postsecondary institutions will have a lot of information on their websites about finding funding and managing money.  In the meantime, I have a resource to help guide you as you explore your options."
+    },
+    {
+        "type": "option",
+        "source": "School Representative",
+        "message": "How does that sound?",
+        "options": [
+            {
+                "text": "I don't know, maybe I'll think about this later. I'm still scratching the surface, you know? But thanks anyway.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/3e"]
+                    }
+                ]
+            },
+            {
+                "text": "I already have my finances sorted, but thanks anyway.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/3e"]
+                    }
+                ]
+            },
+            {
+                "text": "Sounds great!",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/3d"]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, have you met the new teacher yet?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! Yeah, I have. They seem really nice and their class is pretty interesting."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What subject do they teach?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "They're teaching history. It's cool to see someone so passionate about the subject."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I might check out their class then. Thanks!"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "No problem!"
+    }
+]

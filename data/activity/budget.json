@@ -1,0 +1,617 @@
+{
+    "name": "budget",
+    "activities": [
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Annual Budget"
+            },
+            {
+                "type": "quoteblock",
+                "html": "There are many things to consider within the costs of your education. In addition to tuition, books, and supplies, you may have other costs such as insurance, transportation, and household expenses. "
+            },
+            {
+                "type": "titledblock",
+                "title": "instructions",
+                "html": "This worksheet helps you look at your budget options. Collecting information is helpful when comparing the cost difference between living on campus, off campus, and at home. There are two sections, expenses and financial resources which are the money coming in and the money going out in a year. Each section has been broken down with some common categories such as tuition and rent. Start by filling in each block that applies to you, and once that is finished you will have concrete numbers to compare and help inform your financial decisions."
+            },
+            {
+                "type": "quoteblock",
+                "html": "<strong style=\"color: var(--light-color);\">Step 1:</strong> Collect annual and monthly expenses that you will have at postsecondary.  These will vary depending on where you plan to live.  Page 2 has a list of common expenses but you may have other expenses not on the list."
+            },
+            {
+                "type": "titledblock",
+                "title": "helpful hints",
+                "html": "<ul><li>Domestic versus International: If you attend a postsecondary in another country, the cost of tuition will be greater than if you were staying in your home country.</li><li>Tuition: Fees often include class costs, student union fees, health insurance, transport passes, lab fees, library fees, and gym passes.</li><li>Check to see if your postsecondary institution has a workshop on finances and scholarship/awards.</li><li>Check your institution's website for information about the cost of living where they reside and expenses such as tuition.</li><li>Additional fees may apply to specific programs. See the specific fee totals for your program in your institution's academic calendar.</li><li>Your books and supplies cost will be dependent on the courses you take and can vary from program to program.</li></ul>"
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "ANNUAL FINANCIAL RESOURCES"
+            },
+            {
+                "type": "quoteblock",
+                "html": "<strong style=\"color: var(--light-color);\">Step 2:</strong> List all courses for income and funding."
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.8, 0.2],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "spreadsheet",
+                            "bindings": {
+                                "provides": {
+                                    "total-0-0": "channel0"
+                                }
+                            },
+                            "tables": [
+                                {
+                                    "categoryHeader": "Resource",
+                                    "valueHeaders": ["Amount"],
+                                    "initialCategories": [
+                                        "Scholarships",
+                                        "Grants",
+                                        "Bursaries",
+                                        "Savings",
+                                        "Employment",
+                                        "Family/Parental Support",
+                                        "Student Loans",
+                                        "Line of Credit"
+                                    ],
+                                    "canAddRows": true,
+                                    "canRemoveRows": true,
+                                    "canEditCellName": true,
+                                    "canEditCellValue": true,
+                                    "totalText": "Annual Total"
+                                }
+                            ]
+                        },
+                        "position": [1, 1],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "verticallist",
+                            "title": "Monthly Budget",
+                            "elements": [
+                                {
+                                    "type": "checkbox",
+                                    "bindings": {
+                                        "recieves": {
+                                            "subtitle": "channel0a"
+                                        }
+                                    },
+                                    "label": "Annual total divided by 12"
+                                }
+                            ]
+                        },
+                        "position": [1, 2],
+                        "size": [2, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "verticallist",
+                            "title": "Tips",
+                            "elements": [
+                                {
+                                    "type": "checkbox",
+                                    "label": "Loans accrue interest even if you’re not paying them now. Borrow only what you absolutely need."
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "label": "Avoid high-interest credit cards. Never miss a payment—it can damage your credit score long-term."
+                                }
+                            ]
+                        },
+                        "position": [2, 1],
+                        "size": [1, 1]
+                    }
+                ]
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["x"],
+                "function": "return \"$\" + Math.floor(parseInt(x.replace(/\\D/g,''))/12).toLocaleString()",
+                "bindings": {
+                    "provides": {
+                        "result": "channel0a"
+                    },
+                    "recieves": {
+                        "x": "channel0"
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Fixed Expenses"
+            },
+            {
+                "type": "quoteblock",
+                "html": "<strong style=\"color: var(--light-color);\">Step 3:</strong> Expense calculator.  Let’s get an estimate of the monthly and yearly cost of one year of postsecondary."
+            },
+            {
+                "type": "titledblock",
+                "title": "Table 1 - Fixed Expenses",
+                "html": "These are expenses that do not vary month to month. Enter the monthly amount that each expense will cost you.  If you do not have an expense for an item listed, leave it blank.  If you have an expense that is not listed (e.g., pet insurance) , add a row and insert it."
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.8, 0.2],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "spreadsheet",
+                            "bindings": {
+                                "provides": {
+                                    "total-1-0": "channel1",
+                                    "celldata-0-0-0": "tuition",
+                                    "total-0-0": "annualtotal",
+                                    "celldata-1-0-0": "rentamnt"
+                                }
+                            },
+                            "tables": [
+                                {
+                                    "categoryHeader": "Expense",
+                                    "valueHeaders": ["Annual Amount"],
+                                    "initialCategories": ["Tuition & Fees"],
+                                    "canAddRows": true,
+                                    "canRemoveRows": true,
+                                    "canEditCellName": true,
+                                    "canEditCellValue": true,
+                                    "totalText": "Annual Total"
+                                },
+                                {
+                                    "categoryHeader": "Expense",
+                                    "valueHeaders": ["Monthly Amount"],
+                                    "initialCategories": [
+                                        "Rent/Housing",
+                                        "Utilities (Electricity/Water)",
+                                        "Internet",
+                                        "Phone",
+                                        "Car Insurance",
+                                        "Renter's Insurance"
+                                    ],
+                                    "canAddRows": true,
+                                    "canRemoveRows": true,
+                                    "canEditCellName": true,
+                                    "canEditCellValue": true,
+                                    "totalText": "Monthly Total"
+                                }
+                            ]
+                        },
+                        "position": [1, 1],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "verticallist",
+                            "title": "Tips",
+                            "elements": [
+                                {
+                                    "type": "checkbox",
+                                    "label": "Tuition and fees can rise unexpectedly. Always leave a buffer in your savings for sudden increases or unexpected course costs."
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "label": "Rent should not be more than 30% of your income"
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "label": "Don’t forget to budget for a damage deposit, which is usually one months rent."
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "label": "Don’t forget to budget for furnishings if renting an unfurnished place."
+                                }
+                            ]
+                        },
+                        "position": [2, 1],
+                        "size": [1, 1]
+                    }
+                ]
+            },
+            {
+                "type": "verticallist",
+                "title": "Total",
+                "elements": [
+                    {
+                        "type": "checkbox",
+                        "bindings": {
+                            "recieves": {
+                                "subtitle": "channel8"
+                            }
+                        },
+                        "label": "To find the total monthly cost: add the total monthly expenses to 1/12 of the total annual expenses."
+                    }
+                ]
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["month", "year"],
+                "function": "return \"$\" + Math.round(parseInt(month.replace(/\\D/g,'')) + parseInt(year.replace(/\\D/g,'')) / 12).toLocaleString()",
+                "bindings": {
+                    "provides": {
+                        "result": "channel8"
+                    },
+                    "recieves": {
+                        "month": "channel1",
+                        "year": "annualtotal"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["month", "year", "tuition"],
+                "function": "return \"$\" + Math.round(parseInt(month.replace(/\\D/g,'')) + (parseInt(year.replace(/\\D/g,'')) - parseInt(tuition.replace(/\\D/g,''))) / 12).toLocaleString()",
+                "bindings": {
+                    "provides": {
+                        "result": "channel9"
+                    },
+                    "recieves": {
+                        "month": "channel1",
+                        "year": "annualtotal",
+                        "tuition": "tuition"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["tuition"],
+                "function": "return \"$\" + Math.round(parseInt(tuition.replace(/\\D/g,'')) / 2).toLocaleString()",
+                "bindings": {
+                    "provides": {
+                        "result": "cost2s"
+                    },
+                    "recieves": {
+                        "tuition": "tuition"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["tuition"],
+                "function": "return \"$\" + Math.round(parseInt(tuition.replace(/\\D/g,'')) / 3).toLocaleString()",
+                "bindings": {
+                    "provides": {
+                        "result": "cost3s"
+                    },
+                    "recieves": {
+                        "tuition": "tuition"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Note",
+                "text": "Your per semester expenses will differ depending on how many semesters you will be attending postsecondary.  Usually semesters are 4 months long allowing for 3 semesters per year, and tuition is paid in lump sums per semester.  If you attend postsecondary for two semesters, your tuition per semester is: {cost2s}. If you attend postsecondary for three semesters, your tuition per semester is: {cost3s}.  If needed, talk to your postsecondary institution about a monthly payment plan.",
+                "bindings": {
+                    "recieves": {
+                        "cost2s": "cost2s",
+                        "cost3s": "cost3s"
+                    }
+                }
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Variable Expenses"
+            },
+            {
+                "type": "quoteblock",
+                "html": "<strong style=\"color: var(--light-color);\">Step 3:</strong> Expense calculator.  Let’s get an estimate of the monthly and yearly cost of one year of postsecondary."
+            },
+            {
+                "type": "titledblock",
+                "title": "Table 2 - Variable Expenses",
+                "html": "These are expenses that will vary month to month so you will have to estimate the cost. They are also costs that are essential for attending postsecondary. Be generous with your estimates to account for error or unforeseen changes."
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.8, 0.2],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "spreadsheet",
+                            "bindings": {
+                                "provides": {
+                                    "total-0-0": "channel2"
+                                }
+                            },
+                            "tables": [
+                                {
+                                    "categoryHeader": "Expense",
+                                    "valueHeaders": ["Monthly Amount"],
+                                    "initialCategories": [
+                                        "Groceries",
+                                        "Books",
+                                        "School Supplies",
+                                        "Prescriptions",
+                                        "Gas",
+                                        "Household Supplies",
+                                        "Clothing/Personal Care"
+                                    ],
+                                    "canAddRows": true,
+                                    "canRemoveRows": true,
+                                    "canEditCellName": true,
+                                    "canEditCellValue": true,
+                                    "totalText": "Monthly Total"
+                                }
+                            ]
+                        },
+                        "position": [1, 1],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "verticallist",
+                            "title": "Tips",
+                            "elements": [
+                                {
+                                    "type": "checkbox",
+                                    "label": "Some courses may require costly textbooks or software. Check for used books at the bookstore."
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "label": "If you own a car, include hidden costs: maintenance, insurance, gas, and parking. Public transit may be cheaper overall."
+                                }
+                            ]
+                        },
+                        "position": [2, 1],
+                        "size": [1, 1]
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Discretionary Expenses"
+            },
+            {
+                "type": "quoteblock",
+                "html": "<strong style=\"color: var(--light-color);\">Step 3:</strong> Expense calculator.  Let’s get an estimate of the monthly and yearly cost of one year of postsecondary."
+            },
+            {
+                "type": "titledblock",
+                "title": "Table 3 - Discretionary Expenses",
+                "html": "These are expenses that are not essential or fixed but what you elect to spend money on. If you have to cut costs, these are things that can be cut to balance a budget.  You will also want to consider putting funds aside for unexpected expenses or emergencies."
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.8, 0.2],
+                "spacing": 20,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "spreadsheet",
+                            "bindings": {
+                                "provides": {
+                                    "total-0-0": "channel3"
+                                }
+                            },
+                            "tables": [
+                                {
+                                    "categoryHeader": "Expense",
+                                    "valueHeaders": ["Monthly Amount"],
+                                    "initialCategories": [
+                                        "Entertainment",
+                                        "Vaction/Travel",
+                                        "Restaurants",
+                                        "Subscriptions"
+                                    ],
+                                    "canAddRows": true,
+                                    "canRemoveRows": true,
+                                    "canEditCellName": true,
+                                    "canEditCellValue": true,
+                                    "totalText": "Monthly Total"
+                                }
+                            ]
+                        },
+                        "position": [1, 1],
+                        "size": [1, 1]
+                    },
+                    {
+                        "element": {
+                            "type": "verticallist",
+                            "title": "Tips",
+                            "elements": [
+                                {
+                                    "type": "checkbox",
+                                    "label": "Eating out regularly can drain your budget fast. Try meal prepping at the start of the week."
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "label": "Prioritize free or student-discounted events and activities."
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "label": "Try to have a remaining balance of at least $500 in case of emergencies."
+                                },
+                                {
+                                    "type": "checkbox",
+                                    "label": "Small monthly subscriptions (e.g., Netflix, Spotify, apps) add up quickly. Review and cancel what you rarely use."
+                                }
+                            ]
+                        },
+                        "position": [2, 1],
+                        "size": [1, 1]
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "SUMMARY"
+            },
+            {
+                "type": "quoteblock",
+                "html": "<strong style=\"color: var(--light-color);\">Step 4:</strong> Summary and Analysis.  Review your income and expenses.  Do you need to adjust either to balance your budget?"
+            },
+            {
+                "type": "pie_chart",
+                "inputNames": [
+                    "Tuition & Fees",
+                    "Fixed Expenses",
+                    "Variable Expenses",
+                    "Discretionary Expenses",
+                    "Remaining Balance"
+                ],
+                "bindings": {
+                    "recieves": {
+                        "Tuition & Fees": "channel7",
+                        "Fixed Expenses": "channel9",
+                        "Variable Expenses": "channel2",
+                        "Discretionary Expenses": "channel3",
+                        "Remaining Balance": "channel4"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": [
+                    "tuition",
+                    "income",
+                    "fixed",
+                    "variable",
+                    "disc"
+                ],
+                "function": "return \"$\" + Math.floor(parseInt(income.replace(/\\D/g,'')) - parseInt(tuition.replace(/\\D/g,'')) / 12 - parseInt(fixed.replace(/\\D/g,'')) - parseInt(variable.replace(/\\D/g,'')) - parseInt(disc.replace(/\\D/g,''))).toLocaleString()",
+                "bindings": {
+                    "provides": {
+                        "result": "channel4"
+                    },
+                    "recieves": {
+                        "tuition": "annualtotal",
+                        "income": "channel0a",
+                        "fixed": "channel1",
+                        "variable": "channel2",
+                        "disc": "channel3"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["t"],
+                "function": "return `${Math.round(parseInt(t.replace(/\\D/g,'')) / 12).toLocaleString()}`",
+                "bindings": {
+                    "provides": {
+                        "result": "channel7"
+                    },
+                    "recieves": {
+                        "t": "tuition"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["remaining"],
+                "function": "return `${parseInt(remaining.replace(/\\D/g,'')) < 500}`",
+                "bindings": {
+                    "provides": {
+                        "result": "channel5"
+                    },
+                    "recieves": {
+                        "remaining": "channel4"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["rentamnt", "monthincome"],
+                "function": "return `${Math.floor(parseInt(rentamnt.replace(/\\D/g,'')) / parseInt(monthincome.replace(/\\D/g,'')) * 100)}`",
+                "bindings": {
+                    "provides": {
+                        "result": "percentrent"
+                    },
+                    "recieves": {
+                        "rentamnt": "rentamnt",
+                        "monthincome": "channel0a"
+                    }
+                }
+            },
+            {
+                "type": "dangerous_eval",
+                "bindingInputs": ["rentamnt", "monthincome"],
+                "function": "return `${parseInt(rentamnt.replace(/\\D/g,'')) / parseInt(monthincome.replace(/\\D/g,'')) > 0.3}`",
+                "bindings": {
+                    "provides": {
+                        "result": "warning1"
+                    },
+                    "recieves": {
+                        "rentamnt": "rentamnt",
+                        "monthincome": "channel0a"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Warning",
+                "text": "You are spending {x}% of your income on rent - that's above the recommended 30%.",
+                "bindings": {
+                    "recieves": {
+                        "x": "percentrent",
+                        "visible": "warning1"
+                    }
+                }
+            },
+            {
+                "type": "callout",
+                "callout": "note",
+                "title": "Warning",
+                "text": "Remaining balance is under $500. Try to have more than $500 left over for emergency expenses.",
+                "bindings": {
+                    "recieves": {
+                        "visible": "channel5"
+                    }
+                }
+            },
+            {
+                "type": "verticallist",
+                "title": "Tips",
+                "elements": [
+                    {
+                        "type": "checkbox",
+                        "label": "Consider tracking grocery spending weekly to better manage food costs."
+                    },
+                    {
+                        "type": "checkbox",
+                        "label": "Don’t just set a budget—track it. Use an app, spreadsheet, or journal to see where your money actually goes."
+                    },
+                    {
+                        "type": "checkbox",
+                        "label": "If you can, take on a small part-time job to reduce loan dependence—but prioritize your studies."
+                    },
+                    {
+                        "type": "checkbox",
+                        "label": "Take advantage of student discounts and freebies—use your student ID wherever you go."
+                    },
+                    {
+                        "type": "checkbox",
+                        "label": "Re-evaluate your budget at least once a semester."
+                    }
+                ]
+            },
+            {
+                "type": "quoteblock",
+                "html": "<strong style=\"color: var(--light-color);\">Step 5:</strong> Take some time to play around with your budget by adding income or adding expenses.  How would you adjust your budget to account for: <ol style=\"text-align: start; margin-left: 60px;\"><li>Losing income from a part-time job</li><li>Having to move in the middle of a semester</li><li>Adding more loan debt</li><li>Having an unexpected large expense (e.g., car repair)</li><li>Receiving a scholarship</li></ol>"
+            }
+        ]
+    ]
+}

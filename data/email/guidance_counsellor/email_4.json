@@ -1,0 +1,59 @@
+{
+    "from": "Guidance Counselor",
+    "avatar": "test.jpg",
+    "subject": "Re: Help With Submitting an Application",
+    "content": "That’s great news, %player%.  I’d be happy to help you out. Let’s meet tomorrow.  In the meantime, I recommend you do some budgeting for postsecondary, which will help you be even better prepared for the financial responsibility.<br><br>Take care, <br><br>Ms. White<br>High School Guidance Counsellor<br>m.white@educ.com",
+    "attachments": [
+        {
+            "text": "Budgeting",
+            "actions": [
+                {
+                    "type": "waterfall",
+                    "actions": [
+                        {
+                            "type": "conditional",
+                            "condition": "flag",
+                            "flags": ["activity:budgeting"],
+                            "actions": [
+                                {
+                                    "type": "activity",
+                                    "activity": "budget"
+                                },
+                                {
+                                    "type": "complete_todo_item",
+                                    "item": "Complete Budgeting Activity in Ms. White's Email",
+                                    "list": "story"
+                                },
+                                {
+                                    "type": "add_todo_item",
+                                    "item": "Go to bed and complete Chapter 3",
+                                    "list": "story"
+                                },
+                                {
+                                    "type": "hint",
+                                    "title": "Complete Chapter 3",
+                                    "description": "Select the bed at home to complete the chapter.",
+                                    "flag": "chapter4:set"
+                                },
+                                {
+                                    "type": "flag",
+                                    "flag": [
+                                        {
+                                            "flag_name": "chapter3:complete",
+                                            "flag_action": "give"
+                                        },
+                                        {
+                                            "flag_name": "activity:budgeting",
+                                            "flag_action": "revoke"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "important": true
+}

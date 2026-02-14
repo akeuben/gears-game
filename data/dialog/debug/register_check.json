@@ -1,0 +1,130 @@
+[
+    {
+        "type": "option",
+        "source": "Debug System",
+        "message": "test_register = %test_register%, test_register_2 = %test_register_2%",
+        "options": [
+            {
+                "text": "Check test_register (%test_register%) >= 10",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "register",
+                        "conditions": [
+                            {
+                                "register": "test_register",
+                                "condition": ">=",
+                                "value": 10
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["debug/register_true"]
+                            }
+                        ],
+                        "else_actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["debug/register_false"]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Check test_register (%test_register%) < 20",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "register",
+                        "conditions": [
+                            {
+                                "register": "test_register",
+                                "condition": "<",
+                                "value": 20
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["debug/register_true"]
+                            }
+                        ],
+                        "else_actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["debug/register_false"]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Check test_register (%test_register%) == 30",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "register",
+                        "conditions": [
+                            {
+                                "register": "test_register",
+                                "condition": "==",
+                                "value": 30
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["debug/register_true"]
+                            }
+                        ],
+                        "else_actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["debug/register_false"]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Check test_register (%test_register%) > test_register_2 (%test_register_2%)",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "register",
+                        "conditions": [
+                            {
+                                "register": "test_register",
+                                "condition": ">",
+                                "value": "test_register_2"
+                            }
+                        ],
+                        "actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["debug/register_true"]
+                            }
+                        ],
+                        "else_actions": [
+                            {
+                                "type": "open_dialog",
+                                "dialog": ["debug/register_false"]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Back",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/register_test"]
+                    }
+                ]
+            }
+        ]
+    }
+]

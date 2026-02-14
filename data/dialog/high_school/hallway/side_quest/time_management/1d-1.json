@@ -1,0 +1,58 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I had no idea there was so much responsibility for learning outside of class. If I’m doing all this work on my own time, what are they doing in class?"
+    },
+    {
+        "type": "message",
+        "source": "Joe",
+        "message": "Highlighting important concepts or having us apply information we learned in the readings.  It sounds like a lot.  They don’t have time to cover all content in the lectures."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "But I want to have time to develop friendship and explore campus life."
+    },
+    {
+        "type": "option",
+        "source": "Joe",
+        "message": "Exactly.  Because I take longer than other people to learn and retain information, the folks hosting the workshop suggested I can take a reduced course load in fall and winter and take spring or summer courses.  Or, take an extra year to finish.",
+        "options": [
+            {
+                "text": "I wouldn’t want to do that.  I want to get in and out as quickly as possible.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1e-1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I’ve already decided that I will need more time.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1e-2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I don’t want to make a decision right now.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/hallway/side_quest/time_management/1e-3"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

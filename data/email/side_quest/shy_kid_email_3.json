@@ -1,0 +1,27 @@
+{
+    "from": "Jayden",
+    "avatar": "test.jpg",
+    "subject": "I think I'm ready to meet!",
+    "content": "Hi %player%,<br><br>Thanks for the advice! I tried saying hi to a couple of classmates, and it wasn’t as scary as I thought. I think I'm more comfortable now! <br><br>I feel like I’m ready to try talking in person. Would you be up for meeting in the school hallway? I’ll be by the doors wearing a white and orange hoodie and shorts.<br><br>Hope to see you there!<br><br>Jayden",
+    "options": [
+        {
+            "text": "Hey Jayden,<br><br>That’s awesome! I’m glad the advice helped.<br><br>Sure, I’d love to meet up. Don’t worry, it’ll be just like our emails.<br><br>See you soon!<br><br>%player%",
+            "actions": [
+                {
+                    "type": "flag",
+                    "flag": [
+                        {
+                            "flag_name": "shy_kid_email_3_sent",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "ignore_shy_kid",
+                            "flag_action": "revoke"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "important": false
+}

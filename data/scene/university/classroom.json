@@ -1,0 +1,17 @@
+{
+    "name": "university:classroom",
+    "backgrounds": [{ "image": "university/classroom.png" }],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0.45,
+            "y": 0.825,
+            "x2": 0.59,
+            "y2": 0.99,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "university/map"
+            }
+        }
+    ]
+}

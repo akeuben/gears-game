@@ -1,0 +1,64 @@
+[
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "People with learning disabilities can have trouble with reading, writing, and/or mathematics, and sometimes language. They have trouble more than other people, which can affect achievement at school.  Everyone’s brain is a bit different and for people with a learning disability there are processes in the brain, that don’t work together as well and as a result, can affect performance."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Like what?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "To do tasks, we rely on many different brain processes, like memory and language.  These processes can affect how we read, do math, and write."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "When you say my brain processes don't work as well, it makes it sound like I'm stupid. "
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "The big thing to remember is that a learning disability is not related to a person's intelligence but rather how they acquire and use information.  There are very smart people out there who have learning disabilities."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "With my learning challenges, maybe postsecondary isn't for me."
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "Many people with learning disabilities complete postsecondary and go on to have amazing careers! It's just that they may need different approaches and strategies for learning when they are there. "
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "I don't think it's fair that I have to deal with this and no one else does.",
+        "actions": [
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "Psyc_Route_Complete",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "action",
+        "source": "Psychologist",
+        "message": "Actually, you are not alone. It is estimated that one in 10 Canadians have a learning disability, and that more children in this country have a learning disability than all other types of disabilities combined. Schools are aware of learning disabilities and have an obligation to support your learning.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["high_school/psychologist/chapter_2/1f-2"]
+            }
+        ]
+    }
+]

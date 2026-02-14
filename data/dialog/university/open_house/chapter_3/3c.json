@@ -1,0 +1,36 @@
+[
+    {
+        "type": "action",
+        "source": "School Representative",
+        "message": "That's ok, there are lots of things to think about when you're starting postsecondary. Take your time and if you need any help with financial matters do not hesitate to come back. Enjoy the Open House!",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["open_house:first_booth_done"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6a"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["open_house:first_booth_not_done"],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/6b"]
+                    }
+                ]
+            }
+        ],
+        "setCharacter": "Dominic"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I should speak to Ms. White again."
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Hello, Ms. White,<br><br>Since we last met, I have spoken to Dr. Kevin. Also, I attended an open house today to get more information about postsecondary education. I feel like I have a better understanding of what I need to do to be prepared. I think I’m ready to submit an application. Can you help me with that?<br><br>Sincerely, <br><br>%player%",
+        "actions": [
+            {
+                "type": "send_email",
+                "email": ["guidance_counsellor/email_4"]
+            },
+            {
+                "type": "add_todo_item",
+                "item": "Complete Budgeting Activity in Ms. White's Email",
+                "list": "story"
+            }
+        ]
+    }
+]

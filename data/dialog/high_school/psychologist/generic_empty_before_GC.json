@@ -1,0 +1,7 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "This doesn't seem like the right room. I should go find the guidance counsellor's office."
+    }
+]

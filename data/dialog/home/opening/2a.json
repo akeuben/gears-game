@@ -1,0 +1,57 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "An email from Ms. White? I better check that out before I head to school.",
+        "actions": [
+            {
+                "type": "add_todo_item",
+                "item": "Reply to Guidance Counsellor Email",
+                "list": "story"
+            },
+            {
+                "type": "waterfall",
+                "actions": [
+                    {
+                        "type": "conditional",
+                        "condition": "flag",
+                        "flags": ["participant:enablekbcontrols"],
+                        "actions": [
+                            {
+                                "type": "hint",
+                                "title": "Open the Mail App on Your Phone",
+                                "description": "Tap the phone in the top left corner or press %key:general:open_phone% to access your phone.",
+                                "flag": "phone:opened_app:mail"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "conditional",
+                        "condition": "true",
+                        "actions": [
+                            {
+                                "type": "hint",
+                                "title": "Open the Mail App on Your Phone",
+                                "description": "Tap the phone in the top left corner to access your phone.",
+                                "flag": "phone:opened_app:mail"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "mail_unlocked",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "first_strategy",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

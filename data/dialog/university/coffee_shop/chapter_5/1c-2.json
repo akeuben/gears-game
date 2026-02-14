@@ -1,0 +1,54 @@
+[
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "I’m not going to lie.  There were some things I had to learn that I wish I had known before I started."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I’m worried that I won’t be able to come up with the best study plan. How did you figure out what works for you?"
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "Talking with Student Accessibility Services was a helpful start because they can give you recommendations for accommodation and other support based on your needs. After that, it’s trying different strategies to see if they help you study or manage time better."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Can’t instructors remind you of what needs to be done everyday? That’s what my high school teachers would do."
+    },
+    {
+        "type": "message",
+        "source": "Sam",
+        "message": "I wish, but instructors can teach hundreds of students so, sending out daily reminders would be too much for one person to manage. Postsecondary is a lot less structured than high school which requires students to be more proactive and self-directed."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What other differences are there?"
+    },
+    {
+        "type": "action",
+        "source": "Sam",
+        "message": "There are quite a few. Here’s a game that student services sent out last year to illustrate some differences students can come across in their first year. You can run through it quickly if you’d like.",
+        "actions": [
+            {
+                "type": "minigame",
+                "minigame": "textbook"
+            }
+        ]
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Thanks for sharing these tips on postsecondary.",
+        "actions": [
+            {
+                "type": "open_dialog",
+                "dialog": ["university/coffee_shop/chapter_5/1b"]
+            }
+        ]
+    }
+]

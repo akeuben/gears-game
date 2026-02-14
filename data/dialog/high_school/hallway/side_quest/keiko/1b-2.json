@@ -1,0 +1,79 @@
+[
+    {
+        "type": "message",
+        "source": "Keiko",
+        "message": "When I was 8 years old, I was told that I have a learning disability. I didn’t quite know what to make of it, but to me, disability meant something bad. My parents felt the same way and so we never really talked about it. My school wasn’t told about it either."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Why were your parents so secretive?"
+    },
+    {
+        "type": "message",
+        "source": "Keiko",
+        "message": "My parents felt it would be very bad to label me. So I’ve grown up with this deep dark secret that I’ve never really understood and felt shame about.  I always felt stupid and less capable than my classmates because it took me longer to read and understand things.  I was terrible at math too."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That's horrible."
+    },
+    {
+        "type": "message",
+        "source": "Keiko",
+        "message": "Yes. I grew up to believe that school wasn’t for me. I was told I had other strengths like sports and my sense of humour. But the truth is that I made jokes to cover-up for how badly I really felt about myself. And sports, well, I really pushed myself to be good because at least I could be good at something but I’m not good enough to have a career in sports."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What do you think you will do?"
+    },
+    {
+        "type": "message",
+        "source": "Keiko",
+        "message": "I’m starting to think that I need to go to college because I’m interested in a trade.  But the trade I want to work in says I need a college degree. My college sent out information saying that I can receive help if I have a learning disability. The information booklet said that people with learning disabilities are smart and just need support, like access to technology and extra time and stuff. Me, smart? Ha!"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What makes you think you aren’t smart enough?  I’ve been talking to you and you seem smart to me."
+    },
+    {
+        "type": "message",
+        "source": "Keiko",
+        "message": "I have a hard time believing that. I’m actually thinking of talking to someone about whether or not I should be tested again and if it’s ok to ask for help. I still feel full of shame about this, but maybe it’s time to stop feeling that way."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I think so.  Ms. White suggested I talk to a Dr. Kevin person about how I learn best.  I’m going to make an appointment.  You should think about doing that too."
+    },
+    {
+        "type": "action",
+        "source": "Keiko",
+        "message": "I might do that. Thanks for listening. I’ll see you around.",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter1:keiko:leave_home"],
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "chapter1:keiko:leave_home",
+                                "flag_action": "revoke"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "go_to_scene",
+                        "scene": "home/room"
+                    }
+                ]
+            }
+        ]
+    }
+]

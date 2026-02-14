@@ -1,0 +1,18 @@
+[
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "Hello %player%!"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Hello! Sorry, wrong room.",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            }
+        ]
+    }
+]

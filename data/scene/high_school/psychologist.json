@@ -1,0 +1,222 @@
+{
+    "name": "high_school:psychologist",
+    "backgrounds": [
+        {
+            "image": "high_school/psychologist_office.png",
+            "music": "psychologist.mp3"
+        },
+        {
+            "image": "high_school/psychologist_office_empty.png",
+            "music": "psychologist.mp3"
+        }
+    ],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0,
+            "y": 0.15,
+            "x2": 0.09,
+            "y2": 0.755,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "high_school/hallway"
+            },
+            "sound": "wood-door"
+        },
+        {
+            "type": "conditional_bounding_box",
+            "condition": "flag",
+            "flags": ["pompom_psychologist"],
+            "elements": [
+                {
+                    "type": "bounding_box",
+                    "x": 0.19,
+                    "y": 0.32,
+                    "x2": 0.215,
+                    "y2": 0.37,
+                    "secret": true,
+                    "action": {
+                        "type": "combo",
+                        "actions": [
+                            {
+                                "type": "flag",
+                                "flag": [
+                                    {
+                                        "flag_name": "pompom_psychologist",
+                                        "flag_action": "revoke"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "repeat",
+                                "name": "wheres_pompom",
+                                "repeat": 4,
+                                "repeat_type": "fixed",
+                                "actions": [
+                                    {
+                                        "type": "badge",
+                                        "badge": "easter_egg:pompom"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "notification",
+                                "title": "You Found a Hidden Pompom!",
+                                "description": "Found in psychologist's office.",
+                                "color": "green",
+                                "sound": "none"
+                            }
+                        ]
+                    },
+                    "sound": "pompom"
+                }
+            ]
+        },
+        {
+            "type": "conditional_bounding_box",
+            "condition": "flag",
+            "flags": ["psychologist:met"],
+            "elements": [
+                {
+                    "type": "bounding_box",
+                    "x": 0.63,
+                    "y": 0.28,
+                    "x2": 0.765,
+                    "y2": 0.81,
+                    "action": {
+                        "type": "waterfall",
+                        "actions": [
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["chapter2:set"],
+                                "actions": [
+                                    {
+                                        "type": "open_dialog",
+                                        "dialog": [
+                                            "high_school/psychologist/repeats/chapter_2_repeat"
+                                        ]
+                                    },
+                                    {
+                                        "type": "change_background",
+                                        "index": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "flag",
+                                "flags": ["chapter3:set"],
+                                "actions": [
+                                    {
+                                        "type": "open_dialog",
+                                        "dialog": [
+                                            "high_school/psychologist/repeats/chapter_3_repeat"
+                                        ]
+                                    },
+                                    {
+                                        "type": "change_background",
+                                        "index": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "conditional",
+                                "condition": "flagOr",
+                                "flags": [
+                                    "chapter3:set",
+                                    "chapter4:set",
+                                    "chapter5:set",
+                                    "chapter6:set"
+                                ],
+                                "actions": [
+                                    {
+                                        "type": "open_dialog",
+                                        "dialog": [
+                                            "high_school/psychologist/repeats/generic_repeat"
+                                        ]
+                                    },
+                                    {
+                                        "type": "change_background",
+                                        "index": 1
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "action": {
+        "type": "waterfall",
+        "actions": [
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["high_school:psychologist"],
+                "actions": [
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/psychologist/chapter_2/1a"]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter1:set", "high_school:guidance_counsellor"],
+                "actions": [
+                    { "type": "change_background", "index": 1 },
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/psychologist/generic_empty_before_GC"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flag",
+                "flags": ["chapter1:set"],
+                "actions": [
+                    { "type": "change_background", "index": 1 },
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/psychologist/generic_empty_after_GC"
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "conditional",
+                "condition": "flagOr",
+                "flags": [
+                    "chapter3:set",
+                    "chapter4:set",
+                    "chapter5:set",
+                    "chapter6:set"
+                ],
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/psychologist/repeats/generic_repeat"
+                        ]
+                    },
+                    {
+                        "type": "change_background",
+                        "index": 1
+                    }
+                ]
+            }
+        ]
+    }
+}

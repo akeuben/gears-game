@@ -1,0 +1,27 @@
+{
+    "from": "Justin Case",
+    "avatar": "test.jpg",
+    "subject": "Stigma around Disabilities",
+    "content": "Hi, <br><br> I’ll be holding open Zoom office hours to share information about disability, stigma, and how accommodations work at the post-secondary level. <br><br> This is a casual drop-in session — no need to register. You can join whenever you’re free to listen in and learn. <br><br>Regards,<br><br>Justin Case",
+    "attachments": [
+        {
+            "text": "Join Virtual Meeting",
+            "actions": [
+                {
+                    "type": "zoom",
+                    "presentation": "stigma"
+                },
+                {
+                    "type": "send_email",
+                    "email": ["stigma_zoom_email_2"]
+                },
+                {
+                    "type": "complete_todo_item",
+                    "item": "Join the Stigma Awareness Night Zoom Session Link",
+                    "list": "optional"
+                }
+            ]
+        }
+    ],
+    "important": true
+}

@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, do you have any plans for a summer job?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! Yeah, I'm planning to work at the local library. It should be pretty chill."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "That sounds like a nice job. What will you be doing there?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Mostly helping out with organizing books and assisting visitors."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Cool! Sounds like a good way to spend the summer."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Yeah, I'm looking forward to it."
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "That was a productive call! I should go meet Sam at the University's coffee shop now.",
+        "actions": [
+            {
+                "type": "add_todo_item",
+                "item": "Meet Sam at the University Coffee Shop",
+                "list": "story"
+            },
+            {
+                "type": "complete_todo_item",
+                "item": "Join the Annual Accessibility Info Day Zoom Session Link",
+                "list": "story"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "coffee_shop:sam_dialog",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "coffee_shop:before_sam",
+                        "flag_action": "revoke"
+                    }
+                ]
+            }
+        ]
+    }
+]

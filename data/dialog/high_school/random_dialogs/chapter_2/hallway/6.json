@@ -1,0 +1,42 @@
+[
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Hey %player%, what did you think of the new book we're reading in English class?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I think it's pretty interesting. The themes are really deep."
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Yeah, it's definitely thought-provoking. I'm enjoying the discussions in class."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "Me too! It's great to hear everyone's different perspectives."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "It's one of the better books we've read this year."
+    },
+    {
+        "type": "option",
+        "source": "Alex",
+        "message": "What's been your favorite part so far?",
+        "options": [
+            {
+                "text": "The character development.",
+                "actions": [{}]
+            },
+            {
+                "text": "The plot twists.",
+                "actions": [{}]
+            }
+        ]
+    }
+]

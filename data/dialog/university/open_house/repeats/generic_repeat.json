@@ -1,0 +1,13 @@
+[
+    {
+        "type": "action",
+        "source": "School Representative",
+        "message": "Hello %player%!",
+        "actions": [
+            {
+                "type": "change_background",
+                "index": 0
+            }
+        ]
+    }
+]

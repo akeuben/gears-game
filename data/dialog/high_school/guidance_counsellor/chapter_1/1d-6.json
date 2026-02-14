@@ -1,0 +1,63 @@
+[
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "It is likely that your caregiver or parent was there and they can tell you."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "If you find out you had an assessment but it was more than two years ago, I recommend you have a reassessment. Most postsecondary institutions require you to have an assessment within one to two years of applying."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "Also, if a pediatrician or family doctor diagnosed you and you need a reassessment, consider getting a psychoeducational assessment instead of a reassessment from your pediatrician or family doctor."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Why does that matter?"
+    },
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "Psychoeducational assessments are much more detailed. They provide more information about your learning strengths and needs. Having more details about your learning profile helps staff at postsecondary institutions identify how they can support you.",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "My assessment is definitely more than two years old.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1d-3"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "Thanks for the warning but I was recently reassessed.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1d-4"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I'm not sure how long ago I was assessed.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1e-2"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

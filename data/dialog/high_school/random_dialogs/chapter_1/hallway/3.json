@@ -1,0 +1,43 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey , did you catch the latest episode of that show we like?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! Yes, I did. Can you believe that plot twist?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "No way! I did not see that coming at all. What do you think will happen next?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "I have no idea. This show keeps surprising me every week."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Same here. I can't wait for the next episode."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "We should do a watch party sometime!"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Definitely. Let's plan for it this weekend."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Sounds good! See you then."
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, what kind of music are you into lately?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! I've been really into indie rock lately. What about you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I've been listening to a lot of pop and electronic music."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Nice! Any artists you'd recommend?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "You should check out XYZ Band. Their latest album is awesome."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Thanks! I'll give them a listen."
+    }
+]

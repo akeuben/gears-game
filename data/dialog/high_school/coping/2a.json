@@ -1,0 +1,72 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "You don't have to go through this alone. I'm here for you if you need to talk."
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Thanks for the offer. I ended up making an appointment to see Dr. Kevin last week. I saw him last year when my parents were splitting up."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "So like ... what did you guys talk about?"
+    },
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "A lot about coping. He helped me figure out what actually helps me calm down when things feel out of control. We talked about breathing techniques and how to make a plan when I'm overwhelmed. He showed me some resources online too -want to see?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What are they?"
+    },
+    {
+        "type": "option",
+        "source": "Dominic",
+        "message": "A couple of videos and some lists of coping strategies. I also completed an online survey that tells me how I tend to cope. It was helpful.",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "I'll check it out. Let me see.",
+                "actions": [
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "browser_unlocked",
+                                "flag_action": "give"
+                            },
+                            {
+                                "flag_name": "browser_shown",
+                                "flag_action": "give"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "hint",
+                        "title": "You Unlocked the Browser App!",
+                        "description": "View the Browser app in your phone.",
+                        "flag": "phone:opened_app:browser"
+                    },
+                    {
+                        "type": "badge",
+                        "badge": "story:all_apps"
+                    }
+                ]
+            },
+            {
+                "text": "Nah, I think I'll be fine without them.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/coping/2a-2"]
+                    }
+                ]
+            }
+        ]
+    }
+]

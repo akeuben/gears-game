@@ -1,0 +1,18 @@
+[
+    {
+        "type": "message",
+        "source": "Dominic",
+        "message": "Well, I'm hungry. Want to get some fries before they get cold?"
+    },
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Let's go!",
+        "actions": [
+            {
+                "type": "go_to_scene",
+                "scene": "high_school/hallway"
+            }
+        ]
+    }
+]

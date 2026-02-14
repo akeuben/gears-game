@@ -1,0 +1,56 @@
+[
+    {
+        "type": "option",
+        "source": "Debug System",
+        "message": "Debug test menu",
+        "options": [
+            {
+                "text": "DEBUG: open flag_test",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/flag_test"]
+                    }
+                ]
+            },
+            {
+                "text": "DEBUG: open notification_test",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/notification_test"]
+                    }
+                ]
+            },
+            {
+                "text": "DEBUG: open register_test",
+                "actions": [
+                    {
+                        "type": "register",
+                        "registerActions": [
+                            {
+                                "register": "test_register",
+                                "action": "set",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "type": "register",
+                        "registerActions": [
+                            {
+                                "register": "test_register_2",
+                                "action": "set",
+                                "value": 25
+                            }
+                        ]
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["debug/register_test"]
+                    }
+                ]
+            }
+        ]
+    }
+]

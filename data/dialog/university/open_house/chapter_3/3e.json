@@ -1,0 +1,33 @@
+[
+    {
+        "type": "option",
+        "source": "School Representative",
+        "message": "If you are interested, check out this game on managing expenses through university!",
+        "options": [
+            {
+                "text": "Sure, I'll have a look.",
+                "actions": [
+                    {
+                        "type": "minigame",
+                        "minigame": "unexpected_expense"
+                    },
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/3f"]
+                    }
+                ]
+            },
+            {
+                "text": "No thanks, I think I am fine.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["university/open_house/chapter_3/3c"]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below",
+        "setCharacter": "Dominic"
+    }
+]

@@ -1,0 +1,114 @@
+{
+    "name": "housing",
+    "activities": [
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Housing"
+            },
+            {
+                "type": "text",
+                "textType": "paragraph",
+                "html": "Where will you live when you go to postsecondary?  If your postsecondary institution is in the city where your family lives, you might decide to live with your family to save money. Or, you may have a partner or good friend you want to live with.  Or, maybe you want to live in residence so you immerse yourself in campus life.<br><br>Whichever option you choose, you should consider timelines for finding housing and determine affordability.\n"
+            },
+            {
+                "type": "quoteblock",
+                "html": "Living On Campus"
+            },
+            {
+                "type": "text",
+                "textType": "paragraph",
+                "html": "Living in residence has many advantages.  You are close to facilities and supports.  You have a short commute to classes and there are opportunities to meet other students and build connections.  Also, your costs are also stable from month to month because you have a set price for utilities, housing and food.<br>        <br>Despite it advantages, living in residence can be more expensive, and if you have shared accommodations, you may not get along with your roommates. It can also be a busy place with lots of distractions.<br><br>If you are considering living on campus know the deadlines for applying to residence.  We suggest you apply when you apply to the institution, if possible.  If not, review information on the institution’s housing website for deadlines. Spots fill up fast.\n"
+            },
+            {
+                "type": "quoteblock",
+                "html": "Living Off Campus"
+            },
+            {
+                "type": "text",
+                "textType": "paragraph",
+                "html": "Living with family is the most cost-effective option, but that is not an option for everyone.  If you rent or own a place off campus, you have more independence but also more financial and domestic responsibilities (i.e., preparing your own food).<br><br>At first glance, off-campus housing might appear less expensive, but consider expenses other than rent – utilities, internet, rental insurance, parking, or car insurance.  Utilities can fluctuate month to month and most places are unfurnished. Also, some landlords insist on leases for an entire year, leaving you to pay rent over the summer months.<br><br>Before deciding to live off campus, consider the rental market in the city where you plan to live.  Some communities have low rental vacancy rates, which drive up rents and make finding affordable accommodation difficult."
+            },
+            {
+                "type": "quoteblock",
+                "html": "Making a Decision"
+            },
+            {
+                "type": "text",
+                "textType": "paragraph",
+                "html": "Not sure what is best for you? Consider these checklists to help you. Estimate the costs of living on and off campus where you plan to live."
+            },
+            {
+                "type": "spreadsheet",
+                "tables": [
+                    {
+                        "categoryHeader": "",
+                        "valueHeaders": [
+                            "LIVING ON CAMPUS",
+                            "LIVING OFF CAMPUS"
+                        ],
+                        "initialCategories": [
+                            "Dorm/Rent Costs",
+                            "Food",
+                            "Transportation",
+                            "Utilities: water, electricity, gas",
+                            "Internet",
+                            "Furnishings",
+                            "Rent Insurance",
+                            "Other:"
+                        ],
+                        "canEditCellName": true,
+                        "canEditCellValue": true,
+                        "totalText": "TOTAL"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "textType": "paragraph",
+                "html": "Other than cost, there might be other factors that are important to you.  Check which options provide what you want for living on or off-campus. If you wish to add other factors that are important to you, you are given the ability to do so.\n"
+            },
+            {
+                "type": "checklist_advanced_2",
+                "bindings": {},
+                "header": "",
+                "table_headers": [
+                    "Living on campus",
+                    "living off campus",
+                    "living at home"
+                ],
+                "scaleTitles": ["X", "X", "X"],
+                "questions": [
+                    {
+                        "question": "INDEPENDENCE"
+                    },
+                    {
+                        "question": "MAKING NEW FRIENDS"
+                    },
+                    {
+                        "question": "ACCESS TO CAMPUS FACILITIES"
+                    },
+                    {
+                        "question": "COMMUTING TO CAMPUS"
+                    },
+                    {
+                        "question": "CONTROL OVER FOOD"
+                    },
+                    {
+                        "question": "FIXED MONTHLY COSTS"
+                    },
+                    {
+                        "question": "CHOICE OF ROOMMATE(S)"
+                    },
+                    {
+                        "question": "SECURE HOUSING"
+                    },
+                    {
+                        "question": "HAVING A PET"
+                    }
+                ]
+            }
+        ]
+    ]
+}

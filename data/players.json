@@ -1,0 +1,26 @@
+{
+    "path": [
+        {
+            "name": "Character Design",
+            "values": [
+                "style_a",
+                "style_b",
+                "style_c",
+                "style_d",
+                "style_e",
+                "style_f",
+                "style_g",
+                "style_h",
+                "style_i",
+                "style_j",
+                "style_k",
+                "style_l",
+                "style_m",
+                "style_n",
+                "style_o",
+                "style_p"
+            ]
+        }
+    ],
+    "file_name": "player.png"
+}

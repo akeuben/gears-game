@@ -1,0 +1,33 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hey, any plans for the weekend?",
+        "setCharacter": "Marcus"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Hey! I'm thinking of going hiking. Need to get some fresh air. What about you?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Not much planned yet. Hiking sounds fun though. Where are you going?"
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "There's a nice trail up by the lake. Great views and not too crowded."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds perfect. Maybe I'll join you if you don't mind."
+    },
+    {
+        "type": "message",
+        "source": "Marcus",
+        "message": "Of course! The more, the merrier."
+    }
+]

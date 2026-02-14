@@ -1,0 +1,69 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Hello Ms. White.",
+        "setCharacter": "Guidance Counsellor"
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "Hello %player%! It's great to see you. As I mentioned in my email, I'd like to talk to you about your plan for after you graduate from high school. Life after high school is an exciting time and comes with more independence, but it comes with many decisions too."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Actually, I was hoping to get your advice."
+    },
+    {
+        "type": "message",
+        "source": "Guidance Counsellor",
+        "message": "I'm happy to help."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "I've been thinking about going to postsecondary after I graduate and want to apply to some schools. It's a big step and I'm not quite sure how to prepare for it."
+    },
+    {
+        "type": "option",
+        "source": "Guidance Counsellor",
+        "message": "Many students are not aware of how different college or university can be. They can be unprepared for unexpected challenges during the transition. A little bit of prep can go a long way, so you're already a step ahead! How are you feeling about it?",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "To be honest, I have a lot of anxiety about it.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1b-1"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I feel both nervous and excited for it.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1b-2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "text": "I'm excited to experience postsecondary and all it has to offer.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": [
+                            "high_school/guidance_counsellor/chapter_1/1b-3"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

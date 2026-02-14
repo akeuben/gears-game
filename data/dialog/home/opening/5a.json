@@ -1,0 +1,36 @@
+[
+    {
+        "type": "action",
+        "source": "%player%",
+        "message": "Oh! That's right, I need to visit the guidance counsellor at school. I better check my map app.",
+        "actions": [
+            {
+                "type": "hint",
+                "title": "Open the Map App on Your Phone",
+                "description": "You can visit different places on the map app.",
+                "flag": "phone:opened_app:map"
+            },
+            {
+                "type": "flag",
+                "flag": [
+                    {
+                        "flag_name": "unlocked_high_school",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "high_school:welcome",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "dictionary_tutorial",
+                        "flag_action": "give"
+                    },
+                    {
+                        "flag_name": "map_unlocked",
+                        "flag_action": "give"
+                    }
+                ]
+            }
+        ]
+    }
+]

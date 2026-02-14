@@ -1,0 +1,288 @@
+{
+    "name": "report_reflection",
+    "stylesheet": "report_reflection",
+    "activities": [
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Report Reflection Activity"
+            },
+            {
+                "type": "quoteblock",
+                "html": "Consider your current learning strengths and needs now. Answer the following questions:"
+            },
+            {
+                "type": "multiselect",
+                "number": "1",
+                "prompt": "What is your diagnosis or disability on record? (choose all that apply)",
+                "options": ["ADHD"],
+                "other_fields": [
+                    "Learning Disability in:",
+                    "Other Disability in:"
+                ]
+            },
+            {
+                "type": "multiselect",
+                "number": "2",
+                "prompt": "What strengths do you see in yourself or that others see in you? (choose all that apply)",
+                "options": [
+                    "Reading",
+                    "Mathematics",
+                    "Writing",
+                    "Science",
+                    "Art",
+                    "Music",
+                    "Sports",
+                    "Technology",
+                    "Video Games",
+                    "Photography",
+                    "Working with hands",
+                    "Creativity",
+                    "Responsible",
+                    "Helpful",
+                    "Caring",
+                    "A good friend"
+                ],
+                "other_fields": ["Other(s):"]
+            },
+            {
+                "type": "reflection",
+                "number": "3",
+                "prompt": "When it comes to your learning, what are your greatest challenges?"
+            },
+            {
+                "type": "multiselect",
+                "number": "4",
+                "prompt": "What accommodations, strategies, and/or services do you currently receive at school?",
+                "options": [
+                    "Quiet workspace",
+                    "Preferential seating in the classroom",
+                    "A quiet room to complete tests",
+                    "Noise cancelling headphones",
+                    "Learning materials in alternate format (e.g., audio)",
+                    "Scribe/reader",
+                    "Text-to-speech software",
+                    "Speech-to-text software",
+                    "Spell checking software",
+                    "Alternate ways for assessment",
+                    "Breaks when needed",
+                    "Extra time for tests and quizzes",
+                    "Help form teachers outside of class time.",
+                    "Break down of tasks into smaller parts",
+                    "Materials provided prior to class",
+                    "Classroom notes provided"
+                ],
+                "other_fields": ["Other:"],
+                "bindings": {
+                    "provides": {
+                        "0": "Quiet workspace",
+                        "1": "Preferential seating in the classroom",
+                        "2": "A quiet room to complete tests",
+                        "3": "Noise cancelling headphones",
+                        "4": "Learning materials in alternate format (e.g., audio)",
+                        "5": "Scribe/reader",
+                        "6": "Text-to-speech software",
+                        "7": "Speech-to-text software",
+                        "8": "Spell checking software",
+                        "9": "Alternate ways for assessment",
+                        "10": "Breaks when needed",
+                        "11": "Extra time for tests and quizzes",
+                        "12": "Help form teachers outside of class time.",
+                        "13": "Break down of tasks into smaller parts",
+                        "14": "Materials provided prior to class",
+                        "15": "Classroom notes provided"
+                    }
+                }
+            },
+            {
+                "type": "grid",
+                "columnWeights": [0.5, 0.5],
+                "spacing": 50,
+                "elements": [
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Quiet workspace\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Quiet workspace"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Preferential seating in the classroom\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Preferential seating in the classroom"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"A quiet room to complete tests\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "A quiet room to complete tests"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Noise cancelling headphones\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Noise cancelling headphones"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Learning materials in alternate format (e.g., audio)\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Learning materials in alternate format (e.g., audio)"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Scribe/reader\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Scribe/reader"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Text-to-speech software\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Text-to-speech software"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Speech-to-text software\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Speech-to-text software"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Spell checking software\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Spell checking software"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Alternate ways for assessment\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Alternate ways for assessment"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Quiet Workspace\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Breaks when needed"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Extra time for tests and quizzes\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Extra time for tests and quizzes"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Help form teachers outside of class time.\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Help form teachers outside of class time."
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Break down of tasks into smaller parts\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Break down of tasks into smaller parts"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Materials provided prior to class\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Materials provided prior to class"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "element": {
+                            "type": "scale",
+                            "prompt": "On a scale of 1-10, with 10 being most helpful, how appropriate is \"Classroom notes provided\" for your learning needs?",
+                            "bindings": {
+                                "recieves": {
+                                    "visible": "Classroom notes provided"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "reflection",
+                "number": "5",
+                "prompt": "Other than accommodations, think about what teachers do that help you. What do you find helpful?"
+            }
+        ]
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "university:hallway",
+    "backgrounds": [{ "image": "university/hallway.png" }],
+    "elements": [
+        {
+            "type": "bounding_box",
+            "x": 0.76,
+            "y": 0.29,
+            "x2": 0.99,
+            "y2": 0.89,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "university/map"
+            }
+        },
+        {
+            "type": "bounding_box",
+            "x": 0.02,
+            "y": 0.29,
+            "x2": 0.23,
+            "y2": 0.88,
+            "action": {
+                "type": "go_to_scene",
+                "scene": "university/classroom"
+            }
+        }
+    ]
+}

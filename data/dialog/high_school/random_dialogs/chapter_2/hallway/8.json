@@ -1,0 +1,46 @@
+[
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "Hey %player%, did you see the movie that premiered last weekend?"
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "No, I missed it. Was it good?"
+    },
+    {
+        "type": "message",
+        "source": "Alex",
+        "message": "It was amazing! The special effects were out of this world."
+    },
+    {
+        "type": "message",
+        "source": "Madison",
+        "message": "I watched it too! The storyline was so captivating."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Sounds like I need to watch it soon."
+    },
+    {
+        "type": "option",
+        "source": "Alex",
+        "message": "What's your favorite genre of movies?",
+        "options": [
+            {
+                "text": "Action and adventure.",
+                "actions": [{}]
+            },
+            {
+                "text": "Drama and romance.",
+                "actions": [{}]
+            },
+            {
+                "text": "Something else...",
+                "actions": [{}]
+            }
+        ]
+    }
+]

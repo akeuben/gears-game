@@ -1,0 +1,75 @@
+[
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "ADHD stands for Attention Deficit- Hyperactivity Disorder. It's a neurodevelopmental condition that can affect both children and adults."
+    },
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "What does that mean?"
+    },
+    {
+        "type": "message",
+        "source": "Psychologist",
+        "message": "There are two characteristics of ADHD: inattention and hyperactivity/impulsivity.  People who fall into the inattentive group have a difficult time paying attention to things when they need to but are not hyperactive or impulsive.  They are bored easily or switch their attention to other things very quickly."
+    },
+    {
+        "type": "option",
+        "source": "Psychologist",
+        "message": "That means they can miss teacher’s instructions, misplace things, and be unorganized. Other people can be hyperactive and impulsive type, where there's excess energy and impulsive behavior. Some people with ADHD have only one group of symptoms and others have a combination of both.",
+        "option_location": "below",
+        "options": [
+            {
+                "text": "I tend to be inattentive.",
+                "actions": [
+                    {
+                        "type": "void"
+                    }
+                ]
+            },
+            {
+                "text": "I tend to be hyperactive/impulsive.",
+                "actions": [
+                    {
+                        "type": "void"
+                    }
+                ]
+            },
+            {
+                "text": "I tend to be both inattentive and hyperactive/impulsive.",
+                "actions": [
+                    {
+                        "type": "void"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "option",
+        "source": "Psychologist",
+        "message": "ADHD is also sometimes referred to as a disorder of executive functioning.",
+        "options": [
+            {
+                "text": "Executive what?  Sounds like someone who is a bad administrator.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/psychologist/chapter_2/1c-1"]
+                    }
+                ]
+            },
+            {
+                "text": "I’m familiar with executive functioning.",
+                "actions": [
+                    {
+                        "type": "open_dialog",
+                        "dialog": ["high_school/psychologist/chapter_2/1c-2"]
+                    }
+                ]
+            }
+        ],
+        "option_location": "below"
+    }
+]

@@ -1,0 +1,209 @@
+{
+    "name": "ld_checklist",
+    "activities": [
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Checklist for LD Symptoms"
+            },
+            {
+                "type": "checklist",
+                "header": "Rate yourself on the following skills and behaviours and how often you experience challenges in these areas:",
+                "scaleTitles": [
+                    "Never",
+                    "Rarely",
+                    "Sometimes",
+                    "Often",
+                    "Very Often"
+                ],
+                "elementTitle": "Reading",
+                "categories": {
+                    "Reading": [
+                        {
+                            "prompt": "Reading unfamilar words",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Reading fluently",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Reading as fast as my peers",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Understanding the words I read",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Remembering what I read",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Understanding the content that I read",
+                            "scores": [0, 0, 0, 1, 1]
+                        }
+                    ]
+                },
+                "responseText": {
+                    "1..20": "It looks like you have some challenges in specific areas. Consider working with learning strategist to find strategies that help compensate for these challenge(s). You should also consider exploring accommodations that your postsecondary can offer you."
+                }
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Checklist for LD Symptoms"
+            },
+            {
+                "type": "checklist",
+                "header": "Rate yourself on the following skills and behaviours and how often you experience challenges in these areas:",
+                "scaleTitles": [
+                    "Never",
+                    "Rarely",
+                    "Sometimes",
+                    "Often",
+                    "Very Often"
+                ],
+                "elementTitle": "Writing",
+                "categories": {
+                    "Writing": [
+                        {
+                            "prompt": "Spelling accurately",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Thinking of ideas I want to write",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Including correct, grammar and punctuation.",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Organizing my ideas so the reader can understand my arguments",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Writing complete sentences",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Writing legibly",
+                            "scores": [0, 0, 0, 1, 1]
+                        }
+                    ]
+                },
+                "responseText": {
+                    "1..20": "It looks like you have some challenges in specific areas. Consider working with learning strategist to find strategies that help compensate for these challenge(s). You should also consider exploring accommodations that your postsecondary can offer you."
+                }
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Checklist for LD Symptoms"
+            },
+            {
+                "type": "checklist",
+                "header": "Rate yourself on the following skills and behaviours and how often you experience challenges in these areas:",
+                "scaleTitles": [
+                    "Never",
+                    "Rarely",
+                    "Sometimes",
+                    "Often",
+                    "Very Often"
+                ],
+                "elementTitle": "Mathematics",
+                "categories": {
+                    "Mathematics": [
+                        {
+                            "prompt": "Doing math in my head",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Understanding word problems",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Getting the right answers on math problems",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Understanding advanced concepts",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Remembering the sequence and steps to a math problem",
+                            "scores": [0, 0, 0, 1, 1]
+                        }
+                    ]
+                },
+                "responseText": {
+                    "1..20": "It looks like you have some challenges in specific areas. Consider working with learning strategist to find strategies that help compensate for these challenge(s). You should also consider exploring accommodations that your postsecondary can offer you."
+                }
+            }
+        ],
+        [
+            {
+                "type": "text",
+                "textType": "title",
+                "html": "Checklist for LD Symptoms"
+            },
+            {
+                "type": "checklist",
+                "header": "Rate yourself on the following skills and behaviours and how often you experience challenges in these areas:",
+                "scaleTitles": [
+                    "Never",
+                    "Rarely",
+                    "Sometimes",
+                    "Often",
+                    "Very Often"
+                ],
+                "elementTitle": "Cognitive",
+                "categories": {
+                    "Cognitive": [
+                        {
+                            "prompt": "Remembering what I have heard",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Taking notes and listening at the same time",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Understanding vocabulary I hear",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Retrieving the words I want to say",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Answering questions on the spot",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Speed of task completion",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Following a conversation",
+                            "scores": [0, 0, 0, 1, 1]
+                        },
+                        {
+                            "prompt": "Remembering instructions for tasks",
+                            "scores": [0, 0, 0, 1, 1]
+                        }
+                    ]
+                },
+                "responseText": {
+                    "1..20": "It looks like you have some challenges in specific areas. Consider working with learning strategist to find strategies that help compensate for these challenge(s). You should also consider exploring accommodations that your postsecondary can offer you."
+                }
+            }
+        ]
+    ]
+}
