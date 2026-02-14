@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d79c41e.css",
-    "main.js": "/static/js/main.6aa610eb.js",
-    "static/media/minimap.png": "/static/media/minimap.c75c455a2077850b91dd.png",
-    "static/media/wallpaper1.png": "/static/media/wallpaper1.5f20123c80a1abbaef73.png",
-    "static/media/table.png": "/static/media/table.092014658a540f7f688d.png",
-    "static/media/map.png": "/static/media/map.2cb8d822c15fe89d0ff2.png",
-    "static/media/endgame.webp": "/static/media/endgame.a7441a83fb541724db05.webp",
-    "static/media/Logo.png": "/static/media/Logo.0d2c6603f8e2b3f45096.png",
-    "static/media/textbook_game_background.png": "/static/media/textbook_game_background.97f6a4e3d38ea4f28857.png",
-    "static/media/phone-icon.png": "/static/media/phone-icon.1e1775f884d2c40b4f83.png",
-    "index.html": "/index.html",
-    "main.6d79c41e.css.map": "/static/css/main.6d79c41e.css.map",
-    "main.6aa610eb.js.map": "/static/js/main.6aa610eb.js.map"
+    "main.css": "/gears-game/static/css/main.214c7303.css",
+    "main.js": "/gears-game/static/js/main.6aa610eb.js",
+    "static/media/minimap.png": "/gears-game/static/media/minimap.c75c455a2077850b91dd.png",
+    "static/media/wallpaper1.png": "/gears-game/static/media/wallpaper1.5f20123c80a1abbaef73.png",
+    "static/media/table.png": "/gears-game/static/media/table.092014658a540f7f688d.png",
+    "static/media/map.png": "/gears-game/static/media/map.2cb8d822c15fe89d0ff2.png",
+    "static/media/endgame.webp": "/gears-game/static/media/endgame.a7441a83fb541724db05.webp",
+    "static/media/Logo.png": "/gears-game/static/media/Logo.0d2c6603f8e2b3f45096.png",
+    "static/media/textbook_game_background.png": "/gears-game/static/media/textbook_game_background.97f6a4e3d38ea4f28857.png",
+    "static/media/phone-icon.png": "/gears-game/static/media/phone-icon.1e1775f884d2c40b4f83.png",
+    "index.html": "/gears-game/index.html",
+    "main.214c7303.css.map": "/gears-game/static/css/main.214c7303.css.map",
+    "main.6aa610eb.js.map": "/gears-game/static/js/main.6aa610eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d79c41e.css",
+    "static/css/main.214c7303.css",
     "static/js/main.6aa610eb.js"
   ]
 }
