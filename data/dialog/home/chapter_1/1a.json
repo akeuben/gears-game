@@ -7,13 +7,13 @@
     {
         "type": "message",
         "source": "%player%",
-        "message": "Dear Ms. White,<br><br>I have completed the activity.  Please see attached.<br><br>Sincerely, <br><br>%player%",
-        "strategy": "chapter_1:staying_focussed_while_studying"
+        "message": "Dear Ms. White,<br><br>I have completed the activity.  Please see attached.<br><br>Sincerely, <br><br>%player%"
     },
     {
         "type": "message",
         "source": "%player%",
-        "message": "...And sent."
+        "message": "...And sent.",
+        "strategy": "chapter_1:study_strategies"
     },
     {
         "type": "message",

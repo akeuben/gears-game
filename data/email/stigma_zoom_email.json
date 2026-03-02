@@ -16,6 +16,10 @@
                     "email": ["stigma_zoom_email_2"]
                 },
                 {
+                    "type": "open_dialog",
+                    "dialog": ["home/chapter_5/stigma_zoom"]
+                },
+                {
                     "type": "complete_todo_item",
                     "item": "Join the Stigma Awareness Night Zoom Session Link",
                     "list": "optional"

@@ -233,9 +233,16 @@
         "message": "Happy to help. It’s going to be a great party!",
         "actions": [
             {
-                "type": "fail_todo_item",
-                "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
-                "list": "optional"
+                "type": "conditional",
+                "condition": "negateFlag",
+                "flags": ["party_surprise:correct"],
+                "actions": [
+                    {
+                        "type": "fail_todo_item",
+                        "item": "Help Madison plan the perfect surprise party by finding out what her friend likes",
+                        "list": "optional"
+                    }
+                ]
             },
             {
                 "type": "conditional",

@@ -48,6 +48,20 @@
         "stylesheet": "timetable_instructions",
         "chapter": 6
     },
+    "high_school:general_coping_tips": {
+        "name": "Healthy Coping Strategies for Postsecondary Students",
+        "description": "Coping strategies to help postsecondary students",
+        "file": "high_school/general_coping_tips",
+        "stylesheet": "coping_strategies",
+        "chapter": 6
+    },
+    "high_school:exam_coping_tips": {
+        "name": "10 Coping Strategies For Exams",
+        "description": "Strategies to help students in coping for exams",
+        "file": "high_school/exam_coping_tips",
+        "stylesheet": "coping_strategies",
+        "chapter": 6
+    },
     "resources:resources_in_postsecondary": {
         "name": "Resources in Postsecondary",
         "description": "Resources students have in postsecondary",

@@ -39,6 +39,7 @@
         "type": "action",
         "source": "%player%",
         "message": "Oh cool. I’ll add that to my phone on my dictionary app so I can check any words that I'm not sure of later.",
+        "strategy": "chapter_1:help_to_start_studying",
         "setCharacter": "Teacher",
         "actions": [
             {

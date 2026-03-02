@@ -39,6 +39,11 @@
         "description": "Get a perfect score in the textbook collection minigame.",
         "hidden": false
     },
+    "minigame:urgency": {
+        "name": "Priority Master",
+        "description": "You correctly prioritized in the urgency minigame!",
+        "hidden": false
+    },
     "easter_egg:cheater": {
         "name": "Cheater",
         "description": "You really shouldn't mess with things you don't know...",

@@ -48,7 +48,8 @@
     {
         "type": "message",
         "source": "%player%",
-        "message": "Thanks for being so open about your experience with stigma."
+        "message": "Thanks for being so open about your experience with stigma.",
+        "strategy": "chapter_4:office_hours_101"
     },
     {
         "type": "action",

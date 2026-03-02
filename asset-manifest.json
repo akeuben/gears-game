@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gears-game/static/css/main.214c7303.css",
-    "main.js": "/gears-game/static/js/main.6aa610eb.js",
+    "main.css": "/gears-game/static/css/main.065c1f3e.css",
+    "main.js": "/gears-game/static/js/main.b220619d.js",
     "static/media/minimap.png": "/gears-game/static/media/minimap.c75c455a2077850b91dd.png",
     "static/media/wallpaper1.png": "/gears-game/static/media/wallpaper1.5f20123c80a1abbaef73.png",
     "static/media/table.png": "/gears-game/static/media/table.092014658a540f7f688d.png",
@@ -11,11 +11,11 @@
     "static/media/textbook_game_background.png": "/gears-game/static/media/textbook_game_background.97f6a4e3d38ea4f28857.png",
     "static/media/phone-icon.png": "/gears-game/static/media/phone-icon.1e1775f884d2c40b4f83.png",
     "index.html": "/gears-game/index.html",
-    "main.214c7303.css.map": "/gears-game/static/css/main.214c7303.css.map",
-    "main.6aa610eb.js.map": "/gears-game/static/js/main.6aa610eb.js.map"
+    "main.065c1f3e.css.map": "/gears-game/static/css/main.065c1f3e.css.map",
+    "main.b220619d.js.map": "/gears-game/static/js/main.b220619d.js.map"
   },
   "entrypoints": [
-    "static/css/main.214c7303.css",
-    "static/js/main.6aa610eb.js"
+    "static/css/main.065c1f3e.css",
+    "static/js/main.b220619d.js"
   ]
 }

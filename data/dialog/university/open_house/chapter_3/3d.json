@@ -3,6 +3,7 @@
         "type": "message",
         "source": "School Representative",
         "message": "Fantastic! Check out this pamphlet and take some time to explore what will work best for you.",
+        "strategy": "chapter_3:task_prioritization_with_priorities_worksheet",
         "setCharacter": "Dominic"
     },
     {

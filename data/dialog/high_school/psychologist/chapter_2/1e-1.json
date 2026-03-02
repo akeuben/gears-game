@@ -3,7 +3,7 @@
         "type": "message",
         "source": "Psychologist",
         "message": "Congratulations!  You now know more about LD and ADHD than most peers your age!  Understanding these disabilities might be helpful in the future if peers or adults make assumptions about you.   You can dispel the myths they hold about you.",
-        "strategy": "chapter_12:approaches_to_studying"
+        "strategy": "chapter_2:reading_strategies"
     },
     {
         "type": "message",

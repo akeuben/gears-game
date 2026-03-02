@@ -31,7 +31,8 @@
     {
         "type": "message",
         "source": "%player%",
-        "message": "Yes, I've saved many of them."
+        "message": "Yes, I've saved many of them.",
+        "strategy": "chapter_6:time_task_estimation"
     },
     {
         "type": "action",
@@ -53,7 +54,8 @@
     {
         "type": "message",
         "source": "Guidance Counsellor",
-        "message": "Good. If you're looking for more information or want to attend some events you missed, feel free to come back later on."
+        "message": "Good. If you're looking for more information or want to attend some events you missed, feel free to come back later on.",
+        "strategy": "chapter_6:reading_instructions_and_questions_carefully"
     },
     {
         "type": "message",

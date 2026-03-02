@@ -33,10 +33,6 @@
                             "flag_action": "revoke"
                         }
                     ]
-                },
-                {
-                    "type": "send_text",
-                    "text": "dominic/text_thread_5"
                 }
             ]
         }

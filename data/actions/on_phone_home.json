@@ -52,12 +52,20 @@
                         {
                             "flag_name": "sam_text_complete_1",
                             "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "transition:chapter_4:1",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "chapter_5_Route:1",
+                            "flag_action": "give"
                         }
                     ]
                 },
                 {
-                    "type": "open_dialog",
-                    "dialog": ["home/chapter_4/4a-1"]
+                    "type": "go_to_scene",
+                    "scene": "transition"
                 }
             ]
         },
@@ -72,12 +80,20 @@
                         {
                             "flag_name": "sam_text_complete_2",
                             "flag_action": "revoke"
+                        },
+                        {
+                            "flag_name": "transition:chapter_4:2",
+                            "flag_action": "give"
+                        },
+                        {
+                            "flag_name": "chapter_5_Route:2",
+                            "flag_action": "give"
                         }
                     ]
                 },
                 {
-                    "type": "open_dialog",
-                    "dialog": ["home/chapter_4/4a-2"]
+                    "type": "go_to_scene",
+                    "scene": "transition"
                 }
             ]
         }

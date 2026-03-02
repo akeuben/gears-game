@@ -67,7 +67,8 @@
     {
         "type": "message",
         "source": "Guidance Counsellor",
-        "message": "As a next step, I recommend you make an appointment with the psychologist,  Dr. Kevin.  He is a great person to talk to about disabilities like LD and ADHD.  You can send him an email when you get home."
+        "message": "As a next step, I recommend you make an appointment with the psychologist,  Dr. Kevin.  He is a great person to talk to about disabilities like LD and ADHD.  You can send him an email when you get home.",
+        "strategy": "chapter_1:approaches_to_studying"
     },
     {
         "type": "message",
@@ -77,13 +78,13 @@
     {
         "type": "message",
         "source": "Guidance Counsellor",
-        "message": "I will also send you some homework to do before you meet with Dr. Kevin.  It will ask you to review your assessment documents and identify your strengths and needs.  Send it back to me when you are done, ok?",
-        "strategy": "chapter_1:help_to_start_studying"
+        "message": "I will also send you some homework to do before you meet with Dr. Kevin.  It will ask you to review your assessment documents and identify your strengths and needs.  Send it back to me when you are done, ok?"
     },
     {
         "type": "action",
         "source": "%player%",
         "message": "I will.",
+        "strategy": "chapter_1:staying_focussed_while_studying",
         "actions": [
             {
                 "type": "change_background",

@@ -12,7 +12,8 @@
     {
         "type": "message",
         "source": "Sam ",
-        "message": "If you want to chat again in the future, just send me a text.  I’d be happy to meet again."
+        "message": "If you want to chat again in the future, just send me a text.  I’d be happy to meet again.",
+        "strategy": "chapter_4:navigating_a_bad_grade"
     },
     {
         "type": "conditional",

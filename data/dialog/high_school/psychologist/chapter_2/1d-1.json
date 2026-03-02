@@ -8,6 +8,7 @@
         "type": "action",
         "source": "%player%",
         "message": "Thank you. I will take a look.",
+        "strategy": "chapter_2:active_learning_retrieval_practice",
         "actions": [
             {
                 "type": "minigame",

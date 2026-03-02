@@ -44,6 +44,7 @@
         "type": "action",
         "source": "%player%",
         "message": "Thanks for sharing your tips for time management.",
+        "strategy": "chapter_4:completing_tests_on_time",
         "actions": [
             {
                 "type": "open_dialog",

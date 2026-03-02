@@ -28,13 +28,13 @@
     {
         "type": "message",
         "source": "Dominic",
-        "message": "Hey, why don't we check these tables and find out more about all that?",
-        "strategy": "chapter_3:pomodoro_technique"
+        "message": "Hey, why don't we check these tables and find out more about all that?"
     },
     {
         "type": "message",
         "source": "%player%",
-        "message": "Sure, let's do it."
+        "message": "Sure, let's do it.",
+        "strategy": "chapter_3:tiny_habits"
     },
     {
         "type": "action",

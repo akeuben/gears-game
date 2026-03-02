@@ -2,7 +2,8 @@
     {
         "type": "message",
         "source": "%player%",
-        "message": "You don't have to go through this alone. I'm here for you if you need to talk."
+        "message": "You don't have to go through this alone. I'm here for you if you need to talk.",
+        "strategy": "chapter_6:getting_started_with_group_work"
     },
     {
         "type": "message",

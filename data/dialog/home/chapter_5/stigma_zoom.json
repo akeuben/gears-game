@@ -1,0 +1,8 @@
+[
+    {
+        "type": "message",
+        "source": "%player%",
+        "message": "Well that was informative!",
+        "strategy": "chapter_5:connecting_with_instructors"
+    }
+]

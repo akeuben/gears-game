@@ -2,7 +2,8 @@
     {
         "type": "message",
         "source": "%player%",
-        "message": "Thanks for showing me those resources, they were really helpful! I do got to go now though, I have a meeting with Ms. White. See you later!"
+        "message": "Thanks for showing me those resources, they were really helpful! I do got to go now though, I have a meeting with Ms. White. See you later!",
+        "strategy": "chapter_6:assigning_roles_in_group_work"
     },
     {
         "type": "action",

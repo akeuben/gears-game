@@ -1,6 +1,7 @@
 {
     "popup:minigame:jeopardy": {
         "title": "Myths and Facts",
+        "position": "tl",
         "lines": [
             "<h>On the categories screen",
             "%key:general:up%, %key:general:down%, %key:general:left%, %key:general:right%: move between options",
@@ -13,6 +14,7 @@
     },
     "popup:minigame:textbook": {
         "title": "Textbook Collection",
+        "position": "tl",
         "lines": [
             "<h>On the gameplay screen",
             "%key:textbook_minigame:left%, %key:textbook_minigame:right%: move the bag left and right to catch books",
@@ -24,6 +26,7 @@
     },
     "popup:minigame:cards": {
         "title": "Urgency Matrix",
+        "position": "tl",
         "lines": [
             "%key:urgency_matrix_minigame:next_cell%, %key:urgency_matrix_minigame:previous_cell%: switch between categories",
             "%key:minigames:select%: select cell, or pull the next card",
@@ -34,6 +37,7 @@
     },
     "popup:minigame:spreadsheet_wheel": {
         "title": "Unexpected Expenses",
+        "position": "bl",
         "lines": [
             "Use Tab to select the menu items",
             "Use Up and Down to increase or decrease the selected item"
@@ -42,6 +46,7 @@
 
     "popup:characterCreator": {
         "title": "Character Creator",
+        "position": "br",
         "lines": [
             "Use Tab to switch between the menu items",
             "Use Enter to select items"
@@ -100,6 +105,7 @@
     },
     "popup:minigameSelector": {
         "title": "Minigame Selector",
+        "position": "bl",
         "lines": [
             "Press %key:general:left% and %key:general:right% to switch between minigames",
             "Use Enter open the selected minigame",
@@ -123,7 +129,7 @@
         ]
     },
 
-    "phone:-1": {
+    "phone:null": {
         "title": "Phone",
         "lines": [
             "%key:general:up%, %key:general:down%, %key:general:left%, %key:general:right%: move between apps on the home screen",
@@ -131,7 +137,7 @@
             "%key:general:back%: close phone"
         ]
     },
-    "phone:0": {
+    "phone:todo": {
         "title": "Todo App",
         "lines": [
             "Press %key:general:left% and %key:general:right% to switch between the sidebar and content",
@@ -139,7 +145,7 @@
             "You can press %key:general:back% to close the app"
         ]
     },
-    "phone:1": {
+    "phone:mail": {
         "title": "Mail App",
         "lines": [
             "<h>Email list",
@@ -152,7 +158,7 @@
             "Press %key:general:back% to return to the email list"
         ]
     },
-    "phone:2": {
+    "phone:map": {
         "title": "Map App",
         "lines": [
             "Use %key:general:left% and %key:general:right% to highlight where you want to travel to",
@@ -160,7 +166,7 @@
             "You can press %key:general:back% to cancel traveling or close the app"
         ]
     },
-    "phone:3": {
+    "phone:messages": {
         "title": "Message App",
         "lines": [
             "<h>Conversation list",
@@ -173,7 +179,7 @@
             "Press %key:general:back% to return to the conversation list"
         ]
     },
-    "phone:4": {
+    "phone:journal": {
         "title": "Journal App",
         "lines": [
             "Press %key:general:left% and %key:general:right% to switch between the sidebar and content",
@@ -181,11 +187,11 @@
             "You can press %key:general:back% to close the app"
         ]
     },
-    "phone:5": {
+    "phone:dictionary": {
         "title": "Dictionary App",
         "lines": ["Press Up and Down scroll"]
     },
-    "phone:6": {
+    "phone:achievements": {
         "title": "Achievements App",
         "lines": [
             "Press %key:general:left% and %key:general:right% to switch between the sidebar and content",
@@ -193,7 +199,7 @@
             "You can press %key:general:back% to close the app"
         ]
     },
-    "phone:7": {
+    "phone:settings": {
         "title": "Settings App",
         "lines": [
             "Use Tab to switch between the menu items",
@@ -222,6 +228,7 @@
     },
     "scene": {
         "title": "Scene",
+        "position": "bl",
         "lines": [
             "%key:general:left% and %key:general:right%: move selection between scene elements",
             "%key:general:select%: select the highlighted element",

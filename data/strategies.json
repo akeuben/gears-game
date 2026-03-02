@@ -9,27 +9,27 @@
         "content": "Use these tips to help you stay on-task while studying.",
         "attachment": true
     },
-    "chapter_2:approaches_to_studying": {
+    "chapter_1:approaches_to_studying": {
         "title": "Approaches to studying",
         "content": "Two approaches to studying, spaced practice and interleaving, can support retention of material in long-term memory.",
         "attachment": true
     },
-    "chapter_3:pomodoro_technique": {
+    "chapter_1:pomodoro_technique": {
         "title": "Pomodoro technique",
         "content": "The pomodoro technique increases productivity and focus by minimizing fatigue and task-switching. Use it with tips for staying focussed while studying and approaches to studying.",
         "attachment": true
     },
-    "chapter_3:study_strategies": {
+    "chapter_1:study_strategies": {
         "title": "Study strategies",
         "content": "The strategies listed here can enhance your learning of any material. Different strategies work well in different contexts, so be sure to align your strategy with the way your learning will be assessed.",
         "attachment": true
     },
-    "chapter_3:active_learning_retrieval_practice": {
+    "chapter_2:active_learning_retrieval_practice": {
         "title": "Active learning: Retrieval practice",
         "content": "Active learning improves memory strength and understanding.  It helps more than passive learning which usually involves listening or reading without interaction (e.g., rereading notes).  Here are some ways to engage in retrieval using active learning techniques.",
         "attachment": true
     },
-    "chapter_3:reading_strategies": {
+    "chapter_2:reading_strategies": {
         "title": "Reading Strategies",
         "content": "Use these reading strategies to understand and recall large amounts of text.  They are especially helpful for textbook learning and exam prep.",
         "attachment": false
@@ -44,12 +44,12 @@
         "content": "Taking good notes helps you remember what you have learned through readings and lectures. Quality notes are a valuable tool to use while studying and preparing for exams.",
         "attachment": true
     },
-    "chapter_4:task_prioritization_with_priorities_worksheet": {
+    "chapter_3:task_prioritization_with_priorities_worksheet": {
         "title": "Task prioritization (with priorities worksheet from McGill)",
         "content": "Three steps provide structure for how students can prioritize tasks for the week.",
         "attachment": true
     },
-    "chapter_4:keeping_track_of_assignments": {
+    "chapter_3:keeping_track_of_assignments": {
         "title": "Keeping track of assignments",
         "content": "With multiple classes and different assignments, it can be difficult to keep track of everything without a system in place.",
         "attachment": true
@@ -57,6 +57,11 @@
     "chapter_4:reading_research_articles": {
         "title": "Reading research articles",
         "content": "This is a strategy to read and understand jargon-heavy science and social science research articles.",
+        "attachment": true
+    },
+    "chapter_4:meeting_with_instructors": {
+        "title": "Meeting with instructors",
+        "content": "At some point in our education, we may need to meet with the instructor or teaching assistant (TA). It might seem scary but here are some tips for having a successful meeting.",
         "attachment": true
     },
     "chapter_4:completing_tests_on_time": {
@@ -69,17 +74,12 @@
         "content": "It’s normal to feel nervous about upcoming tests.  A little bit of nervousness can actually be helpful but excessive anxiety can interfere with test performance.  Use these strategies to manage anxiety.",
         "attachment": false
     },
-    "chapter_5:office_hours_101": {
+    "chapter_4:office_hours_101": {
         "title": "Office hours 101",
         "content": "Office hours are opportunities to meet with an instructor.  Here is an explanation of how to make an appointment and how to prepare for a meeting.",
         "attachment": true
     },
-    "chapter_5:meeting_with_instructors": {
-        "title": "Meeting with instructors",
-        "content": "At some point in our education, we may need to meet with the instructor or teaching assistant (TA). It might seem scary but here are some tips for having a successful meeting.",
-        "attachment": true
-    },
-    "chapter_5:navigating_a_bad_grade": {
+    "chapter_4:navigating_a_bad_grade": {
         "title": "Navigating a bad grade",
         "content": "At some point, we may get a grade that we think is wrong or unfair. Here are some ways to challenge a grade with an instructor.",
         "attachment": true

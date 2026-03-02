@@ -2,7 +2,7 @@
     {
         "type": "message",
         "source": "Psychologist",
-        "message": "Hello %player%"
+        "message": "Hello %player%!"
     },
     {
         "type": "action",

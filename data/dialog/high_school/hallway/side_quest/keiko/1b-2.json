@@ -50,30 +50,9 @@
         "message": "I think so.  Ms. White suggested I talk to a Dr. Kevin person about how I learn best.  I’m going to make an appointment.  You should think about doing that too."
     },
     {
-        "type": "action",
+        "type": "message",
         "source": "Keiko",
         "message": "I might do that. Thanks for listening. I’ll see you around.",
-        "actions": [
-            {
-                "type": "conditional",
-                "condition": "flag",
-                "flags": ["chapter1:keiko:leave_home"],
-                "actions": [
-                    {
-                        "type": "flag",
-                        "flag": [
-                            {
-                                "flag_name": "chapter1:keiko:leave_home",
-                                "flag_action": "revoke"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "go_to_scene",
-                        "scene": "home/room"
-                    }
-                ]
-            }
-        ]
+        "strategy": "chapter_1:pomodoro_technique"
     }
 ]

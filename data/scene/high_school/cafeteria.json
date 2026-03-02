@@ -32,6 +32,15 @@
                     {
                         "type": "open_dialog",
                         "dialog": ["high_school/side_quest/shy_kid/2a-1"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "shy_kid_2_dialog",
+                                "flag_action": "revoke"
+                            }
+                        ]
                     }
                 ]
             },
@@ -43,6 +52,15 @@
                     {
                         "type": "open_dialog",
                         "dialog": ["high_school/side_quest/shy_kid/2a-2"]
+                    },
+                    {
+                        "type": "flag",
+                        "flag": [
+                            {
+                                "flag_name": "shy_kid_3_dialog",
+                                "flag_action": "revoke"
+                            }
+                        ]
                     }
                 ]
             },

@@ -44,6 +44,7 @@
         "type": "action",
         "source": "%player%",
         "message": "Thanks for sharing these tips on postsecondary.",
+        "strategy": "chapter_4:test_taking_overcoming_nervousness",
         "actions": [
             {
                 "type": "open_dialog",
